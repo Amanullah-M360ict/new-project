@@ -1,0 +1,218 @@
+.Contact {
+    --app-width: 880px;
+    margin: 100px 0
+}
+
+@media(max-width:580px) {
+    .Contact {
+        margin: calc(var(--global-space)*3) 0
+    }
+}
+
+.Contact__hero__h1 {
+    color: #1a1a1a;
+    font-size: 110px;
+    font-weight: 700;
+    text-align: center
+}
+
+.Contact__hero__h1,
+.Contact__hero__h1 span {
+    line-height: 1
+}
+
+@media(max-width:750px) {
+    .Contact__hero__h1 {
+        color: #1a1a1a;
+        font-size: 64px;
+        font-weight: 700;
+        letter-spacing: 2.667px
+    }
+}
+
+@media(max-width:400px) {
+    .Contact__hero__h1 {
+        font-size: 50px
+    }
+}
+
+.Contact__hero__p {
+    margin-top: calc(var(--global-space)*.5);
+    color: #1a1a1a;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 11.5556px;
+    text-align: center
+}
+
+@media(max-width:750px) {
+    .Contact__hero__p {
+        color: #1a1a1a;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 6px
+    }
+}
+
+@media(max-width:400px) {
+    .Contact__hero__p {
+        font-size: 10px;
+        letter-spacing: 5px
+    }
+}
+
+.Contact__content {
+    margin-top: calc(var(--global-space)*3)
+}
+
+.Contact__content__p {
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center
+}
+
+@media(max-width:580px) {
+    .Contact__content__p {
+        color: #1a1a1a;
+        font-size: 14px;
+        letter-spacing: .875px
+    }
+}
+
+.Contact__content__wrapper {
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    align-items: start;
+    margin-top: calc(var(--global-space)*3);
+    grid-gap: calc(var(--global-space)*5) calc(var(--global-space)*3);
+    gap: calc(var(--global-space)*5) calc(var(--global-space)*3)
+}
+
+@media(max-width:750px) {
+    .Contact__content__wrapper {
+        grid-template-columns: 1fr;
+        gap: calc(var(--global-space)*3)
+    }
+}
+
+@media(max-width:580px) {
+    .Contact__content__wrapper {
+        margin-top: calc(var(--global-space)*2);
+        gap: calc(var(--global-space)*2)
+    }
+}
+
+.Contact__content__left {
+    display: grid;
+    grid-gap: calc(var(--global-space)*1);
+    gap: calc(var(--global-space)*1)
+}
+
+@media(max-width:750px) {
+    .Contact__content__left {
+        order: 2
+    }
+}
+
+.Contact__content__left__p {
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px
+}
+
+.Contact__content__left__iframe {
+    width: 100%;
+    height: 212px
+}
+
+.Contact__content__left__a {
+    padding: calc(var(--global-space)*.25);
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    color: #1a1a1a;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .75px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.Contact__content__form {
+    display: grid;
+    grid-gap: calc(var(--global-space)*1);
+    gap: calc(var(--global-space)*1)
+}
+
+.Contact__content__form__label {
+    display: grid;
+    grid-gap: calc(var(--global-space)*.5);
+    gap: calc(var(--global-space)*.5)
+}
+
+.Contact__content__form__label__p {
+    display: flex;
+    align-items: center;
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    gap: calc(var(--global-space)*.5)
+}
+
+@media(max-width:580px) {
+    .Contact__content__form__label__p {
+        font-size: 14px
+    }
+}
+
+.Contact__content__form__label__p__required {
+    color: #ea4336;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px
+}
+
+.Contact__content__form__label__input {
+    display: block;
+    width: 100%;
+    padding: calc(var(--global-space)*.75);
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: none;
+    font-size: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.Contact__content__form__label__input--select {
+    padding-right: calc(var(--global-space)*2.5);
+    background-image: url(/images/Contact__content__form__label__input--select.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - var(--global-space)*1);
+    background-size: 14px 8px
+}
+
+.Contact__content__form__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: calc(var(--global-space)*1);
+    gap: calc(var(--global-space)*1)
+}
+
+.Contact__content__buttons {
+    display: grid;
+    grid-column: 1/3;
+    justify-content: center
+}
+
+@media(max-width:750px) {
+    .Contact__content__buttons {
+        grid-column: unset
+    }
+}

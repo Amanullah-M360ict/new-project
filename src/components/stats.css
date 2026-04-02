@@ -1,0 +1,223 @@
+.stats-section {
+    position: relative;
+    width: 100%;
+    min-height: 780px;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop'); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/mon.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    color: #fff;
+    overflow: hidden;
+
+}
+
+.stats-section__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    gap: 60px;
+}
+
+.stats-section__left {
+    flex: 1;
+    max-width: 600px;
+}
+
+.stats-section__title {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 87px;
+    line-height: 1;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+.stats-section__subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 450px;
+    opacity: 0.9;
+}
+
+.stats-section__right {
+    flex: 1.2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    gap: 1px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 622px;
+
+
+}
+
+.stats-card {
+    padding: 16px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+}
+
+.stats-card--green {
+    background-color: #a3ff66;
+    color: #000;
+}
+
+.stats-card--white {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.stats-card--empty {
+    background: transparent;
+}
+
+.stats-card--image {
+    background-image: url('https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=800&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+
+.stats-card__icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 20px;
+}
+
+.stats-card__value {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.stats-card__label {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+/* Grid positioning to match image */
+.card-1 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+/* 15M+ Top Right */
+.card-2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* 15+ Middle Left */
+.card-3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+/* 100+ Bottom Left */
+.card-4 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/* 450+ Bottom Right */
+.card-image-bg {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+/* The empty/image space in middle right */
+.card-top-left-empty {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+@media (max-width: 1024px) {
+    .stats-section__container {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .stats-section__title {
+        font-size: 60px;
+    }
+
+    .stats-section__subtitle {
+        margin: 0 auto 40px;
+    }
+
+    .stats-section__right {
+        width: 100%;
+        max-width: 600px;
+        grid-template-rows: repeat(3, 180px);
+    }
+
+    .card-1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .card-2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .card-3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .card-4 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .card-image-bg,
+    .card-top-left-empty {
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    .stats-section__right {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .stats-section {
+
+        align-items: start;
+        width: 100%;
+        min-height: 800px;
+        padding: 60px 0;
+        display: flex;
+
+    }
+
+    .stats-section__right {
+
+        bottom: 70px;
+
+    }
+}
