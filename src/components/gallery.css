@@ -1,0 +1,203 @@
+.gallery-section {
+
+    padding: 120px 0;
+    width: 100%;
+}
+
+.gallery-container {
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.gallery-left {
+    flex: 0 0 30%;
+    height: 500px;
+}
+
+.gallery-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-right {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 180px 1fr;
+    gap: 20px;
+}
+
+/* Stats */
+.stat-item {
+    border-left: 1px solid #d1d1d1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.stat-title {
+    font-size: 15px;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+
+.stat-number {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 50px;
+    color: #000;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.stat-1 {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    grid-area: 3 / 1 / 1 / 4;
+}
+
+.stat-2 {
+    grid-column: 5 / 8;
+    grid-row: 1;
+    grid-area: 1 / 4 / 2 / 8;
+}
+
+.stat-3 {
+    grid-column: 8 / 11;
+    grid-row: 1;
+    grid-area: 1 / 7 / 2 / 11;
+}
+
+/* In the photo, the Stats take up roughly columns 1-9. I'll adjust to 1/4, 4/7, 7/10 for better text spacing. */
+
+/* Right-most large vertical image (Woman) */
+.gallery-img-e {
+    grid-column: 10 / 13;
+    grid-row: 1 / 3;
+    align-self: center;
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    display: block;
+    grid-area: 2 / 10 / 4 / 25;
+}
+
+/* Under stats photos */
+.gallery-img-b {
+    grid-column: 1 / 6;
+    grid-row: 2;
+    align-self: end;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-img-c {
+    grid-column: 6 / 8;
+    grid-row: 2;
+    align-self: end;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-img-d {
+    grid-column: 8 / 10;
+    grid-row: 2;
+    align-self: end;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 0px;
+    /* Shifted UP as per design */
+}
+
+@media (max-width: 1024px) {
+    .gallery-container {
+        flex-direction: column;
+    }
+
+    .gallery-left {
+        width: 100%;
+        height: 500px;
+        flex: none;
+    }
+
+    .gallery-right {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .stat-1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .stat-2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .stat-3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .gallery-img-e {
+        grid-column: 2;
+        grid-row: 2;
+        height: 300px;
+    }
+
+    .gallery-img-b {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        height: 300px;
+    }
+
+    .gallery-img-c {
+        grid-column: 1;
+        grid-row: 4;
+        height: 300px;
+    }
+
+    .gallery-img-d {
+        grid-column: 2;
+        grid-row: 4;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-right {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-1,
+    .stat-2,
+    .stat-3,
+    .gallery-img-e,
+    .gallery-img-b,
+    .gallery-img-c,
+    .gallery-img-d {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        height: auto;
+        aspect-ratio: 16/9;
+        margin-bottom: 0;
+    }
+
+    .stat-item {
+        height: auto;
+        padding-bottom: 20px;
+    }
+}

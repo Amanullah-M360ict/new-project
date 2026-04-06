@@ -309,7 +309,7 @@ source {
     background-color: #fff
 }
 
-/* Button */
+
 .Button {
     display: block;
     padding: calc(var(--global-space)*.75) calc(var(--global-space)*3);
@@ -326,10 +326,9 @@ source {
     appearance: none
 }
 
-/* Hero */
 .Hero__h1 {
     color: #1a1a1a;
-    font-size: 104px;
+    font-size: 120px;
     font-weight: 700
 }
 
@@ -340,8 +339,9 @@ source {
 
 @media(max-width:750px) {
     .Hero__h1 {
-        font-size: 64px;
-        letter-spacing: 2.667px
+        font-size: 40px;
+        letter-spacing: 2.667px;
+        margin-top: 22px;
     }
 }
 
@@ -356,7 +356,7 @@ source {
 
 .Hero__wrapper {
     justify-content: center;
-    height: 700px;
+    height: 720px;
     max-height: 80vh
 }
 
@@ -384,6 +384,12 @@ source {
         font-size: 12px;
         font-weight: 300;
         letter-spacing: 6px
+    }
+
+    .Hero__wrapper {
+        justify-content: start;
+        height: 300px;
+        max-height: 80vh
     }
 }
 
