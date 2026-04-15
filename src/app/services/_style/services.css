@@ -1,0 +1,426 @@
+/* ─────────────────────────────────────────────────────────
+   Services Page — Ollyo-inspired editorial design
+   ───────────────────────────────────────────────────────── */
+
+.ServicesPage {
+    color: #1a1a1a;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+/* ── Hero ─────────────────────────────────────────────── */
+
+.Svc__hero {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.Svc__hero__eyebrow {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 12px;
+}
+
+.Svc__hero__eyebrow::before {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 1px;
+    background-color: #1a1a1a;
+}
+
+.Svc__hero__h1 {
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: -5px;
+    color: #1a1a1a;
+    margin-bottom: 60px;
+}
+
+.Svc__hero__h1,
+.Svc__hero__h1 * {
+    line-height: 0.9;
+}
+
+.Svc__hero__bottom {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    gap: 80px;
+    align-items: center;
+    padding-top: 40px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.Svc__hero__desc {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    max-width: 560px;
+}
+
+.Svc__hero__cta {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.Svc__hero__cta:hover {
+    background-color: #8FFF45;
+    color: #1a1a1a;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* ── Stats ────────────────────────────────────────────── */
+
+.Svc__stats {
+    padding: 50px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.Svc__stats__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    text-align: center;
+}
+
+.Svc__stats__item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0 40px;
+    border-right: 1px solid #e5e5e5;
+}
+
+.Svc__stats__item:first-child {
+    padding-left: 0;
+}
+
+.Svc__stats__item:last-child {
+    border-right: none;
+}
+
+.Svc__stats__value {
+    font-size: 64px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.Svc__stats__label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #999;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+
+
+.Svc__list {
+    padding: 0;
+}
+
+.Svc__item {
+    padding: 80px 0;
+    border-bottom: 1px solid #e5e5e5;
+    transition: background 0.25s ease;
+}
+
+.Svc__item__meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.Svc__item__id {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #bbb;
+    font-variant-numeric: tabular-nums;
+}
+
+.Svc__item__cat {
+    display: inline-block;
+    padding: 4px 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.Svc__item__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.Svc__item__left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.Svc__item__title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.0;
+    letter-spacing: -2px;
+    color: #1a1a1a;
+}
+
+.Svc__item__desc {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    max-width: 460px;
+}
+
+.Svc__item__link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #8FFF45;
+    width: fit-content;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.Svc__item__link:hover {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-color: #1a1a1a;
+}
+
+/* Capabilities */
+
+.Svc__item__caps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.Svc__item__cap {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 16px;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1a1a1a;
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+    transition: letter-spacing 0.2s ease;
+}
+
+.Svc__item__cap:first-child {
+    border-top: 1px solid #f0f0f0;
+}
+
+.Svc__item__cap:hover {
+    letter-spacing: 0.2px;
+}
+
+.Svc__item__capNum {
+    font-size: 11px;
+    font-weight: 700;
+    color: #bbb;
+    letter-spacing: 1px;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ── CTA ──────────────────────────────────────────────── */
+
+.Svc__cta {
+    padding: 140px 0;
+    background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url('/images/services_cta_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.Svc__cta__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.Svc__cta__h2 {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: -4px;
+    color: #fff;
+}
+
+.Svc__cta__right {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.Svc__cta__p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.Svc__cta__buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.Svc__cta__btn {
+    display: inline-block;
+    padding: 16px 36px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.Svc__cta__btn:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.Svc__cta__btn--primary {
+    background: #8FFF45;
+    color: #1a1a1a;
+}
+
+.Svc__cta__btn--primary:hover {
+    background: #a8ff6a;
+}
+
+.Svc__cta__btn--outline {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.Svc__cta__btn--outline:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+/* ── Responsive ─────────────────────────────────────── */
+
+@media (max-width: 1100px) {
+    .Svc__hero__h1 {
+        font-size: 100px;
+    }
+
+    .Svc__item__title {
+        font-size: 44px;
+    }
+
+    .Svc__cta__h2 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 900px) {
+    .Svc__hero__h1 {
+        font-size: 72px;
+        letter-spacing: -3px;
+    }
+
+    .Svc__hero__bottom {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .Svc__stats__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .Svc__stats__item {
+        padding: 0;
+        border-right: none;
+    }
+
+    .Svc__item__body {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .Svc__cta__inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .Svc__cta__h2 {
+        font-size: 60px;
+        letter-spacing: -3px;
+    }
+}
+
+@media (max-width: 640px) {
+    .Svc__hero__h1 {
+        font-size: 52px;
+        letter-spacing: -2px;
+        margin-bottom: 40px;
+    }
+
+    .Svc__item__title {
+        font-size: 34px;
+        letter-spacing: -1px;
+    }
+
+    .Svc__stats__value {
+        font-size: 48px;
+    }
+
+    .Svc__cta__h2 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .Svc__cta {
+        padding: 100px 0;
+    }
+
+    .Svc__item {
+        padding: 60px 0;
+    }
+}

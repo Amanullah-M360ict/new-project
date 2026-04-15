@@ -1,5 +1,5 @@
+import Link from 'next/link';
 import PreFooter from './PreFooter';
-import StatsSection from './StatsSection';
 
 export default function Footer() {
     const year = new Date().getFullYear();
@@ -7,7 +7,6 @@ export default function Footer() {
         <div style={{
             overflow: "hidden"
         }}>
-
             <PreFooter />
             <footer className="footer">
                 <div className="footer__container">
@@ -19,7 +18,7 @@ export default function Footer() {
                                     <li className="footer__list-item">
                                         <a
                                             className="footer__link footer__link--external"
-                                            href="https://www.joomshaper.com/"
+                                            href="https://www.iata.trabill.biz/"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
@@ -27,37 +26,37 @@ export default function Footer() {
                                         </a>
                                     </li>
                                     <li className="footer__list-item">
-                                        <a className="footer__link footer__link--external" href="https://www.themeum.com/" target="_blank" rel="noopener noreferrer">
+                                        <a className="footer__link footer__link--external" href="https://info.thehotel360.com/" target="_blank" rel="noopener noreferrer">
                                             <span>Hotel360</span>
 
                                         </a>
                                     </li>
                                     <li className="footer__list-item">
-                                        <a className="footer__link footer__link--external" href="https://droip.com/" target="_blank" rel="noopener noreferrer">
+                                        <a className="footer__link footer__link--external" href="https://erpbd.ontheway.com.bd" target="_blank" rel="noopener noreferrer">
                                             <span>ERPBD</span>
 
                                         </a>
                                     </li>
                                     <li className="footer__list-item">
-                                        <a className="footer__link footer__link--external" href="https://icofont.com/" target="_blank" rel="noopener noreferrer">
+                                        <a className="footer__link footer__link--external" href="https://www.t360toursntravels.com/" target="_blank" rel="noopener noreferrer">
                                             <span>T360TRAVEL</span>
                                         </a>
                                     </li>
                                 </ul>
                                 <ul className="footer__list">
                                     <li className="footer__list-item">
-                                        <a className="footer__link footer__link--external" href="https://tutorlms.com/" target="_blank" rel="noopener noreferrer">
+                                        <a className="footer__link footer__link--external" href="https://employee.crm360world.com" target="_blank" rel="noopener noreferrer">
                                             <span>CRM360</span>
 
                                         </a>
                                     </li>
                                     <li className="footer__list-item">
-                                        <a className="footer__link footer__link--external" href="https://growfund.com/" target="_blank" rel="noopener noreferrer">
+                                        <a className="footer__link footer__link--external" href="ttps://v2.dokani.live/login" target="_blank" rel="noopener noreferrer">
                                             <span>Dokani</span>
                                         </a>
                                     </li>
                                     <li className="footer__list-item">
-                                        <a className="footer__link footer__link--external" href="https://www.joomshaper.com/page-builder" target="_blank" rel="noopener noreferrer">
+                                        <a className="footer__link footer__link--external" href="https://account.recruit360.biz" target="_blank" rel="noopener noreferrer">
                                             <span>Recruit 360</span>
                                         </a>
                                     </li>
@@ -72,13 +71,26 @@ export default function Footer() {
                                 <nav className="footer__nav">
                                     <ul className="footer__list">
                                         <li className="footer__list-item">
-                                            <a className="footer__link" href="/about/">About</a>
+                                            <Link className="footer__link" href="/about/">About</Link>
+                                        </li>
+
+                                        <li className="footer__list-item">
+                                            <Link className="footer__link" href="/services/">Services</Link>
                                         </li>
                                         <li className="footer__list-item">
-                                            <a className="footer__link" href="/career/">Careers</a>
+                                            <Link className="footer__link" href="/our-concern/">Our Concern</Link>
                                         </li>
                                         <li className="footer__list-item">
-                                            <a className="footer__link" href="/contact/">Contact</a>
+                                            <Link className="footer__link" href="/fairs/">Events</Link>
+                                        </li>
+                                        <li className="footer__list-item">
+                                            <Link className="footer__link" href="/awards/">Awards</Link>
+                                        </li>
+                                        <li className="footer__list-item">
+                                            <Link className="footer__link" href="/vendors/">Vendors</Link>
+                                        </li>
+                                        <li className="footer__list-item">
+                                            <Link className="footer__link" href="/our-clients/">Our Clients</Link>
                                         </li>
                                     </ul>
                                 </nav>

@@ -15,18 +15,15 @@ export default function Contact() {
 
             <form className="Contact__content">
                 <div className="container">
-
                     <p className="Contact__content__p">
                         For company information, recruitment, HR, or any inquiries about our services, please contact us here.
                     </p>
-
                     <div className="Contact__content__wrapper">
-
                         <div className="Contact__content__left">
                             <p className="Contact__content__left__p">
                                 M360 ICT Ltd. <br />
                                 House# 74 Road# 7, Block# H, Banani, Dhaka-1213 <br />
-                                <small>Phone: +8809638336699 | +8801888798798 | +8802226603136</small> <br />
+                                <small>Phone: +8809638336699, +8801888798798, +8802226603136</small> <br />
                                 <small>Email: info@m360ict.com</small>
                             </p>
 

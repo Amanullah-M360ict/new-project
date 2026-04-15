@@ -1,9 +1,10 @@
-
 import Link from "next/link";
 import HeroText from "@/components/HeroText";
 import AnimatedText from "@/components/AnimatedText";
 import StatsSection from "@/components/StatsSection";
 import ServicesSection from "@/components/ServicesSection";
+import M360ictProducts from "@/components/M360ictProducts";
+import AwardsSection from "@/components/AwardsSection";
 
 export default function Home() {
 
@@ -17,7 +18,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
 
       <div className="Index__mission">
         <div className="container">
@@ -53,266 +53,10 @@ As many connections as possible with M360ICT.`}
         </div>
       </div>
 
-
-      <div className="Index__products">
-        <div className="container">
-          <div className="Index__products__header">
-            <h2 className="Index__products__header__h2">
-              <AnimatedText text="Products" />
-            </h2>
-            <div className="Index__products__header__link">
-              <Link className="Index__products__header__link__a" href="/products">
-                See all products
-              </Link>
-            </div>
-          </div>
-
-          <dl className="Index__products__dl">
-            {/* Trabill */}
-            <div className="Index__products__dl__item product_trabill">
-              <div className="Index__products__dl__item__wrapper">
-                <h3 className="Index__products__dl__item__h3">Trabill</h3>
-
-                <div className="Index__products__dl__item__box">
-
-
-                  <small className="Index__products__dl__item__box__small">
-                    Travel Agency Management Software
-                  </small>
-
-                  <div className="Index__products__dl__item__box__wrapper">
-
-                    <img
-                      className="Index__products__dl__item__box__img"
-                      src="/images/products/trabill.png"
-                      alt="Trabill"
-                      width={220}
-                      height={120}
-                    />
-
-                    <p className="Index__products__dl__item__box__p">
-                      An all-in-one travel management solution featuring IATA integration and double-entry accounting. A professional platform where you can streamline agency operations, track financial transactions, and manage client bookings efficiently.
-                    </p>
-
-                    <div className="Index__products__dl__item__box__link">
-                      <Link
-                        className="Index__products__dl__item__box__link__a"
-                        href="https://www.trabill.biz/login"
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                      >
-                        Go to site
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div className="Index__products__dl__item__drama">
-                  <div className="Index__products__dl__item__drama__header">
-                    <img
-                      className="Index__products__dl__item__drama__header__img"
-                      src="/images/Index__products__dl__item__drama__header__img.svg"
-                      alt=""
-                    />
-
-                    <h4 className="Index__products__dl__item__drama__header__h4">
-                      IATA Integrated Solutions
-                    </h4>
-
-                    <small className="Index__products__dl__item__drama__header__small">
-                      double-entry accounting system
-                    </small>
-                  </div>
-
-                  <dl className="Index__products__dl__item__drama__dl">
-                    <div className="Index__products__dl__item__drama__dl__chunk">
-                      <a
-                        className="Index__products__dl__item__drama__dl__item Index__products__dl__item__drama__dl__item--active"
-                        href="https://iata-double-entry.trabill.biz/"
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                      >
-                        <img
-                          className="Index__products__dl__item__drama__dl__item__img"
-                          src="https://iata-double-entry.trabill.biz/assets/5-BRpnS7jU.png"
-                          alt=""
-                          height={230}
-                        />
-
-                        <dt className="Index__products__dl__item__drama__dl__item__dt">
-                          Double Entry Accounting
-                        </dt>
-
-                        <div className="Index__products__dl__item__drama__dl__item__link">
-                          <span className="Index__products__dl__item__drama__dl__item__link__a">
-                            Go to site
-                          </span>
-                        </div>
-                      </a>
-
-                      <a
-                        className="Index__products__dl__item__drama__dl__item Index__products__dl__item__drama__dl__item--active"
-                        href="https://iata-double-entry.trabill.biz/"
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                      >
-                        <img
-                          className="Index__products__dl__item__drama__dl__item__img"
-                          src="https://iata-double-entry.trabill.biz/assets/2-CpiDBrWp.jpg"
-                          alt=""
-                          height={230}
-                        />
-
-                        <dt className="Index__products__dl__item__drama__dl__item__dt">
-                          Accounting Software
-                        </dt>
-
-                        <div className="Index__products__dl__item__drama__dl__item__link">
-                          <span className="Index__products__dl__item__drama__dl__item__link__a">
-                            Go to site
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </dl>
-                </div>
-              </div>
-
-              <img
-                className="Index__products__dl__item__img"
-                src="/images/products/trabill-banner.png"
-                style={{
-                  width: "18vw"
-                }}
-                alt="Virtual world"
-              />
-            </div>
-
-            {/* T360 Tours and Travels */}
-            <div className="Index__products__dl__item product_2">
-              <div className="Index__products__dl__item__wrapper">
-                <h3 className="Index__products__dl__item__h3">
-                  <AnimatedText text="T360 Tours and Travels" />
-                </h3>
-
-                <div className="Index__products__dl__item__box">
-                  <h4 className="Index__products__dl__item__box__h4">
-                    Complete OTA Solution
-                  </h4>
-
-                  <small className="Index__products__dl__item__box__small">
-                    integrated OTA platform
-
-                  </small>
-
-                  <div className="Index__products__dl__item__box__wrapper">
-                    <img
-                      className="Index__products__dl__item__box__img"
-                      src="https://www.t360toursntravels.com/_next/static/media/T360.12rr7u5fwacvd.svg"
-                      alt="Posmoni"
-                      width={220}
-                      height={140}
-                    />
-
-                    <p className="Index__products__dl__item__box__p">
-                      An all-in-one travel booking solution for flights, hotels, and weekend getaways. Take advantage of limited-time deals, family packages, and exclusive promo codes for your next adventure.
-                    </p>
-
-                    <div className="Index__products__dl__item__box__link">
-                      <a
-                        className="Index__products__dl__item__box__link__a"
-                        href="https://www.t360toursntravels.com/"
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                      >
-                        Go to site
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                {/* <div className="Index__products__dl__item__drama">
-                  <div className="Index__products__dl__item__drama__header">
-                    <img
-                      className="Index__products__dl__item__drama__header__img"
-                      src="/images/Index__products__dl__item__drama__header__img.svg"
-                      alt=""
-                    />
-
-                    <h4 className="Index__products__dl__item__drama__header__h4">
-                      All-in-One Travel Solution
-                    </h4>
-
-                    <small className="Index__products__dl__item__drama__header__small">
-                      Complete OTA System
-                    </small>
-                  </div>
-
-                  <dl className="Index__products__dl__item__drama__dl">
-                    <div className="Index__products__dl__item__drama__dl__chunk">
-                      <a
-                        className="Index__products__dl__item__drama__dl__item Index__products__dl__item__drama__dl__item--active"
-                        href="https://www.t360toursntravels.com/"
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                      >
-                        <img
-                          className="Index__products__dl__item__drama__dl__item__img"
-                          src="/images/products/t360-sub.png"
-                          alt=""
-                          height={150}
-                        />
-
-                        <dt className="Index__products__dl__item__drama__dl__item__dt">
-                          Booking System
-                        </dt>
-
-                        <div className="Index__products__dl__item__drama__dl__item__link">
-                          <span className="Index__products__dl__item__drama__dl__item__link__a">
-                            Go to site
-                          </span>
-                        </div>
-                      </a>
-
-                      <a
-                        className="Index__products__dl__item__drama__dl__item Index__products__dl__item__drama__dl__item--active"
-                        href="https://www.t360toursntravels.com/"
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                      >
-                        <img
-                          className="Index__products__dl__item__drama__dl__item__img"
-                          src="/images/products/t360-sub-1.png"
-                          alt=""
-                          height={150}
-                        />
-
-                        <dt className="Index__products__dl__item__drama__dl__item__dt">
-                          Exclusive Flights
-                        </dt>
-
-                        <div className="Index__products__dl__item__drama__dl__item__link">
-                          <span className="Index__products__dl__item__drama__dl__item__link__a">
-                            Go to site
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </dl>
-                </div> */}
-              </div>
-
-              <img
-                className="Index__products__dl__item__img"
-                src="/images/t360-banner.png"
-                alt="Content moderation"
-              />
-
-            </div>
-          </dl>
-        </div>
+      <M360ictProducts limit={1} showExploreButton={true} />
+      <div style={{ margin: '80px 0' }}>
+        <AwardsSection showExploreButton={true} />
       </div>
-
 
       {/* News */}
       <div className="Index__news">
@@ -383,7 +127,8 @@ As many connections as possible with M360ICT.`}
 
       <ServicesSection />
       <StatsSection />
-      {/* Connect */}
+
+
       <div className="Index__connect">
         <img src="/images/lets-bg.svg" alt="Connect" className="Index__connect__img_bg" />
         <div className="container">
@@ -416,8 +161,6 @@ As many connections as possible with M360ICT.`}
           </div>
         </div>
       </div>
-
-
 
     </div>
   );

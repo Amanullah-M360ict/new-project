@@ -19,7 +19,8 @@ export default function PreFooter() {
 
                     <div className="pre-footer__gallery-images">
                         <img src="https://img.freepik.com/premium-photo/businessman-hand-holding-wooden-cube-block-with-value-business-word-mission-vision-core-values-concept_42256-1423.jpg" alt="Gallery 3" className="pre-footer__gallery-img" />
-                        <img src="https://img.freepik.com/premium-photo/nighttime-work-openplan-office_1286780-3008.jpg" alt="Gallery 4" className="pre-footer__gallery-img" />
+                        {/* <img src="https://img.freepik.com/premium-photo/nighttime-work-openplan-office_1286780-3008.jpg" alt="Gallery 4" className="pre-footer__gallery-img" /> */}
+                        <img src="/images/teams/office-team.jpeg" alt="Gallery 4" className="pre-footer__gallery-img" />
                         <img src="https://img.freepik.com/free-photo/young-male-web-designers-working-computer_1303-19452.jpg" alt="Gallery 5" className="pre-footer__gallery-img" />
                     </div>
                 </div>

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import './gallery.css';
+import AnimatedText from './AnimatedText';
 
 const GallerySection = () => {
     return (
@@ -17,18 +18,18 @@ const GallerySection = () => {
                 <div className="gallery-right">
 
                     <div className="stat-item stat-1">
-                        <span className="stat-title">Years of Excellence</span>
-                        <span className="stat-number">15+</span>
+                        <span className="stat-title"><AnimatedText text={["Years of Excellence"]} /></span>
+                        <span className="stat-number"><AnimatedText text={["15+"]} /></span>
                     </div>
 
                     <div className="stat-item stat-2">
-                        <span className="stat-title">Team Members</span>
-                        <span className="stat-number">100+</span>
+                        <span className="stat-title"><AnimatedText text={["Team Members"]} /></span>
+                        <span className="stat-number"><AnimatedText text={["100+"]} /></span>
                     </div>
 
                     <div className="stat-item stat-3">
-                        <span className="stat-title">Brands & Products</span>
-                        <span className="stat-number">300+</span>
+                        <span className="stat-title"><AnimatedText text={["Brands & Products"]} /></span>
+                        <span className="stat-number"><AnimatedText text={["300+"]} /></span>
                     </div>
 
                     <img

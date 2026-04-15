@@ -1,0 +1,216 @@
+.Vendors {
+    padding-bottom: 120px;
+    background-color: #fff;
+}
+
+.Vendors .Hero {
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.Vendors .Hero__grid-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.Vendors .Hero__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: skewY(-5deg) translateY(-10%);
+}
+
+.Vendors .Hero__row {
+    display: flex;
+    gap: 10px;
+    animation: scroll 40s linear infinite;
+}
+
+.Vendors .Hero__row--2 {
+    animation-direction: reverse;
+}
+
+.Vendors .Hero__row--4 {
+    animation-direction: reverse;
+}
+
+.Vendors .Hero__grid-img {
+    width: 350px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 0.3;
+}
+
+.Vendors .Hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
+    z-index: 2;
+}
+
+.Vendors .Hero__wrapper {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    color: #fff;
+}
+
+.Vendors .Vendors__mb {
+    margin-bottom: 20px;
+}
+
+.Vendors .vendors_Hero__h1 {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.Vendors .Hero__p {
+    font-size: 20px;
+    color: #ccc;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.Vendors__main {
+    margin-top: 100px;
+}
+
+.Vendors__intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.Vendors__h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.Vendors__intro-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.Vendors__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.VendorCard {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 40px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.VendorCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    border-color: #8FFF45;
+}
+
+.VendorCard__logo-box {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.VendorCard__logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.VendorCard__h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.VendorCard__p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.Vendors__questions {
+    margin-top: 140px;
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.Vendors__questions__h5 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.Vendors__questions__p {
+    margin-bottom: calc(var(--global-space) * 1.5);
+    color: #1a1a1a;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.Vendors__questions__buttons {
+    margin-top: calc(var(--global-space) * 2);
+    grid-template-columns: max-content;
+    justify-content: center;
+    display: grid;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .Vendors .vendors_Hero__h1 {
+        font-size: 48px;
+    }
+
+    .Vendors__h2 {
+        font-size: 36px;
+    }
+
+    .Vendors .Hero__wrapper {
+        height: 400px;
+    }
+}

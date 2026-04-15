@@ -1,0 +1,255 @@
+.CultureSection {
+    padding: 100px 0;
+    background: #fff;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    padding: 0 60px
+}
+
+.CultureSection__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 20px;
+    width: 100%;
+}
+
+.CultureSection__item {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.CultureSection__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Text Section & Container Logic */
+.CultureSection__item--text {
+    grid-column: span 2;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+.CultureSection__textContainer {
+    width: 100%;
+    padding-left: calc((100vw - var(--app-width)) / 6 + var(--app-padding));
+    margin-right: 0;
+}
+
+.CultureSection__headline {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: #1a1a1a;
+    margin-bottom: 50px;
+    letter-spacing: -0.5px;
+}
+
+.CultureSection__values {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.CultureSection__value {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.CultureSection__valueTitle {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    line-height: 1.2;
+}
+
+.CultureSection__slash {
+    color: #a3e635;
+    /* Neon green slash */
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.CultureSection__valueDesc {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #1a1a1a;
+    opacity: 0.9;
+    max-width: 420px;
+}
+
+/* Image Grid Layout - Optimized Spans */
+
+.CultureSection__item--amphi {
+    grid-area: 1 / 1 / span 2;
+}
+
+.CultureSection__item--meeting {
+    grid-area: 2 / 3;
+}
+
+.CultureSection__item--hallway {
+    grid-area: 2 / 1;
+}
+
+.CultureSection__item--pods {
+    grid-area: 2 / 2;
+}
+
+.CultureSection__item--stairs {
+    grid-column: 3;
+    grid-row: 4 / span 3;
+}
+
+.CultureSection__item--bookshelf {
+    grid-column: 2;
+    grid-row: 4 / span 2;
+}
+
+.CultureSection__item--window {
+    grid-column: 1;
+    grid-row: 6;
+    aspect-ratio: 1;
+}
+
+/* Explicit Heights for Masonry feel */
+.CultureSection__item--amphi img {
+    height: 450px;
+}
+
+.CultureSection__item--meeting img {
+    height: 280px;
+}
+
+.CultureSection__item--hallway img {
+    height: 280px;
+}
+
+.CultureSection__item--pods img {
+    height: 280px;
+}
+
+.CultureSection__item--stairs img {
+    height: 750px;
+}
+
+.CultureSection__item--bookshelf img {
+    height: 550px;
+}
+
+.CultureSection__item--window img {
+    height: 100%;
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 1280px) {
+    .CultureSection__textContainer {
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .CultureSection__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .CultureSection__item--text {
+        grid-column: span 2;
+        padding: 40px;
+    }
+
+    .CultureSection__textContainer {
+        padding-left: 0;
+        max-width: 100%;
+    }
+
+    .CultureSection__item {
+        grid-column: span 1 !important;
+        grid-row: auto !important;
+    }
+
+    .CultureSection__item img {
+        height: 350px !important;
+    }
+
+    .CultureSection__value {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .CultureSection {
+        position: relative;
+    }
+
+    .CultureSection__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .CultureSection__item--text {
+        grid-column: span 1;
+        padding: 20px;
+    }
+
+    .CultureSection__headline {
+        font-size: 30px;
+    }
+
+    .CultureSection {
+        padding: 0;
+    }
+
+    .CultureSection__values {
+        flex-direction: column;
+        gap: 22px;
+        display: flex;
+        width: 68%;
+    }
+
+    .CultureSection__value {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .CultureSection__item.CultureSection__item--amphi {
+        position: absolute;
+        right: 6px;
+        top: 37%;
+    }
+
+    .CultureSection__item.CultureSection__item--meeting {
+        position: absolute;
+        right: 6px;
+        top: 51%;
+    }
+
+    .CultureSection__item.CultureSection__item--hallway {
+        position: absolute;
+        right: 6px;
+        top: 65%;
+    }
+
+    .CultureSection__item img {
+        height: 110px !important;
+        width: 110px !important;
+    }
+
+    .CultureSection__item.CultureSection__item--pods img {
+        width: 100% !important;
+        height: 132px !important;
+    }
+
+}

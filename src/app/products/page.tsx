@@ -1,5 +1,6 @@
 import AnimatedText from "@/components/AnimatedText";
 import "./_style/products.css";
+import M360ictProducts from "@/components/M360ictProducts";
 
 export default function Products() {
 
@@ -34,55 +35,6 @@ export default function Products() {
         { name: "FlyCon", logo: "https://flycon.net/_next/image?url=%2Flogo.png&w=128&q=75" },
         { name: "Universal Travel BD", logo: "https://www.nusukibd.com/_next/image?url=%2Funiversal_logo.png&w=256&q=75" },
         { name: "Lantabur", logo: "https://lantaburtours.com/_next/image?url=%2FLantabur_Tours%20%26%20Travel_Logo.png&w=384&q=75" }
-    ];
-
-    const data = [
-        {
-            title: "Customer Relationship Management",
-            productName: "CRM360",
-            logo: "/images/products/CRM.png",
-            href: "https://employee.crm360world.com",
-            desc: "Customer Relationship Management",
-            longDesc: "Streamline customer relationships and internal communication. Our CRM system helps manage leads, employee activities, and client interactions in one centralized dashboard.",
-            image: "/images/products/crm-large.png"
-        },
-        {
-            title: "The Hotel 360",
-            productName: "The Hotel 360",
-            logo: "/images/products/reservation1.png",
-            href: "https://app.thehotel360.com",
-            desc: "Hotel & Restaurant Management",
-            longDesc: "A fully integrated hotel and restaurant management platform. Handle bookings, room administration, guest services, and billing seamlessly to provide the best hospitality experience.",
-            image: "/images/products/hotel-large.png"
-        },
-        {
-            title: "Dokani",
-            productName: "POS Software",
-            logo: "/images/products/dokani.png",
-            href: "https://v2.dokani.live/login/",
-            desc: "Sales software for retail shops",
-            longDesc: "Smart point-of-sale and sales management software tailored for retail shops. Dokani simplifies inventory tracking, daily sales reporting, and retail accounting for any shop size.",
-            image: "/images/products/dokani-large.png"
-        },
-
-        {
-            title: "ERP BD",
-            productName: "ERP Software",
-            logo: "/images/products/erp.png",
-            href: "https://erpbd.ontheway.com.bd",
-            desc: "Enterprise Resource Planning",
-            longDesc: "An Enterprise Resource Planning system natively built to support regional businesses. Integrate your supply chain, finance, HR, and operations into a single cohesive platform.",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
-        },
-        {
-            title: "Recruit360",
-            productName: "Recruitment Software",
-            logo: "/images/products/recruitment.png",
-            href: "https://account.recruit360.biz",
-            desc: "Recruitment & HR software",
-            longDesc: "Next-generation recruitment and human resources software. Manage job postings, track applicant pipelines, and automate your hiring workflows with complete organizational visibility.",
-            image: "/images/products/recruitment-large.png"
-        },
     ];
 
     const otherProjects = [
@@ -185,7 +137,7 @@ export default function Products() {
                     <div className="Hero__wrapper">
                         <div className="Hero__wrapper-inner">
                             <h1 className="Hero__h1 Hero__h1--products">
-                                <AnimatedText text="Products Our Journey" />
+                                <AnimatedText text={["Products ", "Our Journey"]} />
                             </h1>
                             <p className="Hero__p Hero__p--products">
                                 How we change the world
@@ -195,255 +147,21 @@ export default function Products() {
                 </div>
             </div>
 
-            <div className="Products__main">
-                <div className="container">
-                    <h2 className="Products__h2">Our Main Projects</h2>
-                    <dl className="Products__main__dl">
-                        <div className="Products__main__dl__item">
-                            <h3 className="Products__main__dl__item__dt">
-                                <AnimatedText text="Trabill" />
-                            </h3>
+            <div className="container">
 
-                            <div className="Products__main__dl__item__box">
+                <div className="second_title">
+                    <h2 className="second_title__h2">Our Products</h2>
+                    <p className="second_title__text">
+                        At M360ICT, we build world-class software solutions designed to streamline operations across travel, hospitality, retail, and enterprise management. Our platforms are built on modern technologies, focused on security, efficiency, and empowering businesses everywhere to scale successfully. Walk through our suite of applications to see how we reshape the future of digital business.
 
-                                <div className="Products__main__dl__item__box__header">
-                                    <img
-                                        className="Products__main__dl__item__box__header__img"
-                                        src="/images/products/trabill.png"
-                                        width={150}
-                                    />
-
-                                    <div className="Products__main__dl__item__box__header__center">
-                                        <h4 className="Products__main__dl__item__box__header__center__h4">
-                                            IATA Integrated Solutions
-                                        </h4>
-
-                                        <p className="Products__main__dl__item__box__header__center__p">
-                                            IATA, NON-IATA, Single entry, double entry accounting management software
-                                        </p>
-                                    </div>
-
-                                    <a
-                                        className="Products__go-to-site"
-                                        href="https://www.iata.trabill.biz/"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                    >
-                                        Go to site
-                                    </a>
-                                </div>
-
-                                <img
-                                    className="Products__main__dl__item__box__img"
-                                    src="/images/products/trabill-large.png"
-                                />
-                                <p className="Products__main__dl__item__box__p">
-                                    A complete travel agency management software designed to simplify
-                                    airline ticketing, invoicing, accounting, and financial tracking
-                                    in one powerful dashboard. The system allows agencies to manage
-                                    air ticket invoices, visa and tour package billing, reissues,
-                                    refunds, vendor balances, BSP reports, and remittance monitoring
-                                    with ease. With real-time sales reports, vendor management, and
-                                    automated financial insights, it helps travel businesses operate
-                                    efficiently, reduce manual work, and maintain accurate financial
-                                    control from a single secure platform.
-                                </p>
-
-                                <div className="Products__main__dl__item__box__drama">
-                                    <div className="Index__products__dl__item__drama">
-                                        <div className="Index__products__dl__item__drama__header">
-                                            <img
-                                                className="Index__products__dl__item__drama__header__img"
-                                                src="/images/Index__products__dl__item__drama__header__img.svg"
-                                            />
-                                            <h4 className="Index__products__dl__item__drama__header__h4">
-                                                Multi version
-                                            </h4>
-                                            <small className="Index__products__dl__item__drama__header__small">
-                                                supported by trabill
-                                            </small>
-                                        </div>
-                                        <dl className="Index__products__dl__item__drama__dl">
-                                            <a className="Index__products__dl__item__drama__dl__a Index__products__dl__item__drama__dl__a--left Index__products__dl__item__drama__dl__a--disabled" />
-                                            <div className="Index__products__dl__item__drama__dl__chunk">
-                                                <a
-                                                    className="Index__products__dl__item__drama__dl__item Index__products__dl__item__drama__dl__item--active"
-                                                    href="https://www.trabill.biz/"
-                                                    target="_blank"
-                                                    rel="nofollow noopener noreferrer"
-                                                >
-                                                    <img
-                                                        className="Index__products__dl__item__drama__dl__item__img"
-                                                        src="/images/products/non-iata.png"
-                                                    />
-                                                    <dt className="Index__products__dl__item__drama__dl__item__dt">
-                                                        Non-IATA Version
-                                                    </dt>
-                                                    <div className="Index__products__dl__item__drama__dl__item__link">
-                                                        <span className="Index__products__dl__item__drama__dl__item__link__a">
-                                                            Go to site
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                                <a
-                                                    className="Index__products__dl__item__drama__dl__item Index__products__dl__item__drama__dl__item--active"
-                                                    href="https://www.iata.trabill.biz/"
-                                                    target="_blank"
-                                                    rel="nofollow noopener noreferrer"
-                                                >
-                                                    <img
-                                                        className="Index__products__dl__item__drama__dl__item__img"
-                                                        src="/images/products/iata-trabill.png"
-                                                    />
-                                                    <dt className="Index__products__dl__item__drama__dl__item__dt">
-                                                        IATA Version
-                                                    </dt>
-                                                    <div className="Index__products__dl__item__drama__dl__item__link">
-                                                        <span className="Index__products__dl__item__drama__dl__item__link__a">
-                                                            Go to site
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div className="Index__products__dl__item__drama__dl__chunk">
-                                                <a
-                                                    className="Index__products__dl__item__drama__dl__item"
-                                                    href="https://iata-double-entry.trabill.biz/"
-                                                    target="_blank"
-                                                    rel="nofollow noopener noreferrer"
-                                                >
-                                                    <img
-                                                        className="Index__products__dl__item__drama__dl__item__img"
-                                                        src="/images/products/double-entry-version.png"
-                                                    />
-                                                    <dt className="Index__products__dl__item__drama__dl__item__dt">
-                                                        Double-Entry Version
-                                                    </dt>
-                                                    <div className="Index__products__dl__item__drama__dl__item__link">
-                                                        <span className="Index__products__dl__item__drama__dl__item__link__a">
-                                                            Go to site
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <a className="Index__products__dl__item__drama__dl__a" />
-                                        </dl>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div className="Products__main__dl__item">
-                            <h3 className="Products__main__dl__item__dt">
-                                <AnimatedText text="T360 Tours and Travels" />
-                            </h3>
-
-                            <div className="Products__main__dl__item__box">
-
-                                <div className="Products__main__dl__item__box__header">
-
-                                    <img
-                                        className="Products__main__dl__item__box__header__img"
-                                        src="https://www.t360toursntravels.com/_next/static/media/T360.12rr7u5fwacvd.svg"
-                                        width={70}
-                                    />
-
-                                    <div className="Products__main__dl__item__box__header__center">
-
-                                        <h4 className="Products__main__dl__item__box__header__center__h4">
-                                            Complete OTA Solution
-                                        </h4>
-
-                                        <p className="Products__main__dl__item__box__header__center__p">
-                                            integrated OTA platform
-
-                                        </p>
-
-
-                                    </div>
-                                    <a
-                                        className="Products__go-to-site"
-                                        href="https://www.t360toursntravels.com/"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                    >
-                                        Go to site
-                                    </a>
-                                </div>
-
-                                <img
-                                    className="Products__main__dl__item__box__img"
-                                    src="/images/products/t360-product.png"
-                                    height={224}
-                                />
-
-                                <p className="Products__main__dl__item__box__p">
-                                    T360 Tours & Travels is a complete OTA platform that integrates flights,
-                                    hotels, and travel services into one system, helping agencies manage
-                                    bookings easily while providing travelers with a smooth and reliable
-                                    experience.
-                                </p>
-
-                            </div>
-                        </div>
-
-
-
-                        {data.map((item, index) => (
-                            <div className="Products__main__dl__item" key={`product-${index}`}>
-                                <h3 className="Products__main__dl__item__dt">
-                                    <AnimatedText text={item.title} />
-                                </h3>
-
-                                <div className="Products__main__dl__item__box">
-
-                                    <div className="Products__main__dl__item__box__header">
-                                        <img
-                                            className="Products__main__dl__item__box__header__img"
-                                            src={item.logo}
-                                            width={150}
-                                        />
-
-                                        <div className="Products__main__dl__item__box__header__center">
-                                            <h4 className="Products__main__dl__item__box__header__center__h4">
-                                                {item.productName}
-                                            </h4>
-                                            <p className="Products__main__dl__item__box__header__center__p">
-                                                {item.desc}
-                                            </p>
-                                        </div>
-
-                                        <a
-                                            className="Products__go-to-site"
-                                            href={item.href}
-                                            target="_blank"
-                                            rel="nofollow noopener noreferrer"
-                                        >
-                                            Go to site
-                                        </a>
-
-                                    </div>
-
-                                    <img
-                                        className="Products__main__dl__item__box__img"
-                                        src={item.image}
-                                        alt={item.title}
-                                        style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "8px" }}
-                                    />
-
-                                    <p className="Products__main__dl__item__box__p" style={{ marginTop: "20px" }}>
-                                        {item.longDesc}
-                                    </p>
-
-                                </div>
-                            </div>
-                        ))}
-
-                    </dl>
+                    </p>
                 </div>
             </div>
 
+            {/* this is common products show all here */}
+            <div style={{ marginTop: "80px" }}>
+                <M360ictProducts />
+            </div>
 
 
             <div className="Products__clients" style={{ margin: "100px 0" }}>
