@@ -153,10 +153,19 @@
 
 @media (max-width: 768px) {
     .Hero__h1--news {
-        font-size: 48px;
+        font-size: 35px;
     }
 
     .NewsPage__card-header {
         height: 200px;
     }
+
+    .Hero__p--news {
+        font-size: 14px;
+    }
+
+    .Hero__p--news::before {
+        display: none;
+    }
+
 }

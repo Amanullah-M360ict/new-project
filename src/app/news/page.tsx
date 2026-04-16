@@ -50,7 +50,7 @@ export default function NewsPage() {
                                 <AnimatedText text="News & Awards" />
                             </h1>
                             <p className="Hero__p Hero__p--news">
-                                Celebrating our achievements and milestones
+                                Celebrating our achievements
                             </p>
                         </div>
                     </div>

@@ -3,6 +3,7 @@ import "./globals.css";
 import { Outfit } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import SmoothScrollProvider from "@/components/common/SmoothScrollProvider";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -38,11 +39,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${outfit.variable}`}>
       <body>
-        <div className="Layout">
-          <Nav />
-          <div className="Main">{children}</div>
-          <Footer />
-        </div>
+        <SmoothScrollProvider>
+          <div className="Layout">
+            <Nav />
+            <div className="Main">{children}</div>
+            <Footer />
+          </div>
+        </SmoothScrollProvider>
       </body>
     </html>
   );
