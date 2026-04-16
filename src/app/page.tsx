@@ -1,5 +1,7 @@
-import Link from "next/link";
+"use client"
 import HeroText from "@/components/HeroText";
+import ModernHero from "@/components/ModernHero";
+import Link from "next/link";
 import AnimatedText from "@/components/AnimatedText";
 import StatsSection from "@/components/StatsSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -10,13 +12,18 @@ export default function Home() {
 
   return (
     <div className="Index">
-      <div className="Index__hero">
-        <div className="container">
-          <div className="Index__hero__wrapper">
-            <HeroText />
-            <p className="Index__hero__p">Innovative software solutions</p>
+      <div className="desktop-hero">
+        <div className="Index__hero">
+          <div className="container">
+            <div className="Index__hero__wrapper">
+              <HeroText />
+              <p className="Index__hero__p">Innovative software solutions</p>
+            </div>
           </div>
         </div>
+      </div>
+      <div className="mobile-hero">
+        <ModernHero />
       </div>
 
       <div className="Index__mission">

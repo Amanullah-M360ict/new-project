@@ -2,6 +2,7 @@
 
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
+import CountUp from "@/components/common/CountUp";
 import "./_style/services.css";
 
 const services = [
@@ -126,7 +127,9 @@ export default function Services() {
                     <div className="Svc__stats__grid">
                         {stats.map((s, i) => (
                             <div key={i} className="Svc__stats__item">
-                                <span className="Svc__stats__value">{s.value}</span>
+                                <span className="Svc__stats__value">
+                                    <CountUp end={s.value} delay={i * 0.1} />
+                                </span>
                                 <span className="Svc__stats__label">{s.label}</span>
                             </div>
                         ))}

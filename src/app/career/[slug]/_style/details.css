@@ -211,11 +211,40 @@
 
 @media (max-width: 600px) {
     .CareerDetails__meta-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        gap: 1px;
     }
 
     .CareerDetails__actions {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .CareerDetails__inner {
+        margin: 0 21px
+    }
+
+    .CareerDetails__breadcrumb {
+        margin-top: 18px;
+    }
+
+    .CareerDetails__title {
+        line-height: 45px;
+    }
+
+    .CareerDetails__meta-item {
+        gap: 0px;
+    }
+
+    .CareerDetails__cta-h2 {
+        letter-spacing: 0px;
+        font-size: 25px;
+        line-height: 31px;
+        margin-bottom: 10px;
+    }
+
+    .CareerDetails__cta-sub {
+        margin-bottom: 21px;
     }
 }

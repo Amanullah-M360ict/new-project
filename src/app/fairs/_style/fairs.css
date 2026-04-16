@@ -135,7 +135,7 @@
     }
 
     .Fairs .Hero {
-        height: 80vh;
+        height: 100vh;
     }
 
     .Fairs .Hero__grid-container {
@@ -157,6 +157,14 @@
 
     .Fairs .Hero__wrapper {
         height: 100%;
+    }
+
+    .fairs_Hero__h1 {
+        color: #fff;
+        text-shadow: 0 4px 20px rgba(0, 0, 0, .5);
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 47px;
     }
 }
 

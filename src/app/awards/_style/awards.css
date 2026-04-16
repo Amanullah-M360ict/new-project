@@ -131,7 +131,7 @@
 
 @media(max-width:768px) {
     .Awards .Hero {
-        height: 80vh;
+        height: 100vh;
     }
 
     .Awards .Hero__grid-container {
@@ -154,5 +154,16 @@
     .Awards .Hero__wrapper {
         height: 100%;
         max-height: none;
+    }
+
+    .Awards .Hero__p:before {
+        background-color: #fff;
+    }
+
+    .award_Hero__h1 {
+        text-shadow: 0 4px 20px rgba(0, 0, 0, .5);
+        font-size: 46px;
+        font-weight: 800;
+        line-height: 53px;
     }
 }

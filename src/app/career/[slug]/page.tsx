@@ -59,7 +59,7 @@ export default function CareerDetailsPage() {
 
             {/* ── Content ── */}
             <main className="CareerDetails__content">
-                <div className="container CareerDetails__inner">
+                <div className="  CareerDetails__inner">
                     <p className="CareerDetails__intro">{job.introduction}</p>
 
                     <section className="CareerDetails__section">

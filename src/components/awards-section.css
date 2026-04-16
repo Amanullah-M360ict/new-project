@@ -264,17 +264,33 @@
 @media (max-width: 640px) {
     .AwardsSection__grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    .AwardCard--main {
-        grid-column: span 1;
+    .AwardsSection:not(.AwardsSection--full) .AwardCard--import,
+    .AwardsSection:not(.AwardsSection--full) .AwardCard--demos,
+    .AwardsSection:not(.AwardsSection--full) .AwardCard--font {
+        display: none;
+    }
+
+    .AwardCard,
+    .AwardCard--rocket,
+    .AwardCard--main,
+    .AwardCard--sale,
+    .AwardCard--collage {
+        grid-column: span 1 !important;
+        grid-row: auto !important;
     }
 
     .AwardsSection__title {
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .AwardCard--main .AwardCard__title {
         font-size: 32px;
+    }
+
+    .AwardsSection {
+        padding: 25px 0;
     }
 }

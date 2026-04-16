@@ -5,15 +5,15 @@ import './awards-section.css';
 import AnimatedText from './AnimatedText';
 import Link from 'next/link';
 
-const AwardsSection = ({ showExploreButton }: { showExploreButton?: boolean }) => {
+const AwardsSection = ({ showExploreButton, isFullList = false }: { showExploreButton?: boolean; isFullList?: boolean }) => {
 
 
     return (
-        <section className="AwardsSection">
+        <section className={`AwardsSection ${isFullList ? 'AwardsSection--full' : ''}`}>
             <div className="container">
                 <div className="AwardsSection__header">
                     <h2 className="AwardsSection__title">
-                        <AnimatedText text="Leading Travel Tech Expert with Prestigious Awards" />
+                        <AnimatedText text={["Leading Travel Tech Expert", "with Prestigious Awards"]} />
                     </h2>
                 </div>
 

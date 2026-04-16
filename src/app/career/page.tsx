@@ -30,17 +30,11 @@ export default function Career() {
                     <div className="Careers__openings__hero">
                         <div className="Careers__openings__hero__left">
                             <h2 className="Careers__openings__hero__h2">
-                                Global products
-                                built by a
-                                talented team
+                                <AnimatedText text={["Global products built by a", "talented team"]} />
                             </h2>
 
                         </div>
-                        <div className="Careers__openings__hero__right">
-                            <p className="Careers__openings__hero__p">
-                                We value a people-first culture, quality craftsmanship, unwavering support, respectful interactions, and a commitment to growth & responsibility.
-                            </p>
-                        </div>
+
                     </div>
 
                     <div className="Careers__job-list">

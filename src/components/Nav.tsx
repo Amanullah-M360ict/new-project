@@ -1,5 +1,6 @@
 "use client";
 
+import { useMediaQuery } from "@/lib/hooks/use-media-query";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -26,14 +27,14 @@ export default function Nav() {
         { href: "/career", label: "career" },
         { href: "/vendors", label: "vendors" },
         { href: "/our-clients", label: "our clients" },
-        { href: "/fairs", label: "fairs" },
+        { href: "/fairs", label: "Events" },
         { href: "/awards", label: "awards" },
         { href: "/contact", label: "contact" },
 
 
     ]
     const isSpecialPath = pathname === "/fairs" || pathname === "/awards" || pathname === "/vendors";
-
+    const isDesktop = useMediaQuery('(min-width: 768px)');
     return (
         <div className={`Nav${menuOpen ? " Nav--menu-active" : ""}${isSpecialPath ? " Nav--fairs" : ""}${drawerOpen ? " Nav--drawer-active" : ""}`}>
             <div className="container">
@@ -61,11 +62,18 @@ export default function Nav() {
 
                     <div className="Nav__menu">
                         <a className="Nav__menu__a" onClick={() => setMenuOpen(!menuOpen)}>
-                            <img className="Nav__menu__a__img" src={!isSpecialPath ? "/images/Nav__menu__a__img.svg" : "/images/white-bar.png"} alt="Menu" />
+                            {menuOpen ? (
+                                <img className="Nav__menu__a__img" width={!isSpecialPath ? 24 : 35} src={!isSpecialPath ? "/images/close.png" : "/images/white-cross.png"} alt="Close" />
+                            ) : (
+                                isSpecialPath ? <img className="Nav__menu__a__img" width={30} src="/images/white-bar.png" alt="Menu" /> : <img className="Nav__menu__a__img" src="/images/Nav__menu__a__img.svg" alt="Menu" />
+                            )}
                         </a>
                         <div className={`Nav__menu__panel${menuOpen ? " Nav__menu__panel--active" : ""}`}>
                             <div className="Nav__menu__panel__grid">
-                                {links.slice(1).map((link) => (
+                                <div className="special-design-simble_1"></div>
+                                <div className="special-design-simble_2"></div>
+                                <div className="special-design-simble_3"></div>
+                                {allRouteLinks.map((link) => (
                                     <Link
                                         key={link.href}
                                         className="Nav__menu__panel__grid__a"

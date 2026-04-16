@@ -172,13 +172,14 @@
     background-color: rgba(159, 250, 98, 1.00);
     font-family: "Plus Jakarta Sans";
     font-weight: 600;
-    font-size: 20px;
+    font-size: 21px;
     letter-spacing: -0.48px;
     line-height: 1.45em;
     color: rgba(0, 0, 0, 0.6);
     width: fit-content;
     padding: 4px 11px 2px 11px;
     margin: 0px 0px 0px 20px;
+    font: 20px;
 }
 
 .badge-white {
@@ -334,7 +335,7 @@
         gap: 2px;
         position: absolute;
         top: 0px;
-        right: 0;
+        right: 25px;
     }
 
     .collage-ai {
@@ -885,7 +886,7 @@
 
 @media(max-width:580px) {
     .Products__questions__h5 {
-        font-size: 48px
+        font-size: 36px
     }
 }
 
@@ -1123,6 +1124,13 @@
         right: 4px;
     }
 
+    .product-card-tutor-layout {
+
+        margin-bottom: 0px;
+
+
+    }
+
     .product-card-tutor-layout .product-info-left {
         width: 100% !important;
         padding: 66px 20px 0px !important;
@@ -1159,7 +1167,11 @@
     }
 
     .Products .Hero__wrapper {
-        height: 350px;
+        height: 200px;
+    }
+
+    .second_title__h2::before {
+        display: none
     }
 }
 
@@ -1182,7 +1194,7 @@
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 8px;

@@ -170,11 +170,11 @@
 
     .grid-4,
     .TechPartner__trainingBottom {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .TechPartner__title {
-        font-size: 40px;
+        font-size: 58px;
     }
 
     .TechPartner__section {

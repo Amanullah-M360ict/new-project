@@ -80,6 +80,7 @@
     text-decoration: none;
     transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
     white-space: nowrap;
+    width: fit-content;
 }
 
 .Svc__hero__cta:hover {
@@ -422,5 +423,9 @@
 
     .Svc__item {
         padding: 60px 0;
+    }
+
+    .Svc__item__cap {
+        padding: 11px 0;
     }
 }

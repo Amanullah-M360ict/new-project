@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Outfit } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+});
 
 export const metadata: Metadata = {
   title: "M360 ICT Ltd.",
@@ -30,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="en" className={`${outfit.variable}`}>
       <body>
         <div className="Layout">
           <Nav />

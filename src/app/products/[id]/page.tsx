@@ -39,7 +39,6 @@ export default function ProductDetails() {
                         ← Back to Products
                     </button>
                     <div className="ProductDetails__heroContent">
-                        <div className="ProductDetails__badge">{product.desc}</div>
                         <h1 className="ProductDetails__h1">
                             <AnimatedText text={[product.productName]} />
                         </h1>

@@ -187,7 +187,7 @@
     }
 
     .OurClients__hero {
-        padding: 100px 0 70px;
+        padding: 70px 0 70px;
     }
 }
 
@@ -468,4 +468,9 @@
     .OurClients__cta__h2 {
         font-size: 28px;
     }
+
+    .OurClients__grid {
+        grid-template-columns: 1fr 1fr
+    }
+
 }

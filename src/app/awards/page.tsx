@@ -52,7 +52,7 @@ export default function Awards() {
             </div>
 
             <div style={{ marginTop: '100px' }} >
-                <AwardsSection />
+                <AwardsSection isFullList={true} />
 
             </div>
             <div className="Products__questions" style={{ marginTop: '140px' }}>

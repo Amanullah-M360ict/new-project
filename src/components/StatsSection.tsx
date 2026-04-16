@@ -2,6 +2,7 @@
 
 import React from 'react';
 import AnimatedText from './AnimatedText';
+import CountUp from './common/CountUp';
 import './stats.css';
 
 const StatsSection = () => {
@@ -34,7 +35,9 @@ const StatsSection = () => {
                         </svg>
                     </div>
                     <div>
-                        <div className="stats-card__value">450+</div>
+                        <div className="stats-card__value">
+                            <CountUp end="450+" />
+                        </div>
                         <div className="stats-card__label">B2B User</div>
                     </div>
                 </div>
@@ -48,7 +51,9 @@ const StatsSection = () => {
                         </svg>
                     </div>
                     <div>
-                        <div className="stats-card__value">15+</div>
+                        <div className="stats-card__value">
+                            <CountUp end="15+" />
+                        </div>
                         <div className="stats-card__label">Years of Excellence</div>
                     </div>
                 </div>
@@ -66,7 +71,9 @@ const StatsSection = () => {
                         </svg>
                     </div>
                     <div>
-                        <div className="stats-card__value">100+</div>
+                        <div className="stats-card__value">
+                            <CountUp end="100+" />
+                        </div>
                         <div className="stats-card__label">Team Members</div>
                     </div>
                 </div>
@@ -81,7 +88,9 @@ const StatsSection = () => {
                         </svg>
                     </div>
                     <div>
-                        <div className="stats-card__value">500+</div>
+                        <div className="stats-card__value">
+                            <CountUp end="500+" />
+                        </div>
                         <div className="stats-card__label">Products</div>
                     </div>
                 </div>

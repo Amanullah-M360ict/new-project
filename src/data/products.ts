@@ -15,8 +15,8 @@ export interface Product {
 export const PRODUCTS: Product[] = [
     {
         id: "t360",
-        title: "Leading Travel LMS",
-        productName: "T360",
+        title: "Tours & Travels Management",
+        productName: "T360 Tours & Travels",
         logo: "/images/products/t360.svg",
         href: "https://t360.biz",
         desc: "Travel LMS",

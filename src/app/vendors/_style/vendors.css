@@ -207,10 +207,30 @@
     }
 
     .Vendors__h2 {
-        font-size: 36px;
+        font-size: 35px;
+        line-height: 48px;
     }
 
     .Vendors .Hero__wrapper {
-        height: 400px;
+        height: 800px;
+    }
+
+    .Vendors .Hero__p {
+        font-size: 15px;
+
+    }
+
+    .Vendors .Hero__p:before {
+        display: none;
+    }
+
+    .Vendors .Hero {
+        height: 100vh;
+    }
+
+    .Vendors__questions__h5 {
+        font-size: 33px;
+        line-height: 48px;
+        margin-bottom: 13px;
     }
 }

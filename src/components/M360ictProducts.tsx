@@ -5,6 +5,7 @@ import AnimatedText from './AnimatedText';
 import "../app/products/_style/products.css"
 import { PRODUCTS } from '@/data/products';
 import { useRouter } from 'next/navigation';
+import { useMediaQuery } from '@/lib/hooks/use-media-query';
 interface M360ictProductsProps {
     limit?: number;
     showExploreButton?: boolean;
@@ -13,7 +14,7 @@ interface M360ictProductsProps {
 export default function M360ictProducts({ limit, showExploreButton = false }: M360ictProductsProps) {
     const router = useRouter();
     const data = PRODUCTS;
-
+    const isDesktop = useMediaQuery('(min-width: 768px)');
     const handleProductClick = (id: string) => {
         router.push(`/products/${id}`);
     };
@@ -21,7 +22,7 @@ export default function M360ictProducts({ limit, showExploreButton = false }: M3
     const displayData = limit ? data.slice(0, limit) : data;
 
     return (
-        <div className="m360ict-products" style={{ marginTop: showExploreButton ? "120px" : "0px", background: showExploreButton ? "#E7E7E7" : "#fff", padding: showExploreButton ? "150px 0 130px" : "0" }}>
+        <div className="m360ict-products" style={{ marginTop: showExploreButton ? "120px" : "0px", background: showExploreButton ? "#E7E7E7" : "#fff", padding: showExploreButton ? isDesktop ? "150px 0 130px" : "30px 0 30px" : "0" }}>
 
             <div className="container">
                 {showExploreButton && (

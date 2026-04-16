@@ -553,19 +553,19 @@
 }
 
 .Careers__openings__hero {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
+
     gap: 100px;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
 }
 
 .Careers__openings__hero__h2 {
-    font-size: 65px;
+    font-size: 70px;
     font-weight: 700;
-    line-height: 1;
+    line-height: 75px;
     letter-spacing: -3px;
     color: #1a1a1a;
+    text-align: center;
 
 }
 
@@ -691,14 +691,16 @@
     }
 
     .Careers__openings__hero__h2 {
-        font-size: 52px;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: -1px;
     }
 }
 
 @media (max-width: 768px) {
     .Careers__dept-section {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 3px;
     }
 
     .Careers__job-item {
@@ -709,4 +711,24 @@
     .Careers__job-title {
         font-size: 24px;
     }
+
+    .Careers .Hero__wrapper {
+        height: 300px;
+    }
+
+    .Careers__openings {
+        padding: 55px 0;
+    }
+
+    .Careers__openings__hero {
+        margin-bottom: 30px;
+    }
+
+    .Careers__job-list {
+        margin-top: 0;
+    }
+
+
+
+
 }
