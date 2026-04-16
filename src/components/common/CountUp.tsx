@@ -51,7 +51,7 @@ const CountUp: React.FC<CountUpProps> = ({ end, duration = 2, delay = 0 }) => {
     }, [end, duration, delay]);
 
     return (
-        <span ref={containerRef} style={{ display: 'inline-block', minWidth: '1ch' }}>
+        <span ref={containerRef} style={{ display: 'inline-block', minWidth: '1ch', lineHeight: "10px" }}>
             {displayValue}
         </span>
     );
