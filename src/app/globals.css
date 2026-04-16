@@ -359,13 +359,14 @@ h1.Contact__hero__h1::before,
 }
 
 .Nav__drawer__link:hover {
-    color: #8FFF45;
+    color: #0065c9;
     transform: translateX(10px);
     text-decoration: none !important;
 }
 
 .Nav__drawer__link--active {
-    color: #8FFF45;
+    color: #1282ed;
+    font-weight: 700;
 }
 
 .Nav__drawer-overlay {

@@ -13,7 +13,7 @@ interface M360ictProductsProps {
 
 export default function M360ictProducts({ limit, showExploreButton = false }: M360ictProductsProps) {
     const router = useRouter();
-    const data = PRODUCTS;
+    const data = PRODUCTS.filter(p => p.id !== 'trabill');
     const isDesktop = useMediaQuery('(min-width: 768px)');
     const handleProductClick = (id: string) => {
         router.push(`/products/${id}`);
@@ -119,12 +119,11 @@ export default function M360ictProducts({ limit, showExploreButton = false }: M3
                                         <>
                                             <div className="product-info-left" style={{ zIndex: 10 }}>
                                                 <div className="tutor-logo">
-                                                    {/* t360 logo */}
-                                                    <img src="/images/products/t360.svg" alt="T360 Logo" />
+                                                    <img src={item.logo} alt={item.productName} />
                                                 </div>
 
                                                 <h3 className="tutor-tagline">
-                                                    Leading WordPress LMS trusted by educators worldwide.
+                                                    {item.title}
                                                 </h3>
                                             </div>
 
@@ -135,8 +134,8 @@ export default function M360ictProducts({ limit, showExploreButton = false }: M3
 
                                                 <img
                                                     className="tutor-main-img"
-                                                    src="/images/products/t360-sub.png"
-                                                    alt="Main App Interface"
+                                                    src={item.image}
+                                                    alt={item.productName}
                                                 />
                                             </div>
                                         </>
@@ -168,7 +167,7 @@ export default function M360ictProducts({ limit, showExploreButton = false }: M3
 
                     {showExploreButton && (
                         <div style={{ textAlign: "center", marginTop: "10px" }}>
-                            {/* button with right arrow icon */}
+
                             <Link href="/products" style={{ display: "inline-block", fontWeight: "bold", fontSize: "15px" }}>
                                 Explore More Products <span className="arrow-right">→</span>
                             </Link>

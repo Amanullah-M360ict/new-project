@@ -2,8 +2,8 @@
     position: relative;
     width: 100%;
     min-height: 780px;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop'); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/mon.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop');
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/mon.png'); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -32,12 +32,12 @@
 }
 
 .stats-section__title {
-    font-family: 'Pixelify Sans', sans-serif;
-    font-size: 87px;
-    line-height: 1;
-    margin-bottom: 30px;
-    text-transform: uppercase;
+    font-family: var(--font-inter), sans-serif;
     letter-spacing: -2px;
+    margin-bottom: 30px;
+    font-size: 80px;
+    line-height: 88px;
+    font-weight: 700;
 }
 
 .stats-section__subtitle {
@@ -157,6 +157,7 @@
 
     .stats-section__title {
         font-size: 58px;
+        line-height: 61px;
     }
 
     .stats-section__subtitle {

@@ -39,7 +39,7 @@ const ServicesSection = () => {
                 </div>
 
                 <div className="capabilities-wrapper">
-                    <div className="capabilities-title">/ Core Capabilities</div>
+                    <div className="capabilities-title">/ Core Services</div>
                     <div className="capabilities-list">
                         <span className="cap-item"><AnimatedText text={["Software Engineering"]} /></span> <span className="cap-sep">/</span>
                         <span className="cap-item"><AnimatedText text={["Design & UX"]} /></span> <span className="cap-sep">/</span>

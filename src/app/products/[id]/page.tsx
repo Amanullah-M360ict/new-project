@@ -35,7 +35,7 @@ export default function ProductDetails() {
         <div className="ProductDetails">
             <div className="ProductDetails__hero">
                 <div className="container">
-                    <button className="BackButton" onClick={() => router.back()}>
+                    <button className="BackButton" onClick={() => router.push("/products")}>
                         ← Back to Products
                     </button>
                     <div className="ProductDetails__heroContent">

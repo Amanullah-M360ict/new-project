@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Outfit } from "next/font/google";
+import { Outfit, Inter } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import SmoothScrollProvider from "@/components/common/SmoothScrollProvider";
@@ -8,6 +8,11 @@ import SmoothScrollProvider from "@/components/common/SmoothScrollProvider";
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -37,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable}`}>
+    <html lang="en" className={`${outfit.variable} ${inter.variable}`}>
       <body>
         <SmoothScrollProvider>
           <div className="Layout">

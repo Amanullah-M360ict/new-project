@@ -2,13 +2,15 @@
 
 import React, { useEffect, useRef } from "react";
 import Lenis from "lenis";
+import { usePathname } from "next/navigation";
 
 /**
  * SmoothScrollProvider initializes Lenis for smooth scrolling.
- * It uses a custom setup to avoid dependency conflicts with React 19.
+ * It also ensures that the scroll position is reset to the top on route changes.
  */
 const SmoothScrollProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const lenisRef = useRef<Lenis | null>(null);
+    const pathname = usePathname();
 
     useEffect(() => {
         // Initialize Lenis
@@ -33,6 +35,13 @@ const SmoothScrollProvider: React.FC<{ children: React.ReactNode }> = ({ childre
             lenis.destroy();
         };
     }, []);
+
+    // Reset scroll to top on route change
+    useEffect(() => {
+        if (lenisRef.current) {
+            lenisRef.current.scrollTo(0, { immediate: true });
+        }
+    }, [pathname]);
 
     return <>{children}</>;
 };

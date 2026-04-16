@@ -84,7 +84,7 @@ export default function AnimatedText({ text, className }: AnimatedTextProps) {
             ref={containerRef}
             className={className}
             onMouseEnter={playAnimation}
-            style={{ cursor: "pointer", display: "inline-block", lineHeight: "inherit" }}
+            style={{ display: "inline-block", lineHeight: "inherit" }}
         >
             {Array.isArray(text) ? (
                 text.map((line, lineIndex) => (

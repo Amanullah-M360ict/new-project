@@ -14,11 +14,12 @@ export default function Footer() {
                         <div className="footer__section">
                             <h3 className="footer__section-title">Products</h3>
                             <div className="footer__products-wrapper">
+                                {/* when click this li links then href should product detials not external site. */}
                                 <ul className="footer__list">
                                     <li className="footer__list-item">
                                         <a
                                             className="footer__link footer__link--external"
-                                            href="https://www.iata.trabill.biz/"
+                                            href="/products/trabill"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
@@ -26,37 +27,37 @@ export default function Footer() {
                                         </a>
                                     </li>
                                     <li className="footer__list-item">
-                                        <a className="footer__link footer__link--external" href="https://info.thehotel360.com/" target="_blank" rel="noopener noreferrer">
+                                        <a className="footer__link footer__link--external" href="/products/thehotel360" target="_blank" rel="noopener noreferrer">
                                             <span>Hotel360</span>
 
                                         </a>
                                     </li>
                                     <li className="footer__list-item">
-                                        <a className="footer__link footer__link--external" href="https://erpbd.ontheway.com.bd" target="_blank" rel="noopener noreferrer">
+                                        <a className="footer__link footer__link--external" href="/products/erpbd" target="_blank" rel="noopener noreferrer">
                                             <span>ERPBD</span>
 
                                         </a>
                                     </li>
                                     <li className="footer__list-item">
-                                        <a className="footer__link footer__link--external" href="https://www.t360toursntravels.com/" target="_blank" rel="noopener noreferrer">
+                                        <a className="footer__link footer__link--external" href="/products/t360 " target="_blank" rel="noopener noreferrer">
                                             <span>T360TRAVEL</span>
                                         </a>
                                     </li>
                                 </ul>
                                 <ul className="footer__list">
                                     <li className="footer__list-item">
-                                        <a className="footer__link footer__link--external" href="https://employee.crm360world.com" target="_blank" rel="noopener noreferrer">
+                                        <a className="footer__link footer__link--external" href="/products/crm360" target="_blank" rel="noopener noreferrer">
                                             <span>CRM360</span>
 
                                         </a>
                                     </li>
                                     <li className="footer__list-item">
-                                        <a className="footer__link footer__link--external" href="ttps://v2.dokani.live/login" target="_blank" rel="noopener noreferrer">
+                                        <a className="footer__link footer__link--external" href="/products/dokani" target="_blank" rel="noopener noreferrer">
                                             <span>Dokani</span>
                                         </a>
                                     </li>
                                     <li className="footer__list-item">
-                                        <a className="footer__link footer__link--external" href="https://account.recruit360.biz" target="_blank" rel="noopener noreferrer">
+                                        <a className="footer__link footer__link--external" href="/products/recruit360" target="_blank" rel="noopener noreferrer">
                                             <span>Recruit 360</span>
                                         </a>
                                     </li>

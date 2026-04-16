@@ -143,5 +143,26 @@ export const PRODUCTS: Product[] = [
             "Employee Onboarding Support"
         ],
         technicalStack: ["Vue.js", "Express", "MongoDB"]
+    },
+    {
+        id: "trabill",
+        title: "Travel Management Software",
+        productName: "TRABILL",
+        logo: "/images/products/trabill.png",
+        href: "https://www.iata.trabill.biz/",
+        desc: "Bangladesh’s #1 Travel Management Software",
+        longDesc: "TRABILL is a comprehensive travel management solution designed for both IATA and NON-IATA agencies. It provides a complete suite of tools for travel business automation, including single and double-entry accounting, real-time ticket management, and advanced reporting. With over 44 modules and 100+ sub-modules, TRABILL streamlines every aspect of a travel agency's operations, from lead management to financial settlement, ensuring total control and scalability for modern travel businesses.",
+        image: "/images/products/trabil-large.png",
+        features: [
+            "IATA & NON-IATA Agency Management",
+            "Double Entry Accounting System",
+            "Automated Ticket Inventory & Billing",
+            "Comprehensive 74+ Financial Reports",
+            "Customer & Vendor Ledger Management",
+            "Multi-branch & Multi-office Support",
+            "Advanced Lead & Booking Management",
+            "Secure Real-time Data Sync"
+        ],
+        technicalStack: ["PHP", "Laravel", "PostgreSQL", "React"]
     }
 ];
