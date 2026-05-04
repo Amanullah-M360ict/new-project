@@ -1,0 +1,14 @@
+/*
+  Tailwind CSS v4 — Utilities only, NO Preflight.
+
+  By explicitly importing only `theme` and `utilities` (and skipping
+  `preflight`), Tailwind's browser reset is completely disabled.
+  This means zero interference with existing styles in globals.css
+  or any component CSS file.
+*/
+
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+/* tailwindcss/preflight.css intentionally skipped */
+@import "tailwindcss/utilities.css" layer(utilities);

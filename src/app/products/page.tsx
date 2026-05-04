@@ -1,6 +1,7 @@
 import AnimatedText from "@/components/AnimatedText";
 import "./_style/products.css";
 import M360ictProducts from "@/components/M360ictProducts";
+import M360ictProductsNew from "@/components/M360ictProductsNew";
 
 export default function Products() {
 
@@ -148,48 +149,17 @@ export default function Products() {
             </div>
 
             <div className="container">
-
                 <div className="second_title">
                     <h2 className="second_title__h2">Our Products</h2>
                     <p className="second_title__text">
                         At M360ICT, we build world-class software solutions designed to streamline operations across travel, hospitality, retail, and enterprise management. Our platforms are built on modern technologies, focused on security, efficiency, and empowering businesses everywhere to scale successfully. Walk through our suite of applications to see how we reshape the future of digital business.
-
                     </p>
                 </div>
             </div>
 
             {/* this is common products show all here */}
-            <div style={{ marginTop: "80px" }}>
-                <M360ictProducts />
-            </div>
-
-
-            <div className="Products__clients" style={{ margin: "100px 0" }}>
-                <div className="container">
-                    <h2 className="Products__h2" style={{ marginBottom: "20px" }}>Our Key Clients </h2>
-                    <p style={{ marginBottom: '40px', fontSize: '18px', color: '#666' }}>Trusted by leading travel agencies and corporate partners globally.</p>
-
-                    <div className="client_showcase">
-                        {ourClients.map((client, index) => (
-                            <div key={index} style={{
-                                background: '#fff',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                gap: '15px',
-                            }}>
-                                <img
-                                    src={client.logo}
-                                    alt={client.name}
-                                    loading="lazy"
-                                    className="client_showcase__img"
-                                />
-
-                            </div>
-                        ))}
-                    </div>
-                </div>
+            <div style={{ marginTop: "80px" }}  >
+                <M360ictProductsNew />
             </div>
 
             <div className="Products__questions">

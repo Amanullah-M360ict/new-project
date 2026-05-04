@@ -22,7 +22,7 @@ export default function M360ictProducts({ limit, showExploreButton = false }: M3
     const displayData = limit ? data.slice(0, limit) : data;
 
     return (
-        <div className="m360ict-products" style={{ marginTop: showExploreButton ? "120px" : "0px", background: showExploreButton ? "#E7E7E7" : "#fff", padding: showExploreButton ? isDesktop ? "150px 0 130px" : "30px 0 30px" : "0" }}>
+        <div className="m360ict-products" style={{ marginTop: showExploreButton ? "140px" : "0px", background: showExploreButton ? "#E7E7E7" : "#fff", padding: showExploreButton ? isDesktop ? "150px 0 130px" : "30px 0 30px" : "0" }}>
 
             <div className="container">
                 {showExploreButton && (

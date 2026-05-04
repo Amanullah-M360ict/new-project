@@ -2,7 +2,7 @@
 
 :root {
     --global-space: 20px;
-    --app-width: 1138px;
+    --app-width: 1238px;
     --app-padding: calc(var(--global-space) * 1);
     --nav-height: 104px;
     --z-modal: 100;
@@ -21,7 +21,9 @@ html {
 
 body {
     overflow-wrap: break-word;
-    word-break: break-word
+    word-break: break-word;
+    padding: 0;
+    margin: 0;
 }
 
 body,
@@ -46,10 +48,10 @@ textarea {
 :after,
 :before {
     box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     overflow-anchor: none;
-    line-height: 1.9
+    /* line-height: 1.9 */
 }
 
 a,
@@ -66,7 +68,7 @@ button[href]:hover {
     cursor: pointer
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -74,7 +76,7 @@ h5,
 h6 {
     font-size: inherit;
     font-weight: 400
-}
+} */
 
 [class*="--disabled"],
 [disabled] {
@@ -139,6 +141,8 @@ source {
     overflow: hidden;
 }
 
+
+
 .Hero__wrapper:before,
 h1.Contact__hero__h1::before,
 .Svc__hero__h1:before {
@@ -182,7 +186,7 @@ h1.Contact__hero__h1::before,
 
 /* Nav */
 .Nav {
-    --app-width: 1206px;
+    --app-width: 1300px;
     padding: calc(var(--global-space)*2) 0
 }
 
@@ -325,6 +329,11 @@ h1.Contact__hero__h1::before,
     padding: 40px;
 }
 
+.Nav__drawer__content a {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
 .Nav__drawer--active {
     right: 0;
 }
@@ -332,13 +341,13 @@ h1.Contact__hero__h1::before,
 .Nav__drawer__header {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .Nav__drawer__close {
     background: none;
     border: none;
-    font-size: 32px;
+    font-size: 25px;
     cursor: pointer;
     color: #1a1a1a;
 }
@@ -346,11 +355,11 @@ h1.Contact__hero__h1::before,
 .Nav__drawer__content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
 }
 
 .Nav__drawer__link {
-    font-size: 24px;
+    font-size: 15px;
     font-weight: 700;
     color: #1a1a1a;
     text-transform: uppercase;
@@ -731,6 +740,7 @@ h1.Contact__hero__h1::before,
     height: 1px;
     background-color: #1a1a1a
 }
+
 
 .Index__mission__wrapper {
     display: grid;
@@ -1223,9 +1233,17 @@ h1.Contact__hero__h1::before,
     align-items: center;
 }
 
+/* .Index__mission {
+    display: none;
+} */
+
 @media(max-width:900px) {
     .Index__connect__wrapper {
         grid-template-columns: 1fr
+    }
+
+    .Index__mission {
+        display: block;
     }
 }
 
