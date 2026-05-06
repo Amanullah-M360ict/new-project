@@ -1,0 +1,376 @@
+.difference__content {
+    padding: 80px 0;
+
+}
+
+.difference__content p {
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translate(0)
+    }
+
+    to {
+        transform: translate(-50%)
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(.2)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@keyframes progress {
+    0% {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.difference__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+@media (min-width: 768px) {
+    .difference__content {
+        gap: 48px
+    }
+}
+
+@media (min-width: 992px) {
+    .difference__content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px
+    }
+}
+
+@media (min-width: 992px) {
+    .difference__text {
+        flex: 1;
+        max-width: 475px
+    }
+
+    .difference__text h2 {
+        font-size: 40px
+    }
+}
+
+@media (min-width: 768px) {
+    .difference__visuals {
+        position: relative;
+        padding-right: 51px
+    }
+}
+
+@media (min-width: 992px) {
+    .difference__visuals {
+        width: 59.28%
+    }
+}
+
+.difference__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px
+}
+
+@media (min-width: 768px) {
+    .difference__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 4px
+    }
+}
+
+.difference__card {
+    padding: 16px;
+    border-radius: 24px;
+    background-color: #f6faff
+}
+
+@media (min-width: 768px) {
+    .difference__card {
+        padding: 32px
+    }
+}
+
+@media (min-width: 992px) {
+    .difference__card {
+        padding: 24px
+    }
+}
+
+@media (min-width: 1200px) {
+    .difference__card {
+        padding: 32px
+    }
+}
+
+.difference__card i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+    border-radius: 8px
+}
+
+.difference__card i svg {
+    width: 24px;
+    height: 24px
+}
+
+.difference__card strong {
+    display: block;
+    color: #0a0a0a;
+    font-size: 36px;
+    line-height: 52px
+}
+
+.difference__card p {
+    color: #2f3241;
+    line-height: 24px
+}
+
+.difference__card--1 {
+    margin-top: auto
+}
+
+@media (min-width: 768px) {
+    .difference__card--1 {
+        width: 45.15%;
+        margin-left: 37.39%
+    }
+}
+
+.difference__card--1 p {
+    font-weight: 700
+}
+
+@media (min-width: 768px) {
+    .difference__card--1 p {
+        font-size: 24px;
+        line-height: 1.25;
+        font-weight: 600
+    }
+}
+
+@media (min-width: 992px) {
+    .difference__card--1 p {
+        font-size: 20px
+    }
+}
+
+@media (min-width: 1200px) {
+    .difference__card--1 p {
+        font-size: 24px
+    }
+}
+
+.difference__card--2 p,
+.difference__card--3 p {
+    font-size: 18px
+}
+
+.difference__card--2 {
+    background-image: url(https://gloriumtech.com/wp-content/themes/integrio/dist/assets/card-2-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+@media (min-width: 768px) {
+    .difference__card--2 {
+        width: 34%
+    }
+}
+
+.difference__card--2 i {
+    background-color: #f6faff
+}
+
+@media (min-width: 768px) {
+    .difference__card--2 i {
+        margin-bottom: 56px
+    }
+}
+
+.difference__card--2 strong {
+    margin-bottom: 12px
+}
+
+@media (min-width: 768px) {
+
+    .difference__card--3,
+    .difference__card--4 {
+        width: 29.63%;
+        margin-top: 20px
+    }
+}
+
+@media (min-width: 992px) {
+
+    .difference__card--3,
+    .difference__card--4 {
+        margin-top: 16px
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .difference__card--3,
+    .difference__card--4 {
+        margin-top: 20px
+    }
+}
+
+@media (min-width: 768px) {
+    .difference__card--3 {
+        margin-bottom: auto;
+        order: 4
+    }
+}
+
+.difference__card--3 strong {
+    margin-bottom: 16px
+}
+
+@media (min-width: 768px) {
+    .difference__card--3 strong {
+        margin-bottom: 12px
+    }
+}
+
+.difference__card--4 {
+    margin-bottom: auto
+}
+
+@media (min-width: 768px) {
+    .difference__card--4 {
+        order: 3
+    }
+}
+
+.difference__card--4 p {
+    font-size: 20px
+}
+
+@media (min-width: 992px) {
+    .difference__card--4 p {
+        font-size: 18px
+    }
+}
+
+@media (min-width: 1200px) {
+    .difference__card--4 p {
+        font-size: 20px
+    }
+}
+
+.difference__card--4 i {
+    background-color: #bdd6ff
+}
+
+.difference__badge {
+    display: none;
+    position: absolute;
+    top: -36px;
+    right: -5px;
+    width: 196px;
+    height: 201px;
+    z-index: 2
+}
+
+@media (min-width: 768px) {
+    .difference__badge {
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+}
+
+@media (min-width: 992px) {
+    .difference__badge {
+        right: -20px;
+        width: 170px;
+        height: 175px
+    }
+}
+
+@media (min-width: 1200px) {
+    .difference__badge {
+        right: -5px;
+        width: 196px;
+        height: 201px
+    }
+}
+
+.difference__badge-logo {
+    width: 103px;
+    height: 103px
+}
+
+@media (min-width: 992px) {
+    .difference__badge-logo {
+        width: 90px;
+        height: 90px
+    }
+}
+
+@media (min-width: 1200px) {
+    .difference__badge-logo {
+        width: 103px;
+        height: 103px
+    }
+}
+
+.difference__badge-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 196px;
+    height: 201px;
+    animation: rotation 20s linear infinite
+}
+
+@media (min-width: 992px) {
+    .difference__badge-text {
+        width: 170px;
+        height: 175px
+    }
+}
+
+@media (min-width: 1200px) {
+    .difference__badge-text {
+        width: 196px;
+        height: 201px
+    }
+}

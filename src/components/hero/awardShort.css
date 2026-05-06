@@ -1,0 +1,167 @@
+@keyframes scroll-left {
+    0% {
+        transform: translate(0)
+    }
+
+    to {
+        transform: translate(-50%)
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(.2)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@keyframes progress {
+    0% {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.awards {
+    padding-top: 32px;
+    margin-bottom: 0
+}
+
+@media (min-width: 768px) {
+    .awards {
+        padding-top: 40px
+    }
+}
+
+@media (min-width: 992px) {
+    .awards {
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        gap: 32px
+    }
+}
+
+.awards__title {
+    position: relative;
+    color: #0a0a0a;
+    font-size: 14px;
+    line-height: 2;
+    text-transform: uppercase;
+    text-align: center
+}
+
+@media (min-width: 992px) {
+    .awards__title {
+        text-align: left
+    }
+}
+
+.awards__marquee {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #FFFFFF 32px, #FFFFFF calc(100% - 32px), transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, #FFFFFF 32px, #FFFFFF calc(100% - 32px), transparent 100%);
+    overflow: hidden;
+    padding: 32px 0;
+    margin-top: -16px
+}
+
+@media (min-width: 768px) {
+    .awards__marquee {
+        width: calc(100% + 64px);
+        padding: 40px 0;
+        margin-top: -24px;
+        margin-left: -32px
+    }
+}
+
+@media (min-width: 992px) {
+    .awards__marquee {
+        flex: 1;
+        width: auto;
+        padding: 56px 0;
+        margin-top: 0;
+        margin-left: 0
+    }
+}
+
+.awards__track {
+    display: flex;
+    width: -moz-max-content;
+    width: max-content;
+    animation: scroll-left 20s linear infinite;
+    will-change: transform
+}
+
+.awards__marquee:hover .awards__track {
+    animation-play-state: paused
+}
+
+.awards__item {
+    position: relative;
+    margin-right: 16px;
+    cursor: pointer
+}
+
+@media (min-width: 768px) {
+    .awards__item {
+        margin-right: 32px
+    }
+}
+
+.awards__item:hover .awards__item--inner {
+    opacity: 1;
+    visibility: visible
+}
+
+.awards__item img {
+    height: 90px;
+    width: auto
+}
+
+.awards__item--inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: calc(100% + 32px);
+    transform: translate(-50%, -50%);
+    padding: 8px 16px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px #1337851f;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s
+}
+
+.awards__item--inner img {
+    margin: 0 auto 4px
+}
+
+.awards__item--inner span {
+    display: block;
+    width: 100%;
+    color: #0a0a0a;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1
+}

@@ -44,7 +44,7 @@ const NewsSection = () => {
             <div className="container mx-auto px-4">
                 <div className="NewsSection__header">
                     <h2 className="NewsSection__title">
-                        <AnimatedText text={["In the Press", "Latest News"]} />
+                        <AnimatedText text={["In the Press Latest", " News"]} />
                     </h2>
                 </div>
 

@@ -29,14 +29,14 @@ export default function About() {
                                 <div className="About__heroImages__grid">
                                     <img
                                         className="About__heroImages__img1"
-                                        src="https://ollyo.com/wp-content/uploads/2026/02/about-img-2-1-1024x576.webp"
+                                        src="/images/teams/about.png"
                                         alt="Office space 2"
                                         data-reveal="left"
                                         data-delay="300"
                                     />
                                     <img
                                         className="About__heroImages__img2"
-                                        src="https://ollyo.com/wp-content/uploads/2026/02/about-img-2-1-1024x576.webp"
+                                        src="/images/teams/about-home.png"
                                         alt="Office space 2"
                                         data-reveal="right"
                                         data-delay="400"

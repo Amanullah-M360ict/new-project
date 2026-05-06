@@ -192,6 +192,8 @@ export default function Footer() {
                         <div className="ExactFooter__bottomLinks">
                             <Link href="/copyright-and-license">Copyright & License</Link>
                             <span className="separator">|</span>
+                            <Link href="/trademark">Trade mark</Link>
+                            <span className="separator">|</span>
                             <Link href="/terms">Terms & Conditions</Link>
                         </div>
                     </div>

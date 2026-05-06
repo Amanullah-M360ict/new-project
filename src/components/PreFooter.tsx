@@ -26,15 +26,7 @@ export default function PreFooter() {
                 </div>
             </div>
 
-            <div className="pre-footer__content">
-                <p className="pre-footer__text">
-                    M360 ICT develops scalable travel technology<br />
-                    solutions for modern online travel agencies.<br />
-                    From Sabre to Travelport integrations,<br />
-                    we build platforms that businesses rely on.
-                </p>
-                <a href="/contact" className="pre-footer__button">Contact Us</a>
-            </div>
+
         </div>
     );
 }

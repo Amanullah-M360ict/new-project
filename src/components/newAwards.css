@@ -1,0 +1,273 @@
+.glorium-block p,
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+section.bg-muted {
+    background-color: #edf3fa;
+    padding: 100px 0;
+    margin: 50px 0;
+}
+
+.metrics__grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr
+}
+
+@media (min-width: 768px) {
+    .metrics__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px
+    }
+}
+
+@media (min-width: 992px) {
+    .metrics__grid {
+        grid-template-columns: repeat(4, 1fr)
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translate(0)
+    }
+
+    to {
+        transform: translate(-50%)
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(.2)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@keyframes progress {
+    0% {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.metrics {
+    overflow: hidden
+}
+
+@media (min-width: 768px) {
+    .metrics {
+        padding: 64px 0
+    }
+}
+
+@media (min-width: 992px) {
+    .metrics {
+        padding: 80px 0
+    }
+}
+
+.metrics--inner {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    z-index: 1
+}
+
+.metrics__top {
+    margin-bottom: 24px
+}
+
+@media (min-width: 992px) {
+    .metrics__top {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin: 32px 0
+    }
+}
+
+@media (min-width: 992px) {
+    .metrics__heading {
+        width: 340px;
+        font-size: 40px;
+        margin-bottom: 0
+    }
+}
+
+@media (max-width: 991px) {
+    .metrics__heading br {
+        display: none
+    }
+}
+
+.metrics__marquee {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #FFFFFF 32px, #FFFFFF calc(100% - 32px), transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, #FFFFFF 32px, #FFFFFF calc(100% - 32px), transparent 100%);
+    overflow: hidden
+}
+
+@media (min-width: 768px) {
+    .metrics__marquee {
+        width: calc(100% + 64px);
+        margin-left: -32px
+    }
+}
+
+@media (min-width: 992px) {
+    .metrics__marquee {
+        flex: 1;
+        width: auto;
+        margin-left: 0
+    }
+}
+
+.metrics__track {
+    display: flex;
+    width: -moz-max-content;
+    width: max-content;
+    animation: scroll-left 40s linear infinite;
+    will-change: transform
+}
+
+.metrics__marquee:hover .metrics__track {
+    animation-play-state: paused
+}
+
+.metrics__logo {
+    height: 50px;
+    width: auto;
+    margin-right: 25px
+}
+
+@media (min-width: 768px) {
+    .metrics__logo {
+        margin-right: 32px
+    }
+}
+
+@media (min-width: 992px) {
+    .metrics__logo {
+        margin-right: 25px
+    }
+}
+
+.metrics__card {
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 32px
+}
+
+@media (min-width: 768px) {
+    .metrics__card {
+        padding: 32px
+    }
+}
+
+.metrics__value {
+    display: block;
+    color: #0a0a0a;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -.6px;
+    margin-bottom: 8px
+}
+
+.metrics__title {
+    color: #0a0a0a
+}
+
+.metrics__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 8px
+}
+
+@media (min-width: 768px) {
+    .metrics__text {
+        margin-top: 16px
+    }
+}
+
+.metrics .circle-gradient--1 {
+    top: -467px;
+    right: -425px
+}
+
+@media (min-width: 768px) {
+    .metrics .circle-gradient--1 {
+        top: -499px
+    }
+}
+
+@media (min-width: 992px) {
+    .metrics .circle-gradient--1 {
+        top: -362px;
+        left: -300px;
+        right: auto
+    }
+}
+
+.metrics .circle-gradient--2 {
+    bottom: -439;
+    left: -432px
+}
+
+@media (min-width: 768px) {
+    .metrics .circle-gradient--2 {
+        bottom: -471
+    }
+}
+
+@media (min-width: 992px) {
+    .metrics .circle-gradient--2 {
+        bottom: -725px;
+        right: -143px;
+        left: auto
+    }
+}
+
+.circle-gradient {
+    position: absolute;
+    width: 705px;
+    height: 705px;
+    background-image: url(/images/circle-gradient.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1
+}
+
+@media screen and (max-width:768px) {
+    .metrics__grid {
+        padding: 0 13px;
+    }
+
+    .metrics__heading {
+        padding: 0 15px 19px 12px;
+    }
+}

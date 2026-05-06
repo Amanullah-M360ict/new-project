@@ -153,4 +153,9 @@
         font-size: 18px;
         padding: 0 20px;
     }
+
+    .pre-footer {
+        padding: 0px 0 0px;
+    }
+
 }

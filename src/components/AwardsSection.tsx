@@ -20,7 +20,7 @@ const AwardsSection = ({ showExploreButton, isFullList = false }: { showExploreB
             <div className="container mx-auto px-4">
                 <div className="AwardsSection__header">
                     <h2 className="AwardsSection__title">
-                        <AnimatedText text={["Recognized for Business", "Excellence"]} />
+                        <AnimatedText text={["Awards & Recognitions"]} />
                     </h2>
                     <p className="AwardsSection__subtitle">Recognized globally for our continuous innovation and excellence.</p>
                 </div>

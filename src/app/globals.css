@@ -2,7 +2,7 @@
 
 :root {
     --global-space: 20px;
-    --app-width: 1238px;
+    --app-width: 1320px;
     --app-padding: calc(var(--global-space) * 1);
     --nav-height: 104px;
     --z-modal: 100;
@@ -52,6 +52,10 @@ textarea {
     padding: 0; */
     overflow-anchor: none;
     /* line-height: 1.9 */
+}
+
+p {
+    margin: 0;
 }
 
 a,
@@ -187,7 +191,7 @@ h1.Contact__hero__h1::before,
 /* Nav */
 .Nav {
     --app-width: 1300px;
-    padding: calc(var(--global-space)*2) 0
+    padding: calc(var(--global-space)*1) 0
 }
 
 @media(max-width:1320px) {
@@ -215,7 +219,7 @@ h1.Contact__hero__h1::before,
 
 @media(max-width:900px) {
     .Nav__wrapper {
-        grid-template-columns: 1fr max-content max-content;
+        grid-template-columns: 1fr max-content;
         gap: calc(var(--global-space)*1)
     }
 }
@@ -226,15 +230,17 @@ h1.Contact__hero__h1::before,
 
 @media(max-width:580px) {
     .Nav__a__img {
-        height: auto
+        height: auto;
+        width: 100px;
     }
 }
 
 .Nav__links {
     display: flex;
     gap: calc(var(--global-space)*2.25);
-    justify-content: flex-end;
-    transform: translateY(calc(var(--global-space) * .4))
+    justify-content: center;
+    transform: translateY(calc(var(--global-space) * .4));
+
 }
 
 @media(max-width:900px) {
@@ -246,10 +252,10 @@ h1.Contact__hero__h1::before,
 .Nav__links__a {
     color: #1a1a1a;
     font-size: 14px;
-    font-style: italic;
     font-weight: 500;
     letter-spacing: 1px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-style: italic;
 }
 
 .Nav__links__a--active {
@@ -277,39 +283,72 @@ h1.Contact__hero__h1::before,
     text-transform: uppercase
 }
 
-.Nav__drawer-toggle {
+.Nav__right {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--global-space)*1.5);
+    transform: translateY(calc(var(--global-space) * .4))
+}
+
+.Nav__contact-btn {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border: 1px solid #1a1a1a;
+}
+
+.Nav__contact-btn:hover {
+    background: transparent;
+    color: #1a1a1a;
+    text-decoration: none !important;
+}
+
+.Nav__menu-toggle {
     cursor: pointer;
     z-index: calc(var(--z-Nav) + 1);
     background: none;
     border: none;
     flex-direction: column;
     gap: 4px;
-    margin-left: 0px;
     padding: 0px;
-    margin-top: 7px;
     display: flex;
+    align-items: self-end;
 }
 
-.Nav__drawer-toggle__bar {
-    width: 25px;
+button.Nav__menu-toggle>div:first-child {
+    width: 15px;
+}
+
+button.Nav__menu-toggle>div:last-child {
+    width: 15px;
+}
+
+.Nav__menu-toggle__bar {
+    width: 23px;
     height: 2px;
     background-color: #1a1a1a;
     transition: all 0.3s ease;
 }
 
-.Nav__drawer-toggle__bar--white {
+.Nav__menu-toggle__bar--white {
     background-color: #fff;
 }
 
-.Nav--drawer-active .Nav__drawer-toggle__bar:nth-child(1) {
+.Nav--drawer-active .Nav__menu-toggle__bar:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
 }
 
-.Nav--drawer-active .Nav__drawer-toggle__bar:nth-child(2) {
+.Nav--drawer-active .Nav__menu-toggle__bar:nth-child(2) {
     opacity: 0;
 }
 
-.Nav--drawer-active .Nav__drawer-toggle__bar:nth-child(3) {
+.Nav--drawer-active .Nav__menu-toggle__bar:nth-child(3) {
     transform: translateY(-6px) rotate(-45deg);
 }
 
@@ -610,7 +649,7 @@ h1.Contact__hero__h1::before,
 /* Index (Home) */
 .Index {
     margin-bottom: 0px;
-    background-image: url(/images/Index__hero.svg);
+    /* background-image: url(/images/Index__hero.svg); */
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: 100%
@@ -624,7 +663,7 @@ h1.Contact__hero__h1::before,
 
 @media(max-width:900px) {
     .Index {
-        margin-bottom: 120px
+        margin-bottom: 70px
     }
 }
 
@@ -1233,6 +1272,12 @@ h1.Contact__hero__h1::before,
     align-items: center;
 }
 
+.Index__connect__wrapper h3,
+p,
+h4 {
+    margin: 0;
+}
+
 /* .Index__mission {
     display: none;
 } */
@@ -1458,9 +1503,7 @@ h1.Contact__hero__h1::before,
         display: block;
     }
 
-    .desktop-hero {
-        display: none;
-    }
+
 }
 
 /* Responsive adjustments */

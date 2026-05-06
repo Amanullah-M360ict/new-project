@@ -3,7 +3,7 @@
 import React from 'react';
 import AnimatedText from "@/components/AnimatedText";
 
-export default function TradeMarkPage() {
+export default function OperatingCountriesPage() {
     const countries = [
         { name: "Bangladesh", code: "bd" },
         { name: "USA", code: "us" },

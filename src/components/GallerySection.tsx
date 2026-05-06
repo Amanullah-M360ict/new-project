@@ -40,7 +40,7 @@ const GallerySection = () => {
 
                     <img
                         className="gallery-img-b"
-                        src="https://ollyo.com/wp-content/uploads/2026/02/about-img-2-1.webp"
+                        src="/images/teams/office-team.jpeg"
                         alt="Discussion"
                     />
 

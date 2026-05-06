@@ -10,6 +10,9 @@ import AwardsSection from "@/components/AwardsSection";
 import DesktopHero from "@/components/DesktopHero";
 import M360ictProductsNew from "@/components/M360ictProductsNew";
 import NewsSection from "@/components/NewsSection";
+import AwardHome from "@/components/hero/AwardHome";
+import WeBring from "@/components/WeBring";
+import NewAwards from "@/components/NewAwards";
 
 
 export default function Home() {
@@ -19,48 +22,12 @@ export default function Home() {
       <div className="desktop-hero">
         <DesktopHero />
       </div>
-      <div className="mobile-hero">
-        <ModernHero />
-      </div>
+      <AwardHome />
+      <WeBring />
 
-      <div className="Index__mission">
-        <div className="container">
-          <div className="Index__mission__wrapper">
-
-            <img
-              className="Index__mission__img"
-              src="/images/ict-logo.png"
-              alt="Our mission"
-            />
-            <div className="Index__mission__left">
-              <h3 className="Index__h3"><AnimatedText text="Our mission" /></h3>
-              <div className="Index__mission__content">
-                <p className="Index__mission__p">Connection, science.</p>
-                <p className="Index__mission__p">
-                  {`While the forms of encounters between people are expanding,
-It is still difficult to connect with people who share the same heart.
-`}
-                </p>
-
-                <p className="Index__mission__p">
-                  {`Gender, age, and place of residence jumped over,
-A really like-minded connection.
-Expose yourself as you are,
-A connection that can be respected.`}
-                </p>
-                <p className="Index__mission__p">
-                  {`It seems that you would never meet if you were living normally
-As many connections as possible with M360ICT.`}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      {/* <M360ictProducts limit={1} showExploreButton={true} /> */}
       <M360ictProductsNew limit={6} showExploreButton={true} />
+
+      <NewAwards />
       <div style={{ margin: '80px 0' }}>
         <AwardsSection showExploreButton={true} />
       </div>

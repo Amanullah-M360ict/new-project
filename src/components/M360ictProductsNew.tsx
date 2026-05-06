@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-
+import "../app/products/_style/products.css"
 interface Product {
     id: string
     name: string
@@ -155,35 +155,61 @@ function ProductCard({ product }: { product: Product }) {
 const M360ictProductsNew = ({ limit, showExploreButton = false }: M360ictProductsProps) => {
     const displayData = limit ? products.slice(0, limit) : products;
     return (
-        <div className={`${showExploreButton ? "bg-[#f6f4f5]" : ""} ${showExploreButton ? "my-[150px]! py-[80px]!" : ""} `}>
-            <section id="m360ict-products" aria-labelledby="products-heading">
-                <div className="m-auto! flex  flex-col gap-8 px-4 md:gap-16 2xl:px-8">
-                    <header className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between md:gap-6 xl:grid xl:grid-cols-4 xl:gap-6">
-                        <h2
-                            id="products-heading"
-                            className="text-5xl font-bold! text-black sm:text-5xl md:text-6xl lg:text-[100px]! xl:col-span-2 xl:col-start-2 p-0 m-0"
-                        >
-                            Products.
-                        </h2>
-                        <p className="text-sm text-balance text-black/60 md:max-w-[30ch] xl:col-start-4 xl:row-start-1 xl:self-center xl:justify-self-end xl:text-right">
-                            10+ innovative software products built for real business challenges
-                        </p>
-                    </header>
-                    <ul className="grid grid-cols-1 gap-1 md:grid-cols-6 p-0">
-                        {displayData.map((product) => (
-                            <ProductCard key={product.id} product={product} />
-                        ))}
-                    </ul>
-                    {showExploreButton && (
-                        <div style={{ textAlign: "center", marginTop: "10px" }}>
-                            <Link href="/products" style={{ display: "inline-block", fontWeight: "bold", fontSize: "15px" }}>
-                                Explore More Products <span className="arrow-right">→</span>
-                            </Link>
+        <section className="brand__area line py-20">
+            <div className="container g-0 line pt-140 pb-130 relative p-0!">
+
+                <div className="Main-product-home">
+                    {/* <div className="services-tabs__glass-effect" aria-hidden="true"></div>
+                    <div className="services-tabs__glass-tint" aria-hidden="true"></div> */}
+                    <div className="services-tabs__bg" aria-hidden="true">
+                        <video className="services-tabs__bg-video" autoPlay={true} muted={true} loop={true} preload="auto">
+                            <source src="https://gloriumtech.com/wp-content/themes/integrio/img/glorium/neon-glow.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+
+                    <div className="col-xxl-12">
+                        <div className="sec-title-wrapper ">
+                            <div className='flex items-center justify-between'>
+                                <h2 className="sec-sub-title title-anim"  >
+                                    <div >
+                                        Our Products
+                                    </div>
+                                </h2>
+
+                                <div className="flex gap-1" aria-hidden="true">
+                                    <span className="h-2 w-2 rounded-full   transition-colors duration-300 bg-[#ff5f57]" />
+                                    <span className="h-2 w-2 rounded-full  transition-colors duration-300 bg-[#febc2e]" />
+                                    <span className="h-2 w-2 rounded-full  transition-colors duration-300 bg-[#28c840]" />
+                                </div>
+
+
+                            </div>
+                            <h3 className="sec-title title-anim p-0 m-0 pb-10 text-[#000]"  >
+                                <div style={{ 'display': 'block', 'textAlign': 'center', 'position': 'relative', 'translate': 'none', 'rotate': 'none', 'scale': 'none', 'transformOrigin': '660px 30px', 'transform': 'translate3d(0px, 0px, 0px)', 'opacity': '1', }} className='md:text-[44px] text-[25px]'>
+                                    Innovate & Transform your business with
+                                </div>
+                                <div style={{ 'display': 'block', 'textAlign': 'center', 'position': 'relative', 'translate': 'none', 'rotate': 'none', 'scale': 'none', 'transformOrigin': '660px 30px', 'transform': 'translate3d(0px, 0px, 0px)', 'opacity': '1' }}>
+                                    M360 ICT Limited
+                                </div>
+                            </h3>
                         </div>
-                    )}
+                    </div>
+                    <div className="col-xxl-12">
+                        <div className="brand__list software-section">
+                            {products.map((product, index) => (
+                                <Link target="_blank" href={product.href} key={index}>
+                                    <div className="brand__item fade_bottom" >
+                                        <Image className="img-fluid" src={product.logoImage} alt="Trabill" width={500} height={80} />
+                                    </div>
+                                </Link>
+                            ))}
+
+
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     )
 }
 

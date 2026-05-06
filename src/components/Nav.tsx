@@ -16,6 +16,7 @@ export default function Nav() {
         { href: "/", label: "home" },
         { href: "/about", label: "about" },
         { href: "/products", label: "products" },
+        { href: "/services", label: "services" },
         { href: "/career", label: "career" },
         { href: "/contact", label: "contact" },
     ];
@@ -26,7 +27,6 @@ export default function Nav() {
         { href: "/services", label: "services" },
         { href: "/products", label: "products" },
         { href: "/career", label: "career" },
-        { href: "/vendors", label: "vendors" },
         { href: "/our-clients", label: "our clients" },
         { href: "/fairs", label: "Events" },
         { href: "/awards", label: "awards" },
@@ -46,8 +46,9 @@ export default function Nav() {
                     <Link className="Nav__a" href="/">
                         <Image className="Nav__a__img" src={!isSpecialPath ? "/images/M360ict_TM.png" : "/images/m360logo.webp"} alt="m360ict" width={127} height={55} />
                     </Link>
+
                     <div className="Nav__links">
-                        {links.map((link) => (
+                        {links.filter(link => link.href !== "/contact").map((link) => (
                             <Link
                                 key={link.href}
                                 className={`Nav__links__a${pathname === link.href ? " Nav__links__a--active" : ""}`}
@@ -56,39 +57,15 @@ export default function Nav() {
                                 {link.label}
                             </Link>
                         ))}
-
-                        <button className="Nav__drawer-toggle" onClick={() => setDrawerOpen(!drawerOpen)}>
-                            <div className={`Nav__drawer-toggle__bar ${isSpecialPath ? "Nav__drawer-toggle__bar--white" : ""}`} ></div>
-                            <div className={`Nav__drawer-toggle__bar ${isSpecialPath ? "Nav__drawer-toggle__bar--white" : ""}`}></div>
-                            <div className={`Nav__drawer-toggle__bar ${isSpecialPath ? "Nav__drawer-toggle__bar--white" : ""}`}></div>
-                        </button>
                     </div>
 
-                    <div className="Nav__menu">
-                        <a className="Nav__menu__a" onClick={() => setMenuOpen(!menuOpen)}>
-                            {menuOpen ? (
-                                <img className="Nav__menu__a__img" width={!isSpecialPath ? 24 : 35} src={!isSpecialPath ? "/images/close.png" : "/images/white-cross.png"} alt="Close" />
-                            ) : (
-                                isSpecialPath ? <img className="Nav__menu__a__img" width={30} src="/images/white-bar.png" alt="Menu" /> : <img className="Nav__menu__a__img" src="/images/Nav__menu__a__img.svg" alt="Menu" />
-                            )}
-                        </a>
-                        <div className={`Nav__menu__panel${menuOpen ? " Nav__menu__panel--active" : ""}`}>
-                            <div className="Nav__menu__panel__grid">
-                                <div className="special-design-simble_1"></div>
-                                <div className="special-design-simble_2"></div>
-                                <div className="special-design-simble_3"></div>
-                                {allRouteLinks.map((link) => (
-                                    <Link
-                                        key={link.href}
-                                        className="Nav__menu__panel__grid__a"
-                                        href={link.href}
-                                        onClick={() => setMenuOpen(false)}
-                                    >
-                                        {link.label}
-                                    </Link>
-                                ))}
-                            </div>
-                        </div>
+                    <div className="Nav__right">
+
+                        <button className="Nav__menu-toggle" onClick={() => setDrawerOpen(!drawerOpen)}>
+                            <div className={`Nav__menu-toggle__bar ${isSpecialPath ? "Nav__menu-toggle__bar--white" : ""}`}></div>
+                            <div className={`Nav__menu-toggle__bar ${isSpecialPath ? "Nav__menu-toggle__bar--white" : ""}`}></div>
+                            <div className={`Nav__menu-toggle__bar ${isSpecialPath ? "Nav__menu-toggle__bar--white" : ""}`}></div>
+                        </button>
                     </div>
                 </div>
             </div>
