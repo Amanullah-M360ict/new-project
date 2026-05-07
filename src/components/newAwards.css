@@ -148,7 +148,7 @@ section.bg-muted {
     display: flex;
     width: -moz-max-content;
     width: max-content;
-    animation: scroll-left 40s linear infinite;
+    animation: scroll-left 10s linear infinite;
     will-change: transform
 }
 

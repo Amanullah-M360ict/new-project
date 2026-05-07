@@ -2,6 +2,7 @@ import AnimatedText from "@/components/AnimatedText";
 import "./_style/products.css";
 import M360ictProducts from "@/components/M360ictProducts";
 import M360ictProductsNew from "@/components/M360ictProductsNew";
+import NewProducts from "@/components/NewProducts";
 
 export default function Products() {
 
@@ -159,7 +160,7 @@ export default function Products() {
 
             {/* this is common products show all here */}
             <div style={{ marginTop: "80px" }}  >
-                <M360ictProductsNew />
+                <NewProducts />
             </div>
 
             <div className="Products__questions">

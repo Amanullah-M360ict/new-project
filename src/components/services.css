@@ -114,8 +114,8 @@
 }
 
 .block-binary {
-    color: #dc2626;
-    background-color: #ff6b95;
+    color: #9BF35F;
+    background-color: #00E05A;
     flex-direction: column;
     grid-area: 2 / 1 / 4;
     padding: 20px;

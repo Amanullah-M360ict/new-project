@@ -13,6 +13,7 @@ import NewsSection from "@/components/NewsSection";
 import AwardHome from "@/components/hero/AwardHome";
 import WeBring from "@/components/WeBring";
 import NewAwards from "@/components/NewAwards";
+import NewProducts from "@/components/NewProducts";
 
 
 export default function Home() {
@@ -23,17 +24,18 @@ export default function Home() {
         <DesktopHero />
       </div>
       <AwardHome />
+      <NewProducts />
       <WeBring />
 
-      <M360ictProductsNew limit={6} showExploreButton={true} />
 
-      <NewAwards />
+      {/* <NewAwards /> */}
+
+
+
+      <NewsSection />
       <div style={{ margin: '80px 0' }}>
         <AwardsSection showExploreButton={true} />
       </div>
-
-      <NewsSection />
-
       <ServicesSection />
       <StatsSection />
 

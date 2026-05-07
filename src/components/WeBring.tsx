@@ -12,7 +12,7 @@ const WeBring = () => {
                         Drive innovation with a partner that understands your business goals.
                     </h3>
                     <p>
-                        <span style={{ 'fontWeight': '400' }}>
+                        <span  >
                             Team up with developers who get the business side. We offer a rare mix of strategic insight and technical depth. Using 15+ years of industry-leading experience, we help you deliver polished products to market while the window of opportunity is wide open.
                         </span>
                     </p>
@@ -21,7 +21,7 @@ const WeBring = () => {
                     <div className="difference__cards">
                         <div className="difference__card difference__card--1">
                             <p>
-                                Focus on ROI-Driven Solutions
+                                Focus on TravelTech Solutions
                             </p>
                         </div>
                         <div className="difference__card difference__card--2">

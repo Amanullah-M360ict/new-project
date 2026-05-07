@@ -13,15 +13,16 @@ export interface Product {
 }
 
 export const PRODUCTS: Product[] = [
+
     {
-        id: "t360",
-        title: "Tours & Travels Management",
-        productName: "T360 Tours & Travels",
-        logo: "/images/products/t360.svg",
+        id: "OTA",
+        title: "Online Travel Agency",
+        productName: "Online Travel Agency",
+        logo: "/images/products/ota.png",
         href: "https://t360.biz",
-        desc: "Travel LMS",
+        desc: "Travel OTA",
         longDesc: "T360 is a powerful Travel Learning Management System designed specifically for the travel and tourism industry. It helps travel agencies, institutes, and organizations train their agents, partners, and students efficiently. The platform provides tools for course creation, learning analytics, certification management, and automated training workflows. With a user-friendly interface and scalable architecture, T360 enables organizations to deliver professional travel training programs globally while tracking learner performance in real time.",
-        image: "/images/products/t360-sub.png",
+        image: "/images/products/ota.png",
         features: [
             "Travel Industry Learning Management System",
             "Course Creation & Curriculum Management",
@@ -34,28 +35,49 @@ export const PRODUCTS: Product[] = [
         ],
         technicalStack: ["WordPress", "PHP", "MySQL"]
     },
-
     {
-        id: "crm360",
-        title: "Customer Relationship Management",
-        productName: "CRM360",
-        logo: "/images/products/CRM.png",
-        href: "https://employee.crm360world.com",
-        desc: "Customer Relationship Management",
-        longDesc: "CRM360 is a modern customer relationship management platform designed to help businesses organize leads, manage customer communication, and streamline sales operations. The system centralizes customer data, tracks sales pipelines, and enables teams to collaborate efficiently. With automated workflows, reporting tools, and real-time dashboards, CRM360 empowers organizations to improve customer engagement, increase conversion rates, and make data-driven decisions for business growth.",
-        image: "/images/products/crm-large.png",
+        id: "trabill",
+        title: "Travel Management Software",
+        productName: "TRABILL",
+        logo: "/images/products/trabill.png",
+        href: "https://www.iata.trabill.biz/",
+        desc: "Bangladesh’s #1 Travel Management Software",
+        longDesc: "TRABILL is a comprehensive travel management solution designed for both IATA and NON-IATA agencies. It provides a complete suite of tools for travel business automation, including single and double-entry accounting, real-time ticket management, and advanced reporting. With over 44 modules and 100+ sub-modules, TRABILL streamlines every aspect of a travel agency's operations, from lead management to financial settlement, ensuring total control and scalability for modern travel businesses.",
+        image: "/images/products/trabil-large.png",
         features: [
-            "Lead & Contact Management",
-            "Sales Pipeline Tracking",
-            "Customer Interaction History",
-            "Task & Team Activity Management",
-            "Automated Sales Workflows",
-            "Advanced Reporting & Analytics",
-            "Customer Support Tracking",
-            "Secure Cloud-Based Access"
+            "IATA & NON-IATA Agency Management",
+            "Double Entry Accounting System",
+            "Automated Ticket Inventory & Billing",
+            "Comprehensive 74+ Financial Reports",
+            "Customer & Vendor Ledger Management",
+            "Multi-branch & Multi-office Support",
+            "Advanced Lead & Booking Management",
+            "Secure Real-time Data Sync"
         ],
-        technicalStack: ["Next.js", "PostgreSQL", "Tailwind CSS"]
+        technicalStack: ["PHP", "Laravel", "PostgreSQL", "React"]
     },
+    {
+        id: "recruit360",
+        title: "Recruit360",
+        productName: "Recruitment Software",
+        logo: "/images/products/recruitment.png",
+        href: "https://account.recruit360.biz",
+        desc: "Recruitment & HR software",
+        longDesc: "Recruit360 is an intelligent recruitment and hiring management platform designed for HR teams and recruitment agencies. It simplifies the entire hiring process from job posting and candidate screening to interview management and onboarding. The platform helps recruiters track applicants, collaborate with hiring managers, and manage recruitment pipelines efficiently. With built-in analytics and automation features, Recruit360 enables organizations to find and hire the right talent faster.",
+        image: "/images/products/recruitment-large.png",
+        features: [
+            "Job Posting & Vacancy Management",
+            "Applicant Tracking System (ATS)",
+            "Resume Database Management",
+            "Interview Scheduling Tools",
+            "Hiring Pipeline Management",
+            "Candidate Evaluation System",
+            "Recruitment Analytics & Reports",
+            "Employee Onboarding Support"
+        ],
+        technicalStack: ["Vue.js", "Express", "MongoDB"]
+    },
+
 
     {
         id: "thehotel360",
@@ -124,45 +146,25 @@ export const PRODUCTS: Product[] = [
     },
 
     {
-        id: "recruit360",
-        title: "Recruit360",
-        productName: "Recruitment Software",
-        logo: "/images/products/recruitment.png",
-        href: "https://account.recruit360.biz",
-        desc: "Recruitment & HR software",
-        longDesc: "Recruit360 is an intelligent recruitment and hiring management platform designed for HR teams and recruitment agencies. It simplifies the entire hiring process from job posting and candidate screening to interview management and onboarding. The platform helps recruiters track applicants, collaborate with hiring managers, and manage recruitment pipelines efficiently. With built-in analytics and automation features, Recruit360 enables organizations to find and hire the right talent faster.",
-        image: "/images/products/recruitment-large.png",
+        id: "crm360",
+        title: "Customer Relationship Management",
+        productName: "CRM360",
+        logo: "/images/products/CRM.png",
+        href: "https://employee.crm360world.com",
+        desc: "Customer Relationship Management",
+        longDesc: "CRM360 is a modern customer relationship management platform designed to help businesses organize leads, manage customer communication, and streamline sales operations. The system centralizes customer data, tracks sales pipelines, and enables teams to collaborate efficiently. With automated workflows, reporting tools, and real-time dashboards, CRM360 empowers organizations to improve customer engagement, increase conversion rates, and make data-driven decisions for business growth.",
+        image: "/images/products/crm-large.png",
         features: [
-            "Job Posting & Vacancy Management",
-            "Applicant Tracking System (ATS)",
-            "Resume Database Management",
-            "Interview Scheduling Tools",
-            "Hiring Pipeline Management",
-            "Candidate Evaluation System",
-            "Recruitment Analytics & Reports",
-            "Employee Onboarding Support"
+            "Lead & Contact Management",
+            "Sales Pipeline Tracking",
+            "Customer Interaction History",
+            "Task & Team Activity Management",
+            "Automated Sales Workflows",
+            "Advanced Reporting & Analytics",
+            "Customer Support Tracking",
+            "Secure Cloud-Based Access"
         ],
-        technicalStack: ["Vue.js", "Express", "MongoDB"]
+        technicalStack: ["Next.js", "PostgreSQL", "Tailwind CSS"]
     },
-    {
-        id: "trabill",
-        title: "Travel Management Software",
-        productName: "TRABILL",
-        logo: "/images/products/trabill.png",
-        href: "https://www.iata.trabill.biz/",
-        desc: "Bangladesh’s #1 Travel Management Software",
-        longDesc: "TRABILL is a comprehensive travel management solution designed for both IATA and NON-IATA agencies. It provides a complete suite of tools for travel business automation, including single and double-entry accounting, real-time ticket management, and advanced reporting. With over 44 modules and 100+ sub-modules, TRABILL streamlines every aspect of a travel agency's operations, from lead management to financial settlement, ensuring total control and scalability for modern travel businesses.",
-        image: "/images/products/trabil-large.png",
-        features: [
-            "IATA & NON-IATA Agency Management",
-            "Double Entry Accounting System",
-            "Automated Ticket Inventory & Billing",
-            "Comprehensive 74+ Financial Reports",
-            "Customer & Vendor Ledger Management",
-            "Multi-branch & Multi-office Support",
-            "Advanced Lead & Booking Management",
-            "Secure Real-time Data Sync"
-        ],
-        technicalStack: ["PHP", "Laravel", "PostgreSQL", "React"]
-    }
+
 ];
