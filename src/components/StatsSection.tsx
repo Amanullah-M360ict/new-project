@@ -11,10 +11,10 @@ const StatsSection = () => {
             <div className="container">
                 <div className="stats-section__left">
                     <h2 className="stats-section__title">
-                        <AnimatedText text={["We've Been", "Around for a", "While"]} />
+                        <AnimatedText text={["A Legacy of", "Innovation &", "Excellence"]} />
                     </h2>
                     <p className="stats-section__subtitle">
-                        Every number tells a story of growth, collaboration, and the products that shape digital experiences worldwide.
+                        Our impact is measured by the success of our partners—delivering cutting-edge solutions that redefine industry standards and drive digital growth.
                     </p>
                 </div>
 

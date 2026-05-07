@@ -51,21 +51,17 @@ export default function About() {
             <div className="About__vision">
                 <div className="container About__vision__container">
                     <h2 className="About__vision__h2" data-reveal="up">
-                        We believe good tools<br />
-                        come from good thinking,<br />
-                        honest work, and teams<br />
-                        that enjoy building<br />
-                        together.
+                        Great technology is born from visionary thinking, rigorous craftsmanship, and a shared passion for solving the world's most complex challenges.
                     </h2>
                     <div className="About__vision__content">
                         <p className="About__vision__p" data-reveal="up" data-delay="100">
-                            <AnimatedText text={["M360 ICT started with a simple idea.", "Build software that solves real problems without making work harder."]} />
+                            <AnimatedText text={["M360ICT was founded on a core principle:", "To bridge the gap between technical complexity and intuitive digital empowerment."]} />
                         </p>
                         <p className="About__vision__p" data-reveal="up" data-delay="200">
-                            What began as a small team working on web tools has grown into a portfolio of products used by millions of people worldwide. Along the way, one thing never changed. We build carefully, we learn constantly, and we ship with responsibility.
+                            What evolved from a boutique team of problem-solvers into a globally recognized technology powerhouse is a testament to our unwavering commitment to quality. We don't just build software; we engineer sustainable digital ecosystems that scale with ambition. Through continuous learning and responsible innovation, we empower businesses across the globe to redefine what's possible.
                         </p>
                         <div className="About__vision__btnWrapper" data-reveal="scale" data-delay="300">
-                            <Link href="/contact"><button className="About__vision__btn">Contact Us</button></Link>
+                            <Link href="/contact"><button className="About__vision__btn">Get in Touch</button></Link>
                         </div>
                     </div>
                 </div>

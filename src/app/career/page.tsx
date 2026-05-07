@@ -24,17 +24,17 @@ export default function Career() {
             </div>
 
             <CultureSection />
-            {/* ── New Career Sections (Appended) ── */}
             <div className="Careers__openings">
                 <div className="container">
                     <div className="Careers__openings__hero">
                         <div className="Careers__openings__hero__left">
                             <h2 className="Careers__openings__hero__h2">
-                                <AnimatedText text={["Global products built by a", "talented team"]} />
+                                <AnimatedText text={["Architecting the Future", "of Digital", "Empowerment"]} />
                             </h2>
-
+                            <p className="Careers__openings__hero__p text-center">
+                                Join a world-class team of engineers, designers, and visionaries dedicated to building scalable solutions that solve real-world complexities on a global scale.
+                            </p>
                         </div>
-
                     </div>
 
                     <div className="Careers__job-list">
@@ -47,11 +47,11 @@ export default function Career() {
                                             <div className="Careers__job-info">
                                                 <h3 className="Careers__job-title">{job.title}</h3>
                                                 <div className="Careers__job-meta">
-                                                    {job.location} / {job.type} / {job.level}
+                                                    {job.location} · {job.type} · {job.level}
                                                 </div>
                                             </div>
                                             <Link href={`/career/${job.slug}`} className="Careers__apply-btn">
-                                                Apply
+                                                View Details
                                             </Link>
                                         </div>
                                     ))}
@@ -59,10 +59,6 @@ export default function Career() {
                             </div>
                         ))}
                     </div>
-
-                    {/* <Link href="#" className="Careers__see-all">
-                        See all Jobs &rarr;
-                    </Link> */}
                 </div>
             </div>
 

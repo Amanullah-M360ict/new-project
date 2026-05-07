@@ -62,9 +62,11 @@ export default function MOUPage() {
                     <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 font-['Outfit'] tracking-tight">
                         <AnimatedText text={["Strategic", "MOU Signing"]} />
                     </h1>
-                    <p className="text-lg text-gray-500 max-w-2xl mx-auto font-['Inter']">
-                        Documenting our milestones in building global partnerships and collaborative success through official Memorandums of Understanding.
-                    </p>
+                    <div className='flex items-center justify-center'>
+                        <p className="text-lg text-gray-500 max-w-2xl mx-auto font-['Inter']">
+                            Documenting our milestones in building global partnerships and collaborative success through official Memorandums of Understanding.
+                        </p>
+                    </div>
                 </div>
             </header>
 
@@ -100,10 +102,7 @@ export default function MOUPage() {
                                 <p className="text-gray-600 leading-relaxed font-['Inter'] mb-6 line-clamp-3">
                                     {mou.description}
                                 </p>
-                                <div className="pt-6 border-t border-gray-50 flex items-center text-blue-600 font-semibold text-sm cursor-pointer group/btn">
-                                    View Partnership Details
-                                    <svg className="w-4 h-4 ml-2 transform group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                                </div>
+
                             </div>
                         </div>
                     ))}
@@ -114,12 +113,12 @@ export default function MOUPage() {
                 <div className="max-w-4xl mx-auto p-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-[50px] shadow-2xl relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
                     <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full blur-3xl -ml-32 -mb-32"></div>
-                    
-                    <h2 className="text-4xl font-bold text-white mb-6 font-['Outfit'] relative z-10">Join Our Ecosystem</h2>
+
+                    <h2 className="text-4xl font-bold text-white mb-6 m-0 font-['Outfit'] relative z-10">Join Our Ecosystem</h2>
                     <p className="text-blue-100 text-lg leading-relaxed mb-10 relative z-10 max-w-2xl mx-auto">
                         We are always looking to collaborate with industry leaders and innovators. Let's create impactful solutions together through strategic partnership.
                     </p>
-                    <button className="px-10 py-4 bg-white text-blue-600 font-bold rounded-full hover:bg-blue-50 transition-colors relative z-10 shadow-lg">
+                    <button className="px-10 py-4 mt-4 bg-white text-blue-600 font-bold rounded-full hover:bg-blue-50 transition-colors relative z-10 shadow-lg">
                         Inquire for Partnership
                     </button>
                 </div>

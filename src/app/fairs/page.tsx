@@ -3,7 +3,7 @@ import path from 'path';
 import AnimatedText from "@/components/AnimatedText";
 import "./_style/fairs.css";
 import "./_style/fairs-modal.css";
-import FairModalGallery from './FairModalGallery';
+import FairImages from './FairImages';
 
 export const metadata = {
     title: "Industry Fairs & Exhibitions | M360ICT",
@@ -104,46 +104,11 @@ export default function FairsPage() {
                                     <AnimatedText text={fair.name} />
                                 </h3>
 
-                                <div className="Fairs__main__dl__item__box">
-                                    {fair.images[0] && (
-                                        <div className="Fairs__image_gallery">
-                                            <img
-                                                className="Fairs__main__dl__item__box__img"
-                                                src={fair.images[0]}
-                                                alt={fair.name}
-                                                loading="lazy"
-                                            />
-                                        </div>
-                                    )}
-                                    <div className="Fairs__main__dl__item__box__content">
-
-
-                                        <p className="Fairs__main__dl__item__box__p"  >
-                                            Immersing ourselves in the heart of {fair.name}, we showcased our latest innovations and connected with industry leaders. Our participation underscores our commitment to elevating the global digital ecosystem and providing cutting-edge solutions for modern travel enterprises.
-                                        </p>
-
-                                        {fair.images.length > 1 && (
-                                            <div className="Fairs__thumbnail_grid" style={{ marginTop: '20px' }}>
-                                                {fair.images.slice(1, 4).map((img, imgIdx) => (
-                                                    <img
-                                                        key={`thumb-${imgIdx}`}
-                                                        src={img}
-                                                        alt={`${fair.name} Thumbnail ${imgIdx + 1}`}
-                                                        className="Fairs__thumbnail"
-                                                        loading="lazy"
-                                                    />
-                                                ))}
-                                                {fair.images.length > 4 && (
-                                                    <FairModalGallery
-                                                        images={fair.images}
-                                                        remainingCount={fair.images.length - 4}
-                                                        fairName={fair.name}
-                                                    />
-                                                )}
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
+                                <FairImages
+                                    images={fair.images}
+                                    fairName={fair.name}
+                                    introText={`Immersing ourselves in the heart of ${fair.name}, we showcased our latest innovations and connected with industry leaders. Our participation underscores our commitment to elevating the global digital ecosystem and providing cutting-edge solutions for modern travel enterprises.`}
+                                />
                             </div>
                         ))}
                     </dl>

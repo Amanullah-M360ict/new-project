@@ -633,6 +633,7 @@
     font-weight: 700;
     color: #1a1a1a;
     transition: color 0.3s ease;
+    margin: 0;
 }
 
 .Careers__job-item:hover .Careers__job-title {

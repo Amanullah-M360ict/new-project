@@ -17,23 +17,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "M360 ICT Ltd.",
+  metadataBase: new URL("https://m360ict.com"),
+  title: "M360 ICT Ltd. | Architecting the Future of Digital Empowerment",
   description:
-    'We hope to create the new future where people can smile, have joyful experiences and be themselves. Create a place one can call one\'s own for everyone — by connecting people to people in the "m360ict" way.',
+    "Leading technology partner providing innovative software solutions, digital transformation, and global travel tech architectures. Building the future of digital empowerment.",
   openGraph: {
     type: "website",
     url: "https://m360ict.com/",
-    title: "M360 ICT Ltd.",
+    title: "M360 ICT Ltd. | Global Technology Solutions",
     description:
-      'We hope to create the new future where people can smile, have joyful experiences and be themselves. Create a place one can call one\'s own for everyone — by connecting people to people in the "m360ict" way.',
-    images: "https://m360ict.com/images/open-graph.png",
+      "Empowering businesses through cutting-edge software development, digital innovation, and strategic technology partnerships.",
+    images: "/images/og-preview.png",
   },
   twitter: {
     card: "summary_large_image",
-    title: "M360 ICT Ltd.",
+    title: "M360 ICT Ltd. | Digital Innovation Leader",
     description:
-      'We hope to create the new future where people can smile, have joyful experiences and be themselves. Create a place one can call one\'s own for everyone — by connecting people to people in the "m360ict" way.',
-    images: "https://m360ict.com/images/open-graph.png",
+      "Architecting the future of digital empowerment with innovative software solutions and global tech expertise.",
+    images: "/images/og-preview.png",
   },
 };
 

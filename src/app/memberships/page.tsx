@@ -54,9 +54,10 @@ export default function Memberships() {
                     <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 font-['Outfit'] tracking-tight">
                         <AnimatedText text={["Corporate", "Memberships"]} />
                     </h1>
-                    <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+                    <div className='flex items-center justify-center'><p className="text-lg text-gray-500 max-w-2xl mx-auto">
                         We are proud members of prestigious national and international associations, collaborating to drive industry growth.
-                    </p>
+                    </p></div>
+
                 </div>
             </header>
 

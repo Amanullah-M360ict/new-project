@@ -422,3 +422,36 @@
 .Button:hover {
     background-color: #333333;
 }
+
+
+
+.Fairs__questions__buttons {
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+    margin-top: calc(var(--global-space)*3)
+}
+
+@media(max-width:580px) {
+    .Fairs__questions__buttons {
+        margin-top: calc(var(--global-space)*2)
+    }
+}
+
+.Button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.Button:hover {
+    background-color: #333333;
+}

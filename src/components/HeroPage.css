@@ -120,6 +120,12 @@
      right: 29%;
  }
 
+ a.m_main_home_product_0 {
+     position: absolute;
+     top: 42%;
+     left: 43.5%;
+ }
+
 
  @media (min-width: 768px) {
      .hero-section {
@@ -513,4 +519,16 @@
          left: 35%;
          top: 52%;
      }
+
+     a.m_main_home_product_0 {
+         position: absolute;
+         top: 23%;
+         left: 20.5%;
+     }
+
+     a.m_main_home_product_0 img {
+         width: 79px;
+         height: 73px;
+     }
+
  }

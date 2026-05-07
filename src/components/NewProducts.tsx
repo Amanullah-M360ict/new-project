@@ -16,10 +16,10 @@ const NewProducts = () => {
             setIsHome(false)
         }
     }, [])
+
+    const displayProducts = isHome ? PRODUCTS.slice(0, 7) : PRODUCTS
     return (
         <section className="our-solutions-section">
-
-
             <div className="container max-w-[1170px]!">
                 <div className="section-header text-center">
                     <h2 className="section-title">
@@ -30,8 +30,8 @@ const NewProducts = () => {
                     </p>
                 </div>
 
-                <div className="products-grid-container">
-                    {PRODUCTS.map((product) => (
+                <div className={`products-grid-container ${!isHome ? 'is-all-products' : ''}`}>
+                    {displayProducts.map((product) => (
                         <div key={product.id} className="product-card-wrapper">
                             <div className="product-card">
                                 <div className="product-logo-box">

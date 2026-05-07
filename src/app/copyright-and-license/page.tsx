@@ -54,9 +54,11 @@ export default function CopyrightAndLicense() {
                     <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 font-['Outfit'] tracking-tight">
                         <AnimatedText text={["Copyright &", "Licensing"]} />
                     </h1>
-                    <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-                        Official documentation of our corporate registrations, intellectual property rights, and global operational compliance.
-                    </p>
+                    <div className='flex items-center justify-center'>
+                        <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+                            Official documentation of our corporate registrations, intellectual property rights, and global operational compliance.
+                        </p>
+                    </div>
                 </div>
             </header>
 

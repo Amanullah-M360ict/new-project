@@ -26,12 +26,6 @@ export default function Home() {
       <AwardHome />
       <NewProducts />
       <WeBring />
-
-
-      {/* <NewAwards /> */}
-
-
-
       <NewsSection />
       <div style={{ margin: '80px 0' }}>
         <AwardsSection showExploreButton={true} />

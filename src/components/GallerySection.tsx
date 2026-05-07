@@ -28,8 +28,8 @@ const GallerySection = () => {
                     </div>
 
                     <div className="stat-item stat-3">
-                        <span className="stat-title"><AnimatedText text={["Brands & Products"]} /></span>
-                        <span className="stat-number"><AnimatedText text={["300+"]} /></span>
+                        <span className="stat-title"><AnimatedText text={["Projects"]} /></span>
+                        <span className="stat-number"><AnimatedText text={["1500+"]} /></span>
                     </div>
 
                     <img

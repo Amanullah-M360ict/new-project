@@ -103,7 +103,6 @@ export default function Services() {
     return (
         <div className="ServicesPage">
 
-            {/* ── Hero ─────────────────────────────────────── */}
             <div className="Svc__hero">
                 <div className="container">
                     <p className="Svc__hero__eyebrow">Services</p>
@@ -121,7 +120,6 @@ export default function Services() {
                 </div>
             </div>
 
-            {/* ── Stats ─────────────────────────────────────── */}
             <div className="Svc__stats">
                 <div className="container">
                     <div className="Svc__stats__grid">
@@ -137,7 +135,6 @@ export default function Services() {
                 </div>
             </div>
 
-            {/* ── Services ─────────────────────────────────── */}
             <div className="Svc__list">
                 <div className="container">
                     {services.map((svc, i) => (
@@ -168,7 +165,6 @@ export default function Services() {
                 </div>
             </div>
 
-            {/* ── CTA ──────────────────────────────────────── */}
             <div className="Svc__cta">
                 <div className="container">
                     <div className="Svc__cta__inner">

@@ -54,9 +54,11 @@ export default function Certifications() {
                     <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 font-['Outfit'] tracking-tight">
                         <AnimatedText text={["Our", "Certifications"]} />
                     </h1>
-                    <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-                        Global standards and technical benchmarks that validate our commitment to quality, security, and innovation.
-                    </p>
+                    <div className='flex items-center justify-center'>
+                        <p className="text-lg text-gray-500 max-w-2xl m-auto text-center">
+                            Global standards and technical benchmarks that validate our commitment to quality, security, and innovation.
+                        </p>
+                    </div>
                 </div>
             </header>
 

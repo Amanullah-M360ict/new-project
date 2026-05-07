@@ -16,112 +16,108 @@ export interface Job {
 export const jobsData: Job[] = [
     {
         id: "1",
-        slug: "senior-people-officer",
-        title: "Senior People Officer",
-        department: "Management",
+        slug: "senior-full-stack-developer",
+        title: "Senior Full Stack Developer",
+        department: "Engineering",
         location: "Dhaka, Bangladesh",
         type: "Full Time",
         level: "Senior Level",
-        salary: "BDT 120,000 - 150,000 per month",
-        introduction: "At Ollyo, we build products used by thousands of creators and businesses worldwide. As we continue to grow, we are looking for a Senior People Officer who will help us strengthen our people operations, shape our culture, and support sustainable team growth.",
+        salary: "BDT 150,000 - 220,000 per month",
+        introduction: "At M360ICT, we engineer world-class digital solutions. We are looking for a Senior Full Stack Developer to lead our core product development, architect scalable systems, and mentor our growing engineering team.",
         responsibilities: [
-            "Oversee accurate and timely payroll management",
-            "Manage compensation structures, increments, and promotions",
-            "Ensure compliance with local labor laws and company policies",
-            "Maintain employee records and HR documentation",
-            "Strengthen and scale Ollyo's culture and values",
-            "Design engagement initiatives and feedback systems",
-            "Handle employee relations and conflict resolution",
-            "Improve retention through structured engagement strategies",
-            "Build and maintain performance review systems",
-            "Support managers in goal-setting and evaluation processes",
-            "Design and deliver Leadership and Management programmes to upskill managers to be effective in their roles",
-            "Lead leadership and succession planning initiatives",
-            "Develop scalable HR systems and SOPs",
-            "Improve onboarding and offboarding processes",
-            "Introduce HR analytics and reporting for leadership",
-            "Continuously optimize people processes as the company grows"
+            "Architect and develop high-performance web applications using React and Node.js",
+            "Lead technical design sessions and provide architectural guidance",
+            "Optimize applications for maximum speed, scalability, and security",
+            "Mentor junior and mid-level developers through code reviews and pair programming",
+            "Collaborate with product managers and designers to translate requirements into technical specs",
+            "Maintain high code quality standards through automated testing and CI/CD"
         ],
         requirements: [
-            "5+ years of experience in HR / People Operations",
-            "Proven experience in recruitment, payroll, and employee engagement",
-            "Exposure to international hiring or contractor management is a plus",
-            "Experience in tech companies is preferred",
-            "Strong interpersonal and problem-solving skills",
-            "High level of integrity and confidentiality",
-            "Ability to work closely with the CEO and senior leadership team",
-            "Bachelor's degree in HR, Business Administration, or related field"
+            "6+ years of professional experience in full-stack development",
+            "Expertise in React.js, Node.js, and TypeScript",
+            "Strong experience with PostgreSQL, MongoDB, or Redis",
+            "Proven track record of building and scaling cloud-native applications on AWS or Azure",
+            "Deep understanding of RESTful APIs, GraphQL, and microservices architecture",
+            "Excellent problem-solving skills and technical leadership abilities"
         ],
         benefits: [
-            "Exceptional work culture and environment",
-            "Free meals, coffee, and snacks",
-            "Full-size gym to support wellness and fitness",
-            "Facilities for both indoor and outdoor sports",
-            "Free shuttle service (subject to route availability)",
-            "Parking facility (subject to availability)",
-            "Two festival bonuses",
-            "Leave encashment",
-            "Loyalty bonus",
-            "Maternity and paternity leaves",
-            "Designated areas for male and female Muslim prayers"
+            "Competitive salary with performance-based increments",
+            "Premium health insurance for you and your family",
+            "Annual learning and development budget",
+            "Flexible working hours and remote work options",
+            "Cutting-edge hardware and toolset",
+            "Two annual festival bonuses and performance incentives",
+            "Fully stocked pantry with gourmet coffee and snacks",
+            "Gym membership and wellness programs"
         ]
     },
     {
         id: "2",
-        slug: "software-qa-engineer",
-        title: "Software QA Engineer",
-        department: "Engineering",
-        location: "Dhaka, Bangladesh",
-        type: "Full Time",
-        level: "Entry Level",
-        salary: "BDT 50,000 - 70,000 per month",
-        introduction: "We are looking for a Software QA Engineer to join our team. You will be responsible for testing our products to ensure they meet our high-quality standards.",
-        responsibilities: [
-            "Develop and execute test cases",
-            "Identify and report bugs",
-            "Collaborate with developers to resolve issues",
-            "Perform regression testing"
-        ],
-        requirements: [
-            "1+ years of experience in Software QA",
-            "Strong understanding of testing methodologies",
-            "Experience with automated testing tools is a plus",
-            "Excellent attention to detail"
-        ],
-        benefits: [
-            "Competitive salary",
-            "Flexible working hours",
-            "Health insurance",
-            "Professional development opportunities"
-        ]
-    },
-    {
-        id: "3",
-        slug: "senior-motion-designer",
-        title: "Senior Motion Designer (UI & Marketing)",
+        slug: "senior-ui-ux-designer",
+        title: "Senior UI/UX Designer",
         department: "Design",
         location: "Dhaka, Bangladesh",
         type: "Full Time",
         level: "Senior Level",
-        salary: "BDT 80,000 - 110,000 per month",
-        introduction: "We are seeking a talented Senior Motion Designer to create engaging animations for our UI and marketing materials.",
+        salary: "BDT 100,000 - 150,000 per month",
+        introduction: "We believe in human-centric design. M360ICT is seeking a visionary Senior UI/UX Designer to craft intuitive, beautiful, and high-converting experiences for our global suite of products.",
         responsibilities: [
-            "Create high-quality motion graphics and animations",
-            "Collaborate with UI/UX designers to enhance user experiences",
-            "Design advertisements and promotional content",
-            "Stay up-to-date with motion design trends"
+            "Lead the design lifecycle from conceptualization to high-fidelity prototyping",
+            "Conduct user research, usability testing, and data-driven design iterations",
+            "Establish and maintain design systems across multiple product lines",
+            "Collaborate closely with engineers to ensure pixel-perfect implementation",
+            "Create wireframes, user flows, and interactive mockups",
+            "Stay ahead of design trends and mentor junior designers"
         ],
         requirements: [
-            "5+ years of experience in motion design",
-            "Proficient in After Effects, Premiere Pro, and Figma",
-            "Strong portfolio showcasing motion work",
-            "Experience with UI animation is preferred"
+            "5+ years of experience in UI/UX design for web and mobile products",
+            "Mastery of Figma, Adobe Creative Suite, and prototyping tools",
+            "Strong portfolio demonstrating complex SaaS or Enterprise UI solutions",
+            "Deep understanding of user psychology and accessibility standards",
+            "Ability to articulate design decisions to stakeholders",
+            "Experience working in an Agile/Scrum environment"
         ],
         benefits: [
-            "Creative work environment",
-            "Latest design tools and hardware",
-            "Regular team outings",
-            "Performance bonuses"
+            "Creative work environment with specialized design gear",
+            "Design-focused workshops and conference sponsorships",
+            "Annual bonuses and loyalty rewards",
+            "Wellness benefits and mental health support",
+            "Regular team building and design sprints"
+        ]
+    },
+
+    {
+        id: "4",
+        slug: "technical-product-manager",
+        title: "Technical Product Manager",
+        department: "Management",
+        location: "Dhaka, Bangladesh",
+        type: "Full Time",
+        level: "Senior Level",
+        salary: "BDT 140,000 - 200,000 per month",
+        introduction: "Join M360ICT as a Technical Product Manager to bridge the gap between business vision and engineering execution, driving the roadmap for our flagship SaaS platforms.",
+        responsibilities: [
+            "Define product strategy and roadmap based on market research and user feedback",
+            "Translate business requirements into detailed technical user stories",
+            "Coordinate between cross-functional teams (Engineering, Design, Marketing)",
+            "Prioritize backlogs and manage sprint planning for development cycles",
+            "Analyze product metrics to drive data-informed decisions",
+            "Act as the primary point of contact for technical product inquiries"
+        ],
+        requirements: [
+            "5+ years of experience in product management for tech companies",
+            "Strong technical background (former engineer or CS degree preferred)",
+            "Experience with Agile methodologies and PM tools (Jira/Linear)",
+            "Excellent communication and stakeholder management skills",
+            "Proven ability to manage products from inception to launch",
+            "Background in TravelTech or FinTech is a significant advantage"
+        ],
+        benefits: [
+            "Strategic leadership role in a fast-growing company",
+            "Opportunity to influence global product direction",
+            "High-impact projects with million-user reach",
+            "Comprehensive executive benefit package",
+            "Stock options and growth incentives"
         ]
     }
 ];

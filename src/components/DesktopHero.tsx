@@ -14,8 +14,6 @@ export default function DesktopHero() {
 
   const isDesktop = useMediaQuery('(min-width: 768px)');
 
-
-
   return (
     <main className="hero-main" ref={container}>
       <section className="hero-section">
@@ -111,7 +109,9 @@ export default function DesktopHero() {
               <Link href={"https://employee.crm360world.com/"} target="_blank" className="m_main_home_product_7">
                 <Image src={`/images/products/CRM.png`} alt="M360ICT Logo" width={40} height={35} />
               </Link>
-
+              {/* <Link href={"https://employee.crm360world.com/"} target="_blank" className="m_main_home_product_0">
+                <Image src={`/images/m.png`} alt="M360ICT Logo" width={106} height={105} />
+              </Link> */}
               <Image src="/images/home-empty.svg" alt="hero" width={1600} height={633} className="main_home_products_image" />
               {/* home view show here */}
               {/* <div className="w-[80%] ms-24 home_video">

@@ -15,7 +15,7 @@ export default function ProductDetails() {
     const [activeImage, setActiveImage] = React.useState(product?.image || "");
 
     React.useEffect(() => {
-        if (product) setActiveImage(product.image);
+        if (product && product.image) setActiveImage(product.image);
     }, [product]);
 
     if (!product) {
@@ -29,7 +29,7 @@ export default function ProductDetails() {
         );
     }
 
-    const galleryImages = product.images || [product.image];
+    const galleryImages = product.images || (product.image ? [product.image] : []);
 
     return (
         <div className="ProductDetails">
@@ -42,7 +42,7 @@ export default function ProductDetails() {
                         <h1 className="ProductDetails__h1">
                             <AnimatedText text={[product.productName]} />
                         </h1>
-                        <p className="ProductDetails__tagline">{product.title}</p>
+                        {product.title && <p className="ProductDetails__tagline">{product.title}</p>}
                     </div>
                 </div>
             </div>
@@ -73,19 +73,21 @@ export default function ProductDetails() {
                         <div className="ProductDetails__left">
                             <div className="ProductDetails__section">
                                 <h2 className="ProductDetails__sectionTitle">About {product.productName}</h2>
-                                <p className="ProductDetails__longDesc">{product.longDesc}</p>
+                                {product.longDesc && <p className="ProductDetails__longDesc">{product.longDesc}</p>}
                             </div>
 
-                            <div className="ProductDetails__section">
-                                <h2 className="ProductDetails__sectionTitle">Key Features</h2>
-                                <ul className="ProductDetails__features">
-                                    {product.features.map((feature, idx) => (
-                                        <li key={idx} className="ProductDetails__featureItem">
-                                            <span className="check">✔</span> {feature}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
+                            {product.features && product.features.length > 0 && (
+                                <div className="ProductDetails__section">
+                                    <h2 className="ProductDetails__sectionTitle">Key Features</h2>
+                                    <ul className="ProductDetails__features">
+                                        {product.features.map((feature, idx) => (
+                                            <li key={idx} className="ProductDetails__featureItem">
+                                                <span className="check">✔</span> {feature}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
 
 
 

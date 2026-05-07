@@ -35,9 +35,10 @@ export default function OperatingCountriesPage() {
                     <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 font-['Outfit'] tracking-tight">
                         <AnimatedText text={["Global", "Operating Countries"]} />
                     </h1>
-                    <p className="text-lg text-gray-500 max-w-2xl mx-auto font-['Inter']">
+                    <div className='flex items-center justify-center'> <p className="text-lg text-gray-500 max-w-2xl mx-auto font-['Inter']">
                         Our software solutions operate globally, with registered trademarks and legal presence across multiple continents and jurisdictions.
-                    </p>
+                    </p></div>
+
                 </div>
             </header>
 

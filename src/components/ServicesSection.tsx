@@ -41,14 +41,16 @@ const ServicesSection = () => {
                 <div className="capabilities-wrapper">
                     <div className="capabilities-title">/ Core Services</div>
                     <div className="capabilities-list">
+                        <span className="cap-item">Research</span> <span className="cap-sep">/</span>
+                        <span className="cap-item">Artificial Intelligence (AI)</span> <span className="cap-sep">/</span>
                         <span className="cap-item">Software Engineering</span> <span className="cap-sep">/</span>
                         <span className="cap-item">Design & UX</span> <span className="cap-sep">/</span>
                         <span className="cap-item">Sales</span> <span className="cap-sep">/</span>
-                        <span className="cap-item">Research</span> <span className="cap-sep">/</span>
-                        <span className="cap-item">Security</span> <span className="cap-sep">/</span>
-                        <span className="cap-item">Artificial Intelligence (AI)</span> <span className="cap-sep">/</span>
-                        <span className="cap-item">Project Management</span> <span className="cap-sep">/</span>
                         <span className="cap-item">Marketing</span>
+                        <span className="cap-item">Security</span> <span className="cap-sep">/</span>
+
+                        <span className="cap-item">Project Management</span>
+
                     </div>
                 </div>
             </div>
