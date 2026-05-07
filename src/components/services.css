@@ -1,6 +1,6 @@
 .services-section {
     background-color: #333333;
-    padding: 120px 0 124px;
+    padding: 120px 0 73px;
     color: #fff;
     font-family: inherit;
     position: relative;
@@ -78,7 +78,7 @@
     height: 700px;
     display: grid;
     position: absolute;
-    top: 150px;
+    top: 220px;
 }
 
 .block {

@@ -12,27 +12,27 @@ const ServicesSection = () => {
 
                 <div className="services-header">
                     <h2 className="services-title">
-                        <AnimatedText text={["What Value", "Mean To Us"]} />
+                        <AnimatedText text={["The Value ", "We Deliver"]} />
                     </h2>
                     <div className="services-values">
                         <div className="value-item">
-                            <div className="value-header">/ HARVESTING FOUND IT PATTERNS</div>
+                            <div className="value-header">/ OPTIMIZING WORKFLOW EFFICIENCY</div>
                             <div className="value-desc">
-                                Our products eliminate repetitive work and unnecessary steps, helping teams focus on outcomes, not processes.
+                                We eliminate friction and redundant steps, allowing your team to focus on high-impact outcomes rather than manual overhead.
                             </div>
                         </div>
 
                         <div className="value-item">
-                            <div className="value-header">/ REDUCING OPERATIONAL COMPLEXITY</div>
+                            <div className="value-header">/ MINIMIZING OPERATIONAL FRICTION</div>
                             <div className="value-desc">
-                                Clear interfaces. Logical flows. Fewer decisions. This leads to faster onboarding and fewer errors.
+                                Through intuitive interfaces and logical architecture, we simplify complex tasks to accelerate onboarding and minimize errors.
                             </div>
                         </div>
 
                         <div className="value-item">
-                            <div className="value-header">/ SUPPORTING LONG-TERM USE</div>
+                            <div className="value-header">/ SCALABLE & SUSTAINABLE DESIGN</div>
                             <div className="value-desc">
-                                Our tools are built to remain stable as teams and businesses grow without constant relearning or redesign.
+                                Our solutions are engineered for long-term stability, ensuring your digital infrastructure evolves seamlessly with your business growth.
                             </div>
                         </div>
                     </div>
