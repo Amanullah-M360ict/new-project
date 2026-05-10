@@ -527,8 +527,10 @@
      }
 
      a.m_main_home_product_0 img {
-         width: 79px;
+         width: 75px;
          height: 73px;
+         z-index: 10;
+         position: relative;
      }
 
  }
