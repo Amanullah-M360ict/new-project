@@ -17,13 +17,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://m360ict.com"),
+  metadataBase: new URL("https://m360ict-ten.vercel.app"),
   title: "M360 ICT Ltd. | Architecting the Future of Digital Empowerment",
   description:
     "Leading technology partner providing innovative software solutions, digital transformation, and global travel tech architectures. Building the future of digital empowerment.",
   openGraph: {
     type: "website",
-    url: "https://m360ict.com/",
+    url: "https://m360ict-ten.vercel.app",
     title: "M360 ICT Ltd. | Global Technology Solutions",
     description:
       "Empowering businesses through cutting-edge software development, digital innovation, and strategic technology partnerships.",
