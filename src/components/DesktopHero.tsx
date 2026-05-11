@@ -85,7 +85,7 @@ export default function DesktopHero() {
           {/* Desktop SVG */}
           <div className="hero-image-desktop">
             <div className="relative">
-              <Link href={"https://travell-flow-engine.lovable.app/"} target="_blank" className="m_main_home_product">
+              {/* <Link href={"https://travell-flow-engine.lovable.app/"} target="_blank" className="m_main_home_product">
                 <Image src={`/images/products/trabill-icon.png`} alt="M360ICT Logo" width={56} height={58} title="Trabill" className="" />
               </Link>
               <Link href={"https://recruitment-website-six.vercel.app/"} target="_blank" className="m_main_home_product_1">
@@ -112,9 +112,9 @@ export default function DesktopHero() {
               <Link href={"https://employee.crm360world.com/"} target="_blank" className="m_main_home_product_0">
                 <Image src={`/images/m.png`} alt="M360ICT Logo" width={106} height={105} />
               </Link>
-              <Image src="/images/home-empty.svg" alt="hero" width={1600} height={633} className="main_home_products_image" />
+              <Image src="/images/home-empty.svg" alt="hero" width={1600} height={633} className="main_home_products_image" /> */}
               {/* home view show here */}
-              {/* <div className="w-[80%] ms-24 home_video">
+              <div className="w-[80%] ms-24 home_video">
                 <video
                   src="/images/home-video.mp4"
                   autoPlay
@@ -127,7 +127,7 @@ export default function DesktopHero() {
                     objectFit: "cover",
                   }}
                 />
-              </div> */}
+              </div>
             </div>
           </div>
 
