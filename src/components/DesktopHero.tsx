@@ -114,9 +114,9 @@ export default function DesktopHero() {
               </Link>
               <Image src="/images/home-empty.svg" alt="hero" width={1600} height={633} className="main_home_products_image" /> */}
               {/* home view show here */}
-              <div className="w-[80%] ms-24 home_video">
+              <div className="2xl:w-[72%] 2xl:ml-[17%] md:w-[63%] md:ml-[25%] w-[40%] ml-[8%]">
                 <video
-                  src="/images/home-video.mp4"
+                  src="https://dynamic.heygen.ai/www/Home%20-%20Page%20-%20Rebrand/HEYGEN_Orb_home_ios.mp4?updatedAt=1761596026165"
                   autoPlay
                   loop
                   muted
