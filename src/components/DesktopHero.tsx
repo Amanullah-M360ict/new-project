@@ -29,6 +29,12 @@ export default function DesktopHero() {
               M360ICT delivers intelligent AI-powered digital solutions <br /> and
               automation workflows, enabling enterprises to scale faster
             </div>
+            <Link
+              href="/contact"
+              className={`hero-btn md:mt-5 mt-3 Button button-primary md:!py-3 !py-2   `}
+            >
+              Get Free Consultation
+            </Link>
 
             <div className="hero-countries">
               <span className="countries-text">Operated in 20+ Countries</span>

@@ -559,7 +559,7 @@ button.Nav__menu-toggle>div:last-child {
     display: block;
     padding: calc(var(--global-space)*.75) calc(var(--global-space)*3);
     border: none;
-    border-radius: 10px;
+    border-radius: 1px;
     box-shadow: none;
     background-color: #1a1a1a;
     color: #fff;
