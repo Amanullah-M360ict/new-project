@@ -208,7 +208,7 @@
 
 /* 3. Vision */
 .About__vision {
-    padding: 120px 0 0 0;
+    padding: 100px 0 0 0;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -219,24 +219,27 @@
 }
 
 .About__vision__h2 {
-    font-size: 64px;
+    letter-spacing: -2px;
+    margin: 0 0 32px;
+    font-size: 55px;
     font-weight: 700;
     line-height: 1.1;
-    letter-spacing: -2px;
-    margin-bottom: 50px;
+    text-align: center;
+
 }
 
 .About__vision__content {
-    margin-left: 30%;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+
 }
 
 .About__vision__p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     color: #1a1a1a;
+    text-align: center;
+
 }
 
 .About__vision__btnWrapper {
@@ -268,10 +271,13 @@
 @media(max-width: 580px) {
     .About__vision__h2 {
         font-size: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
 
+    .About__vision__p {
+        display: none;
 
+    }
 
     .About__vision {
 
@@ -831,4 +837,183 @@
 .About__access__right__buttons {
     display: grid;
     grid-template-columns: max-content
+}
+
+.About__offices {
+    padding: 34px 0 108px;
+    background-color: #fcfcfc;
+    background-image: url("/images/map-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+a.OfficeCard__link svg {
+    width: 24px;
+}
+
+/* Background Decoration */
+.About__offices::before {
+    content: "WORLDWIDE";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20vw;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.015);
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.About__offices__h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 80px;
+    color: #1a1a1a;
+    text-align: center;
+    letter-spacing: -3px;
+    position: relative;
+    z-index: 1;
+}
+
+.OfficesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.OfficeCard {
+    height: 480px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px 40px;
+    border: none;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.OfficeCard__bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 0;
+}
+
+.OfficeCard::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.9) 100%);
+    z-index: 1;
+    transition: all 0.6s ease;
+}
+
+.OfficeCard:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.2);
+}
+
+.OfficeCard:hover .OfficeCard__bg {
+    transform: scale(1.1);
+}
+
+.OfficeCard:hover::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 1) 100%);
+}
+
+.OfficeCard__content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.OfficeCard__country {
+    font-family: 'Outfit', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #ffffff;
+    letter-spacing: -1px;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.OfficeCard__address {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 30px;
+    font-weight: 400;
+    max-width: 90%;
+}
+
+.OfficeCard__links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.OfficeCard__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 17px;
+    color: #1fb5ff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.OfficeCard__link:hover {
+    color: #ffffff;
+    transform: translateX(10px);
+}
+
+@media (max-width: 1199px) {
+    .OfficeCard {
+        height: 420px;
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .OfficesGrid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .About__offices__h2 {
+        font-size: 56px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .About__offices {
+        padding: 80px 0;
+    }
+
+    .OfficeCard {
+        text-align: left;
+        border-radius: 30px;
+        height: 204px;
+        padding: 16px 30px;
+    }
+
+    .About__offices__h2 {
+        font-size: 40px;
+    }
+
 }

@@ -204,8 +204,12 @@
 .OurClients__marquee-track {
     display: flex;
     gap: 60px;
-    animation: marqueeClients 30s linear infinite;
+    animation: marqueeClients 10s linear infinite;
     width: max-content;
+}
+
+.OurClients__marquee-track--reverse {
+    animation-direction: reverse;
 }
 
 .OurClients__marquee-track:hover {
@@ -236,6 +240,47 @@
     filter: grayscale(0);
     opacity: 1;
 }
+
+/* ── New Marquee Section Styles ── */
+.OurClients__marquee-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 0;
+    background: #fafafa;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.OurClients__marquee-row {
+    overflow: hidden;
+    width: 100%;
+}
+
+.OurClients__marquee-item {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.OurClients__marquee-item:hover {
+    border-color: #8FFF45;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.OurClients__marquee-item img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
 
 /* ── Intro ── */
 .OurClients__intro {
@@ -277,9 +322,8 @@
     }
 }
 
-/* ── Client Cards Grid ── */
 .OurClients__section {
-    padding: 60px 0;
+    padding: 80px 0 0;
 }
 
 .OurClients__section__header {
@@ -308,77 +352,6 @@
     background: #1a1a1a;
 }
 
-.OurClients__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 30px;
-}
-
-/* Individual Client Card */
-.ClientCard {
-    background: #fff;
-    border: 1px solid #f0f0f0;
-    border-radius: 12px;
-    padding: 40px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-.ClientCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
-    border-color: #8FFF45;
-}
-
-.ClientCard__logo-box {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.ClientCard__logo {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    transition: all 0.4s ease;
-}
-
-.ClientCard:hover .ClientCard__logo {
-    filter: grayscale(0);
-    opacity: 1;
-}
-
-.ClientCard__name {
-    font-size: 20px;
-    font-weight: 700;
-    color: #1a1a1a;
-}
-
-.ClientCard__industry {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #1a1a1a;
-    background: #8FFF45;
-    padding: 3px 10px;
-    margin-top: 4px;
-}
-
-.ClientCard__desc {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #666;
-    flex: 1;
-}
 
 
 .OurClients__cta {

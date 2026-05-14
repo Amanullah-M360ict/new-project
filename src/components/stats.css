@@ -80,7 +80,7 @@
 
 .stats-card--white {
     background-color: #ffffff;
-    color: #000;
+    color: #1fb5ff;
 }
 
 .stats-card--empty {
@@ -148,6 +148,16 @@
     grid-row: 1;
 }
 
+.card-5 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.card-6 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
 @media (max-width: 1024px) {
     .stats-section__container {
         flex-direction: column;
@@ -188,6 +198,16 @@
     .card-4 {
         grid-column: 2;
         grid-row: 2;
+    }
+
+    .card-5 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .card-6 {
+        grid-column: 2;
+        grid-row: 3;
     }
 
     .card-image-bg,

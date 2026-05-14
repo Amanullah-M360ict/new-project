@@ -25,50 +25,83 @@ export default function About() {
                                     About us
                                 </p>
                             </div>
-                            <div className="About__heroImages">
-                                <div className="About__heroImages__grid">
-                                    <img
-                                        className="About__heroImages__img1"
-                                        src="/images/teams/about.png"
-                                        alt="Office space 2"
-                                        data-reveal="left"
-                                        data-delay="300"
-                                    />
-                                    <img
-                                        className="About__heroImages__img2"
-                                        src="/images/teams/about-home.png"
-                                        alt="Office space 2"
-                                        data-reveal="right"
-                                        data-delay="400"
-                                    />
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
+                <div className="container">
+                    <div className="second_title">
+                        <h2 className="second_title__h2">Who We Are</h2>
+                        <p className="second_title__text">
+                            M360 ICT is a premier global technology consulting and software engineering firm dedicated to transforming businesses through innovation and excellence. With over 15 years of experience in the technology sector, we have established ourselves as a trusted partner for companies seeking reliable, scalable, and future-ready digital solutions.
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
             <div className="About__vision">
                 <div className="container About__vision__container">
                     <h2 className="About__vision__h2" data-reveal="up">
-                        Great technology is born from visionary thinking, rigorous craftsmanship, and a shared passion for solving the world's most complex challenges.
+                        Where Vision Meets Engineering
                     </h2>
                     <div className="About__vision__content">
                         <p className="About__vision__p" data-reveal="up" data-delay="100">
-                            <AnimatedText text={["M360ICT was founded on a core principle:", "To bridge the gap between technical complexity and intuitive digital empowerment."]} />
+                            Our mission is to bridge the gap between technical complexity and intuitive digital empowerment. We believe that great technology should be accessible, efficient, and transformative, allowing businesses to focus on what they do best.
+
+
                         </p>
-                        <p className="About__vision__p" data-reveal="up" data-delay="200">
-                            What evolved from a boutique team of problem-solvers into a globally recognized technology powerhouse is a testament to our unwavering commitment to quality. We don't just build software; we engineer sustainable digital ecosystems that scale with ambition. Through continuous learning and responsible innovation, we empower businesses across the globe to redefine what's possible.
-                        </p>
-                        <div className="About__vision__btnWrapper" data-reveal="scale" data-delay="300">
-                            <Link href="/contact"><button className="About__vision__btn">Get in Touch</button></Link>
+                    </div>
+                </div>
+            </div>
+
+            <GallerySection />
+            <AwardsSection showExploreButton={true} />
+
+            <TechnologyPartner />
+
+            <div className="About__offices">
+                <div className="container">
+                    <h2 className="About__offices__h2" data-reveal="up">Global Offices</h2>
+                    <div className="OfficesGrid">
+                        <div className="OfficeCard" data-reveal="up" data-delay="100">
+                            <div className="OfficeCard__bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=800&auto=format&fit=crop')" }}></div>
+                            <div className="OfficeCard__content">
+                                <h3 className="OfficeCard__country">United States</h3>
+                                <p className="OfficeCard__address">447 Broadway, 2nd Floor,<br />New York, NY 10013</p>
+
+                            </div>
+                        </div>
+
+                        <div className="OfficeCard" data-reveal="up" data-delay="200">
+                            <div className="OfficeCard__bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=800&auto=format&fit=crop')" }}></div>
+                            <div className="OfficeCard__content">
+                                <h3 className="OfficeCard__country">United Kingdom</h3>
+                                <p className="OfficeCard__address">71-75 Shelton Street,<br />Covent Garden, London</p>
+
+                            </div>
+                        </div>
+
+                        <div className="OfficeCard" data-reveal="up" data-delay="300">
+                            <div className="OfficeCard__bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=800&auto=format&fit=crop')" }}></div>
+                            <div className="OfficeCard__content">
+                                <h3 className="OfficeCard__country">Australia</h3>
+                                <p className="OfficeCard__address">100 Harris Street,<br />Pyrmont, NSW 2009</p>
+
+                            </div>
+                        </div>
+
+                        <div className="OfficeCard" data-reveal="up" data-delay="400">
+                            <div className="OfficeCard__bg" style={{ backgroundImage: "url('/images/hati.jpg')" }}></div>
+                            <div className="OfficeCard__content">
+                                <h3 className="OfficeCard__country">Bangladesh</h3>
+                                <p className="OfficeCard__address">House# 74, Road# 7,<br />Block# H, Banani, Dhaka</p>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <GallerySection />
-            <AwardsSection showExploreButton={true} />
-            <TechnologyPartner />
         </div>
     );
 }

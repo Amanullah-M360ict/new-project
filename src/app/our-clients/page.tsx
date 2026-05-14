@@ -62,20 +62,6 @@ const clients = [
         logo: "/images/partners/bttf.jpg",
         description: "An annual travel fair bringing together thousands of stakeholders, powered by M360ICT's solutions.",
     },
-    {
-        name: "Sabre",
-        fullName: "Sabre Corporation",
-        industry: "GDS & Technology",
-        logo: "/images/partners/sabre.png",
-        description: "A global leader in travel technology, partnered with M360ICT to offer the best-in-class booking systems.",
-    },
-    {
-        name: "Skill Planet",
-        fullName: "Skill Planet Training Institute",
-        industry: "Education & Training",
-        logo: "/images/partners/skill-planet.png",
-        description: "Upskilling the next generation of travel professionals through collaborative training programs.",
-    },
 ];
 
 const stats = [
@@ -144,32 +130,36 @@ export default function OurClientsPage() {
                 </div>
             </section>
 
-            {/* ── Client Cards Grid ── */}
-            <section className="OurClients__section">
+            {/* ── Client Marquees ── */}
+            {/* <section className="OurClients__section">
                 <div className="container">
-                    <div className="OurClients__section__header">
-                        <h2 className="OurClients__section__h2">Our Clients</h2>
-                    </div>
-                    <div className="OurClients__grid">
-                        {clients.map((client, idx) => (
-                            <div
-                                className="ClientCard"
-                                key={idx}
-                                data-reveal="scale"
-                                data-delay={String(Math.min((idx % 4) * 100, 400))}
-                            >
-                                <div className="ClientCard__logo-box">
-                                    <img
-                                        src={client.logo}
-                                        alt={client.name}
-                                        className="ClientCard__logo"
-                                    />
-                                </div>
-                            </div>
-                        ))}
+                    <div className="OurClients__section__header flex items-center justify-center">
+                        <h2 className="text-black text-[30px] font-semibold">Our Clients</h2>
                     </div>
                 </div>
-            </section>
+                <div className="OurClients__marquee-container">
+                    <div className="OurClients__marquee-row">
+                        <div className="OurClients__marquee-track">
+                            {[...clients, ...clients].map((c, i) => (
+                                <div key={i} className="OurClients__marquee-item">
+                                    <img src={c.logo} alt={c.name} />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="OurClients__marquee-row">
+                        <div className="OurClients__marquee-track OurClients__marquee-track--reverse">
+                            {[...clients, ...clients].map((c, i) => (
+                                <div key={i} className="OurClients__marquee-item">
+                                    <img src={c.logo} alt={c.name} />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section> */}
+
+
 
 
             <div className=" ">

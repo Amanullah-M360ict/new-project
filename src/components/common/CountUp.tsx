@@ -12,7 +12,7 @@ interface CountUpProps {
     delay?: number;
 }
 
-const CountUp: React.FC<CountUpProps> = ({ end, duration = 2, delay = 0 }) => {
+const CountUp: React.FC<CountUpProps> = ({ end, duration = 4, delay = 0 }) => {
     const [displayValue, setDisplayValue] = useState("0");
     const containerRef = useRef<HTMLSpanElement>(null);
 

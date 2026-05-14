@@ -4,7 +4,7 @@
 
 .AwardsSection__header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     padding: 0 20px;
 }
 
@@ -162,6 +162,7 @@
 @media (max-width: 768px) {
     .AwardsSection__title {
         font-size: 27px;
+        margin-bottom: 8px;
     }
 
     .InteractiveAwardCard {
@@ -173,4 +174,13 @@
     .AwardsSection__marqueeWrapper::after {
         width: 80px;
     }
+
+    .AwardsSection__subtitle {
+        font-size: 15px;
+    }
+
+    .AwardsSection__header {
+        margin-bottom: 20px;
+    }
+
 }

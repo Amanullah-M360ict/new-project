@@ -98,7 +98,7 @@
     .awards__marquee {
         flex: 1;
         width: auto;
-        padding: 56px 0;
+        padding: 46px 0;
         margin-top: 0;
         margin-left: 0
     }
@@ -108,7 +108,7 @@
     display: flex;
     width: -moz-max-content;
     width: max-content;
-    animation: scroll-left 20s linear infinite;
+    animation: scroll-left 8s linear infinite;
     will-change: transform
 }
 
@@ -124,7 +124,7 @@
 
 @media (min-width: 768px) {
     .awards__item {
-        margin-right: 32px
+        margin-right: 37px
     }
 }
 
@@ -164,4 +164,10 @@
     text-align: center;
     font-size: 12px;
     line-height: 1
+}
+
+@media screen and (max-width:1280px) {
+    .awards__marquee {
+        padding: 20px 0
+    }
 }

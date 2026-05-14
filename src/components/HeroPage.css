@@ -5,7 +5,7 @@
 
 
  .hero-main {
-     height: 70vh;
+     height: 78vh;
 
      overflow: hidden;
  }
@@ -129,7 +129,7 @@
 
  @media (min-width: 768px) {
      .hero-section {
-         padding-top: 10px;
+         padding-top: 13rem;
          padding-bottom: 10px;
 
      }
@@ -137,7 +137,7 @@
 
  @media (min-width: 1536px) {
      .hero-section {
-         padding-top: 0px;
+         padding-top: 14rem;
          padding-bottom: 0px;
      }
  }
@@ -173,9 +173,8 @@
 
  @media (min-width: 768px) {
      .hero-content {
-         max-width: 50%;
-         padding: 8rem 0;
-
+         max-width: 58%;
+         padding: 0rem 0;
          padding-left: 0;
          padding-right: 0;
      }
@@ -184,10 +183,12 @@
  /* Title */
  .hero-title {
      margin-top: 0;
-     margin-bottom: 0.75rem;
+     margin-bottom: 30px;
      line-height: 1.2;
      letter-spacing: -1.5px;
-     font-size: 27px;
+     font-size: 25px;
+     font-weight: bold;
+     color: #161c2d;
  }
 
  @media (min-width: 768px) {
@@ -198,7 +199,9 @@
 
  @media (min-width: 1536px) {
      .hero-title {
-         font-size: 56px;
+         color: #1fb5ff;
+         font-size: 65px;
+         line-height: 70px;
      }
  }
 
@@ -394,7 +397,9 @@
      }
 
      .hero-title {
-         font-size: 46px;
+         color: #1fb5ff;
+         font-size: 66px;
+         line-height: 67px;
      }
 
      .hero-para {
@@ -419,15 +424,29 @@
      }
 
      .hero-content {
-         padding: 2rem 0rem;
+         padding: 1rem 0rem 0 0;
+     }
+
+     .hero-section {
+         padding-top: 6rem;
+     }
+
+     main.hero-main:before {
+         display: none
      }
 
      .hero-title {
-         font-size: 38px !important;
+         text-align: center;
+         line-height: 39px;
+         font-size: 37px !important;
+         margin-bottom: 10px;
+
      }
 
      .hero-para {
          font-size: 14px !important;
+         text-align: center;
+         margin-bottom: 10px;
      }
 
      .country-flags {
@@ -458,7 +477,7 @@
      }
 
      .hero-main {
-         height: 98vh;
+         height: 76vh;
      }
 
      .m_main_home_product img {

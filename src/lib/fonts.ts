@@ -1,4 +1,14 @@
 import { IBM_Plex_Mono, Manrope, Inter } from "next/font/google";
+import localFont from "next/font/local";
+
+
+// use a external fonts. path is : /fonts/Higher Jump.ttf
+
+export const higherJump = localFont({
+    src: "../../public/font/IBMPlexSans-Bold.ttf",
+    variable: "--font-higher-jump",
+});
+
 
 export const buttonFonts = IBM_Plex_Mono({
     subsets: ["latin"],

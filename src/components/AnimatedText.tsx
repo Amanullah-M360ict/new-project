@@ -6,9 +6,10 @@ import gsap from "gsap";
 interface AnimatedTextProps {
     text: string | string[];
     className?: string;
+    infinite?: boolean;
 }
 
-export default function AnimatedText({ text, className }: AnimatedTextProps) {
+export default function AnimatedText({ text, className, infinite = false }: AnimatedTextProps) {
     const containerRef = useRef<HTMLSpanElement>(null);
     const tlRef = useRef<gsap.core.Timeline | null>(null);
 
@@ -22,7 +23,10 @@ export default function AnimatedText({ text, className }: AnimatedTextProps) {
 
         gsap.set(chars, { opacity: 1, textShadow: "none", clearProps: "color" });
 
-        const tl = gsap.timeline();
+        const tl = gsap.timeline({
+            repeat: infinite ? -1 : 0,
+            repeatDelay: infinite ? 3 : 0
+        });
         tlRef.current = tl;
 
         const animColors = ["#1282ed", "#34b4eb"];

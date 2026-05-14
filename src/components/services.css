@@ -266,6 +266,16 @@
     }
 }
 
+/* laptop 1280px */
+
+@media (max-width: 1280px) {
+    .capabilities-wrapper {
+        margin-left: 19rem;
+
+
+    }
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 1200px) {
     .blocks-wrapper {
@@ -306,7 +316,10 @@
 
 @media (max-width: 768px) {
     .services-title {
-        font-size: 52px;
+        font-size: 43px;
+        margin: 0;
+        margin-bottom: 34px;
+        margin-top: 33px;
     }
 
     .value-item {
@@ -332,7 +345,19 @@
     }
 
     .services-section {
-        padding: 120px 0 0;
+        padding: 14px 0 0;
+        background: url(/images/mobile-value.png);
     }
 
+    .services-container {
+        padding: 0 23px;
+    }
+
+    .services-values {
+        gap: 27px;
+    }
+
+    .cap-sep {
+        display: none;
+    }
 }

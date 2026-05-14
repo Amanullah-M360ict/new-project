@@ -12,7 +12,7 @@
 
 .Svc__hero {
     padding-top: 60px;
-    padding-bottom: 80px;
+    padding-bottom: 35px;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -38,12 +38,12 @@
 }
 
 .Svc__hero__h1 {
-    font-size: 140px;
-    font-weight: 700;
-    line-height: 0.9;
-    letter-spacing: -5px;
+
     color: #1a1a1a;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: .9;
 }
 
 .Svc__hero__h1,
@@ -56,7 +56,7 @@
     grid-template-columns: 1fr max-content;
     gap: 80px;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 25px;
     border-top: 1px solid #e5e5e5;
 }
 
@@ -93,7 +93,7 @@
 /* ── Stats ────────────────────────────────────────────── */
 
 .Svc__stats {
-    padding: 50px 0;
+    padding: 30px 0;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -121,7 +121,7 @@
 }
 
 .Svc__stats__value {
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 700;
     color: #1a1a1a;
     line-height: 1;
@@ -143,7 +143,7 @@
 }
 
 .Svc__item {
-    padding: 80px 0;
+    padding: 50px 0;
     border-bottom: 1px solid #e5e5e5;
     transition: background 0.25s ease;
 }
@@ -194,6 +194,7 @@
     line-height: 1.0;
     letter-spacing: -2px;
     color: #1a1a1a;
+    margin: 0;
 }
 
 .Svc__item__desc {
@@ -285,6 +286,7 @@
     line-height: 0.9;
     letter-spacing: -4px;
     color: #fff;
+    margin: 0;
 }
 
 .Svc__cta__right {
@@ -427,5 +429,9 @@
 
     .Svc__item__cap {
         padding: 11px 0;
+    }
+
+    .Svc__hero {
+        padding-top: 25px;
     }
 }

@@ -56,9 +56,7 @@ export default function FairImages({ images, fairName, introText }: { images: st
                     </div>
                 )}
                 <div className="Fairs__main__dl__item__box__content">
-                    <p className="Fairs__main__dl__item__box__p">
-                        {introText}
-                    </p>
+
 
                     {images.length > 1 && (
                         <div className="Fairs__thumbnail_grid" style={{ marginTop: '20px' }}>

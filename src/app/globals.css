@@ -114,11 +114,11 @@ svg {
     background-size: cover
 }
 
-svg,
+/* svg,
 video {
     display: block;
     width: 100%
-}
+} */
 
 source {
     display: contents
@@ -191,13 +191,14 @@ h1.Contact__hero__h1::before,
 /* Nav */
 .Nav {
     --app-width: 1300px;
-    padding: calc(var(--global-space)*1) 0
+    padding: calc(var(--global-space)*0.8) 0;
+    transition: all 0.3s ease;
 }
+
 
 @media(max-width:1320px) {
     .Nav {
-        padding: calc(var(--global-space)*0.9) 0;
-        border-bottom: 1px solid #ededed;
+        padding: 11px 0 16px 0;
     }
 }
 
@@ -209,6 +210,34 @@ h1.Contact__hero__h1::before,
     width: 100%;
     background-color: #fff
 }
+
+.Nav--scrolled {
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 15px 0 20px 0 !important;
+}
+
+.Nav__top-bar {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    transform-origin: top;
+}
+
+.Nav__top-bar--hidden {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-20px);
+}
+
+.Nav__top-bar--visible {
+    max-height: 100px;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+
 
 .Nav__wrapper {
     display: grid;
@@ -222,6 +251,7 @@ h1.Contact__hero__h1::before,
         grid-template-columns: 1fr max-content;
         gap: calc(var(--global-space)*1)
     }
+
 }
 
 .Nav__a__span {
@@ -231,15 +261,39 @@ h1.Contact__hero__h1::before,
 @media(max-width:580px) {
     .Nav__a__img {
         height: auto;
-        width: 100px;
+        width: 120px;
     }
 }
 
 .Nav__links {
     display: flex;
-    gap: calc(var(--global-space)*2.25);
+    gap: calc(var(--global-space)*2);
     justify-content: center;
     transform: translateY(calc(var(--global-space) * .4));
+
+}
+
+.nav-contact-button {
+    display: block;
+    font-family: var(--title-font);
+    text-align: center;
+    color: #fff;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    outline: 0;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 11px 40px;
+    font-size: 14px;
+    border: none;
+    background: #38b1ed;
+    transition: all 0.3s ease;
+
+}
+
+.nav-contact-button:hover {
+    box-shadow: 2px 2px 20px 0px rgba(56, 177, 237, 0.5);
 
 }
 
@@ -247,15 +301,23 @@ h1.Contact__hero__h1::before,
     .Nav__links {
         display: none
     }
+
+    .nav-contact-button {
+        display: none;
+    }
+
+    .Nav {
+        border-bottom: 1px solid #dddddd75;
+    }
 }
 
 .Nav__links__a {
-    color: #1a1a1a;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-style: italic;
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+
+    text-transform: capitalize;
+    /* font-style: italic; */
 }
 
 .Nav__links__a--active {
@@ -573,7 +635,7 @@ button.Nav__menu-toggle>div:last-child {
 
 .Hero__h1 {
     color: #1a1a1a;
-    font-size: 120px;
+    font-size: 70px;
     font-weight: 700
 }
 
@@ -600,9 +662,9 @@ button.Nav__menu-toggle>div:last-child {
 }
 
 .Hero__wrapper {
-    justify-content: center;
-    height: 720px;
-    max-height: 80vh
+    /* justify-content: center; */
+    height: 273px;
+
 }
 
 .Hero__p,
@@ -633,8 +695,8 @@ button.Nav__menu-toggle>div:last-child {
 
     .Hero__wrapper {
         justify-content: start;
-        height: 300px;
-        max-height: 80vh
+        height: 160px;
+
     }
 }
 
@@ -1259,11 +1321,7 @@ button.Nav__menu-toggle>div:last-child {
     inset: 0px auto auto auto;
 }
 
-@media(max-width:900px) {
-    .Index__connect {
-        margin-top: 0px
-    }
-}
+
 
 .Index__connect__wrapper {
     display: grid;
@@ -1284,7 +1342,8 @@ h4 {
 
 @media(max-width:900px) {
     .Index__connect__wrapper {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
+        gap: 50px;
     }
 
     .Index__mission {
@@ -1311,7 +1370,7 @@ h4 {
 
 @media(max-width:400px) {
     .Index__connect__h3 {
-        font-size: 73px
+        font-size: 55px
     }
 }
 
@@ -2196,4 +2255,25 @@ html.lenis body {
 
 .lenis.lenis-scrolling iframe {
     pointer-events: none;
+}
+
+/* Index__connect */
+@media(max-width:900px) {
+    .Index__connect {
+        margin-top: 0px;
+        padding: 73px 0;
+    }
+
+    .second_title__h2:before {
+        content: none
+    }
+
+    .second_title__h2 {
+        margin-top: 25px;
+    }
+
+    .second_title__text {
+        margin-top: 18px;
+        font-size: 14px;
+    }
 }

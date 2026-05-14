@@ -13,16 +13,13 @@ const StatsSection = () => {
                     <h2 className="stats-section__title">
                         <AnimatedText text={["A Legacy of", "Innovation &", "Excellence"]} />
                     </h2>
-                    <p className="stats-section__subtitle">
-                        Our impact is measured by the success of our partners—delivering cutting-edge solutions that redefine industry standards and drive digital growth.
-                    </p>
+
                 </div>
 
 
             </div>
             <div className="stats-section__right">
 
-                {/* <div className="stats-card stats-card--empty card-top-left-empty"></div> */}
 
 
 
@@ -36,9 +33,9 @@ const StatsSection = () => {
                     </div>
                     <div>
                         <div className="stats-card__value">
-                            <CountUp end="450+" />
+                            <CountUp end="2500+" />
                         </div>
-                        <div className="stats-card__label">B2B User</div>
+                        <div className="stats-card__label"> Users</div>
                     </div>
                 </div>
 
@@ -72,9 +69,9 @@ const StatsSection = () => {
                     </div>
                     <div>
                         <div className="stats-card__value">
-                            <CountUp end="100+" />
+                            <CountUp end="150+" />
                         </div>
-                        <div className="stats-card__label">Team Members</div>
+                        <div className="stats-card__label">Tech Members</div>
                     </div>
                 </div>
 
@@ -89,9 +86,46 @@ const StatsSection = () => {
                     </div>
                     <div>
                         <div className="stats-card__value">
-                            <CountUp end="500+" />
+                            <CountUp end="350+" />
                         </div>
                         <div className="stats-card__label">Products</div>
+                    </div>
+                </div>
+
+                <div className="stats-card stats-card--white card-5">
+                    <div className="stats-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div className="stats-card__value">
+                            <CountUp end="21" />
+                        </div>
+                        <div className="stats-card__label">Export Countries</div>
+                    </div>
+                </div>
+
+                <div className="stats-card stats-card--green card-6">
+                    <div className="stats-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M3 21h18"></path>
+                            <path d="M9 8h1"></path>
+                            <path d="M9 12h1"></path>
+                            <path d="M9 16h1"></path>
+                            <path d="M14 8h1"></path>
+                            <path d="M14 12h1"></path>
+                            <path d="M14 16h1"></path>
+                            <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div className="stats-card__value">
+                            <CountUp end="9" />
+                        </div>
+                        <div className="stats-card__label">Sister Concern</div>
                     </div>
                 </div>
             </div>

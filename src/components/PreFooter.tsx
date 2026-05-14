@@ -13,7 +13,7 @@ export default function PreFooter() {
                     </div>
                     <div className="pre-footer__gallery-title-wrapper">
                         <h2 className="pre-footer__gallery-title">
-                            <AnimatedText text={["Ethics, Values,", "Culture, Sacrifice."]} />
+                            <AnimatedText text={["Ethics, Values,", "Culture, Commitment."]} />
                         </h2>
                     </div>
 

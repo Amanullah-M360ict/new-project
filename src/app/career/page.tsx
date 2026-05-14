@@ -1,13 +1,15 @@
+"use client"
 import AnimatedText from "@/components/AnimatedText";
 import "./_style.css/career.css";
 import CultureSection from "@/components/CultureSection";
 import { jobsData } from "@/lib/data/jobsData";
 import Link from "next/link";
+import { useMediaQuery } from "@/lib/hooks/use-media-query";
 
 export default function Career() {
     // Group jobs by department
     const departments = Array.from(new Set(jobsData.map(j => j.department)));
-
+    const isDesktop = useMediaQuery('(min-width: 768px)');
     return (
         <div className="Careers">
             <div className="Hero">
@@ -29,10 +31,10 @@ export default function Career() {
                     <div className="Careers__openings__hero">
                         <div className="Careers__openings__hero__left">
                             <h2 className="Careers__openings__hero__h2">
-                                <AnimatedText text={["Architecting the Future", "of Digital", "Empowerment"]} />
+                                <AnimatedText text={isDesktop ? ["Digital Empowerment Future"] : ["Digital Empowerment", "Future"]} />
                             </h2>
                             <p className="Careers__openings__hero__p text-center">
-                                Join a world-class team of engineers, designers, and visionaries dedicated to building scalable solutions that solve real-world complexities on a global scale.
+                                Join a world-class team of engineers, designers, and visionaries dedicated to building <br className="md:block hidden" /> scalable solutions that solve real-world complexities on a global scale.
                             </p>
                         </div>
                     </div>

@@ -26,7 +26,7 @@
     gap: 20px;
     justify-content: center;
     background-color: #f3f3f3;
-    padding: 6px 10px;
+    padding: 0px 0px;
     margin-bottom: 20px;
 }
 
@@ -173,10 +173,19 @@
     }
 
     .TechPartner__title {
-        font-size: 58px;
+        font-size: 24px;
     }
 
     .TechPartner__section {
         margin-bottom: 60px;
+    }
+
+    .TechPartner__header {
+        margin-bottom: 20px;
+    }
+
+    .TechPartner__grid {
+        gap: 6px;
+        display: grid;
     }
 }

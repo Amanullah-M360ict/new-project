@@ -1,17 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { buttonFonts, ManropeFonts } from "@/lib/fonts";
+import { buttonFonts, higherJump, ManropeFonts } from "@/lib/fonts";
 import "./HeroPage.css";
 import Image from "next/image";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useMediaQuery } from "@/lib/hooks/use-media-query";
+import AnimatedText from "./AnimatedText";
 
 export default function DesktopHero() {
   const container = useRef(null);
-
   const isDesktop = useMediaQuery('(min-width: 768px)');
 
   return (
@@ -21,71 +21,14 @@ export default function DesktopHero() {
 
         <div className="container mx-auto relative"   >
           <div className="hero-content">
-            <h1 className={`hero-title font-bold ${ManropeFonts.className}`}>
-              Provided <span className="hero_title_span_1">TravelTech</span> <span className="hero_title_span_1 second">Solutions</span>
+            <h1 className={`hero-title font-bold ${higherJump.className}`}>
+              <AnimatedText infinite={true} text={["We Build Software", "That Powers Global ", "Businesses"]} />
             </h1>
-
             <div className="hero-para">
-              M360ICT delivers intelligent AI-powered digital solutions <br /> and
-              automation workflows, enabling enterprises to scale faster
+              M360 ICT is an award-winning technology company helping businesses <br className="md:block hidden" /> worldwide build reliable, scalable, and future-ready digital solutions.
             </div>
-            <Link
-              href="/contact"
-              className={`hero-btn md:mt-5 mt-3 Button button-primary md:!py-3 !py-2   `}
-            >
-              Get Free Consultation
-            </Link>
 
-            <div className="hero-countries">
-              <span className="countries-text">Operated in 20+ Countries</span>
-              <div className="country-flags">
-                {[
-                  { name: "Bangladesh", code: "bd" },
-                  { name: "USA", code: "us" },
-                  { name: "Canada", code: "ca" },
-                  { name: "UK", code: "gb" },
-                  { name: "Saudi Arabia", code: "sa" },
-                  { name: "UAE", code: "ae" },
-                  { name: "Kuwait", code: "kw" },
-                  { name: "Japan", code: "jp" },
-                  { name: "South Sudan", code: "ss" },
-                  { name: "Australia", code: "au" },
-                  { name: "Qatar", code: "qa" },
-                ].map((country) => (
-                  <img
-                    key={country.code}
-                    src={`https://flagcdn.com/w80/${country.code}.png`}
-                    alt={country.name}
-                    className="country-flag"
-                    title={country.name}
-                  />
-                ))}
-              </div>
-              <div className="country-flags">
-                {[
-                  { name: "Malaysia", code: "my" },
-                  { name: "India", code: "in" },
-                  { name: "Egypt", code: "eg" },
-                  { name: "Oman", code: "om" },
-                  { name: "Italy", code: "it" },
-                  { name: "Vietnam", code: "vn" },
-                  { name: "Bhutan", code: "bt" },
-                  { name: "Portugal", code: "pt" },
-                  { name: "Scotland", code: "gb-sct" },
-                  { name: "Nepal", code: "np" }
-                ].map((country) => (
-                  <Image
-                    key={country.code}
-                    src={`https://flagcdn.com/w80/${country.code}.png`}
-                    alt={country.name}
-                    className="country-flag"
-                    title={country.name}
-                    width={42}
-                    height={35}
-                  />
-                ))}
-              </div>
-            </div>
+
           </div>
 
           {/* Desktop SVG */}
@@ -120,9 +63,9 @@ export default function DesktopHero() {
               </Link>
               <Image src="/images/home-empty.svg" alt="hero" width={1600} height={633} className="main_home_products_image" /> */}
               {/* home view show here */}
-              <div className="2xl:w-[72%] 2xl:ml-[17%] md:w-[63%] md:ml-[25%] w-[40%] ml-[8%]">
+              <div className="2xl:w-[61%] 2xl:ml-[26%] 2xl:mt-[-34px] md:w-[57%] md:ml-[31%] md:mt-0 w-[38%] ml-[7%] mt-[2%] ">
                 <video
-                  src="https://dynamic.heygen.ai/www/Home%20-%20Page%20-%20Rebrand/HEYGEN_Orb_home_ios.mp4?updatedAt=1761596026165"
+                  src="/images/home-video.mp4"
                   autoPlay
                   loop
                   muted

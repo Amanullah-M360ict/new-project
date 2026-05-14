@@ -5,6 +5,7 @@ import { Outfit, Inter } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import SmoothScrollProvider from "@/components/common/SmoothScrollProvider";
+import { higherJump } from "@/lib/fonts";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -44,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable} ${inter.variable}`}>
+    <html lang="en" className={`${outfit.variable} ${inter.variable} `}>
       <body>
         <SmoothScrollProvider>
           <div className="Layout">

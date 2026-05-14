@@ -9,7 +9,7 @@
 .Fairs__intro {
     margin-top: 50px;
     margin-bottom: 80px;
-    max-width: 800px;
+    text-align: center;
 }
 
 
@@ -169,11 +169,10 @@
 }
 
 .Fairs__h2 {
-    display: grid;
-    grid-template-columns: max-content 1fr;
+
     align-items: center;
     color: #1a1a1a;
-    font-size: 12px;
+    font-size: 22px;
     font-weight: 500;
     letter-spacing: .75px;
     text-transform: uppercase;
@@ -181,13 +180,13 @@
     gap: calc(var(--global-space)*.5)
 }
 
-.Fairs__h2:before {
+/* .Fairs__h2:before {
     content: "";
     display: block;
     width: 36px;
     height: 1px;
     background-color: #1a1a1a
-}
+} */
 
 .Fairs__intro-text {
     margin-top: 20px;

@@ -160,7 +160,7 @@ export default function Products() {
 
             {/* this is common products show all here */}
             <div style={{ marginTop: "80px" }}  >
-                <NewProducts />
+                <M360ictProductsNew />
             </div>
 
             <div className="Products__questions">

@@ -14,25 +14,33 @@ import AwardHome from "@/components/hero/AwardHome";
 import WeBring from "@/components/WeBring";
 import NewAwards from "@/components/NewAwards";
 import NewProducts from "@/components/NewProducts";
+import OperatedCountries from "@/components/OperatedCountries";
+
 
 
 export default function Home() {
 
   return (
     <div className="Index">
-      <div className="desktop-hero">
+      <div className="desktop-hero" style={{
+        background: "url(/images/hom-bg.png)",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}>
         <DesktopHero />
       </div>
       <AwardHome />
-      <NewProducts />
-      <WeBring />
-      <NewsSection />
-      <div style={{ margin: '80px 0' }}>
+      <OperatedCountries />
+
+      <M360ictProductsNew showExploreButton={true} limit={8} />
+      {/* <WeBring /> */}
+
+      <div style={{ margin: '0px 0 80px' }}>
         <AwardsSection showExploreButton={true} />
       </div>
       <ServicesSection />
       <StatsSection />
-
+      <NewsSection />
 
       <div className="Index__connect">
         <img src="/images/lets-bg.svg" alt="Connect" className="Index__connect__img_bg" />

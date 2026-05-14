@@ -23,13 +23,13 @@ const GallerySection = () => {
                     </div>
 
                     <div className="stat-item stat-2">
-                        <span className="stat-title"><AnimatedText text={["Team Members"]} /></span>
-                        <span className="stat-number"><AnimatedText text={["100+"]} /></span>
+                        <span className="stat-title"><AnimatedText text={["Tech Members"]} /></span>
+                        <span className="stat-number"><AnimatedText text={["150+"]} /></span>
                     </div>
 
                     <div className="stat-item stat-3">
-                        <span className="stat-title"><AnimatedText text={["Projects"]} /></span>
-                        <span className="stat-number"><AnimatedText text={["1500+"]} /></span>
+                        <span className="stat-title"><AnimatedText text={["Export Countries"]} /></span>
+                        <span className="stat-number"><AnimatedText text={["21+"]} /></span>
                     </div>
 
                     <img
@@ -40,7 +40,7 @@ const GallerySection = () => {
 
                     <img
                         className="gallery-img-b"
-                        src="/images/teams/office-team.jpeg"
+                        src="/images/about.jpeg"
                         alt="Discussion"
                     />
 
