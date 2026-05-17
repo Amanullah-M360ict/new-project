@@ -37,8 +37,8 @@ export default function OperatingCountriesPage() {
         <div className="min-h-screen pb-24 bg-white overflow-hidden">
             <header className="pt-3 pb-16 border-b border-gray-50">
                 <div className="container mx-auto px-4 ">
-                    <h1 className="text-5xl md:text-4xl font-bold text-gray-900 mb-6 font-['Outfit'] tracking-tight">
-                        <AnimatedText text={["Global", "Operating Countries"]} />
+                    <h1 className="text-3xl md:text-6xl font-bold text-gray-900 mb-6 font-['Outfit'] tracking-tight">
+                        <AnimatedText text={["Global Presence", "Powered by Our Software"]} />
                     </h1>
                     <div className=''> <p className="text-lg text-gray-500  font-['Inter']">
                         Our software solutions operate globally, with registered <br className='md:block hidden' /> trademarks and legal presence across multiple continents and jurisdictions.
@@ -90,9 +90,9 @@ export default function OperatingCountriesPage() {
             </main>
 
             <section className="container mx-auto px-4 mt-32 text-center">
-                <div className="max-w-3xl mx-auto p-12 bg-gray-50 rounded-[40px] border border-gray-100">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4 font-['Outfit'] mt-0">International Compliance</h2>
-                    <p className="text-gray-600 leading-relaxed">
+                <div className="max-w-3xl mx-auto md:p-12 p-6 bg-gray-50 rounded-[40px] border border-gray-100">
+                    <h2 className="md:text-3xl  text-xl font-bold text-gray-900 mb-4 font-['Outfit'] mt-0">International Compliance</h2>
+                    <p className="text-gray-600 leading-relaxed md:text-base text-sm">
                         We strictly adhere to international trade and intellectual property laws across all operating regions, ensuring global brand protection and service excellence.
                     </p>
                 </div>

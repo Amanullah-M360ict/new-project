@@ -53,7 +53,7 @@ export default function Career() {
                                                 </div>
                                             </div>
                                             <Link href={`/career/${job.slug}`} className="Careers__apply-btn">
-                                                View Details
+                                                Details
                                             </Link>
                                         </div>
                                     ))}

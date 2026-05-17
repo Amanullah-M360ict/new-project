@@ -39,8 +39,8 @@
 
  .TestimonialFooter {
      display: flex;
-     gap: .75rem;
-     align-items: center
+     gap: 1.25rem;
+     align-items: flex-start
  }
 
  .TestimonialFooterContent {
@@ -50,21 +50,27 @@
  }
 
  .TestimonialName {
-     font-weight: 500;
-     line-height: 20px;
+     font-weight: 700;
+     line-height: 22px;
+     color: #0f172a;
+     font-size: 16px;
  }
 
  .TestimonialJobTitle {
-     opacity: .5
+     opacity: .75;
+     line-height: 1.5;
  }
 
  img.TestimonialImage {
-     width: 48px;
-     height: 48px;
+     width: 72px;
+     height: 72px;
      background: #f5f5f5;
      border-radius: 50%;
      flex-shrink: 0;
-     object-fit: cover
+     object-fit: cover;
+     border: 2px solid #2563eb;
+     padding: 3px;
+     box-shadow: 0 4px 12px rgba(37, 99, 235, 0.12);
  }
 
 

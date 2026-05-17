@@ -103,7 +103,7 @@ export default function OurClientsPage() {
             </section>
 
             <div className="OurClients__marquee-section">
-                <Marquee gradient={true} gradientColor="#f7f7f7" speed={50} pauseOnHover={true}>
+                <Marquee gradient={true} gradientColor="#f7f7f7" speed={160} pauseOnHover={true}>
                     {marqueeLogos.map((c, i) => (
                         <div key={i} className="OurClients__marquee-item-wrapper" style={{ padding: '0 30px' }}>
                             <img
@@ -173,7 +173,7 @@ export default function OurClientsPage() {
                             <Link href="/contact" className="OurClients__cta__btn">
                                 Get In Touch
                             </Link>
-                            <span className="OurClients__cta__sub">No commitment needed — just a conversation.</span>
+                            <span className="OurClients__cta__sub">We’re here to help you succeed.</span>
                         </div>
                     </div>
                 </div>

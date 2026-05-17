@@ -159,7 +159,7 @@ export default function Products() {
             </div>
 
             {/* this is common products show all here */}
-            <div style={{ marginTop: "80px" }}  >
+            <div style={{ marginTop: "45px" }}  >
                 <M360ictProductsNew />
             </div>
 

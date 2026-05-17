@@ -46,8 +46,8 @@ export default function Nav() {
         { href: "/awards", label: "awards" },
         { href: "/certifications", label: "Certifications" },
         { href: "/memberships", label: "Memberships" },
-        { href: "/oparate-countiries", label: "countries we serve" },
-        { href: "/mou", label: "MOU" },
+        { href: "/oparate-countiries", label: "Countries We Serve" },
+        { href: "/mou", label: "Collaborations" },
         { href: "/copyright-and-license", label: "©License" },
         { href: "/contact", label: "contact" },
     ]

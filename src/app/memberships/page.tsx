@@ -114,7 +114,7 @@ export default function Memberships() {
         <div className="min-h-screen pb-24  ">
             <header className="pt-10 pb-16 bg-white">
                 <div className="container mx-auto px-4">
-                    <div className="text-[12px] font-bold text-amber-600 uppercase tracking-[0.3em] mb-4">Our Memberships</div>
+                    <div className="text-[12px] font-bold text-[#38B1ED] uppercase tracking-[0.3em] mb-4">Our Memberships</div>
                     <h1 className="text-4xl md:text-6xl m-0 font-bold text-gray-900 leading-[1.1] font-['Outfit'] tracking-tight max-w-4xl">
                         Strategic Partnerships that Drive <br />
                         Industry Innovation

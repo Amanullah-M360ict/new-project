@@ -34,48 +34,51 @@ export default function Contact() {
                                     </div>
                                     <span> info@m360ict.com</span>
                                 </div>
-                                <div className="flex gap-4 mt-5 " style={{ alignItems: 'flex-start' }}>
-                                    <div className="ExactFooter__contactIconWrapper" style={{ marginTop: '4px' }}>
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <div className="Contact__offices">
+                                    <h4 className="Contact__offices__title">Regional Offices</h4>
+                                    
+                                    {/* USA */}
+                                    <div className="Contact__office-card">
+                                        <div className="Contact__office-header">
+                                            <div className="Contact__flag-wrapper">
+                                                <img src="https://flagcdn.com/w40/us.png" alt="United States Flag" className="Contact__flag-img" />
+                                            </div>
+                                            <span className="Contact__office-country">United States</span>
+                                        </div>
+                                        <p className="Contact__office-address">447 Broadway, 2nd Floor, New York, NY 10013</p>
                                     </div>
-                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', width: '100%' }}>
 
-                                        {/* USA */}
-                                        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                                            <span style={{ fontSize: '15px', fontWeight: '600', color: '#000', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                                                <span>🇺🇸</span> United States
-                                            </span>
-                                            <span style={{ fontSize: '13px', color: '#9ca3af' }}>447 Broadway, 2nd Floor, New York, NY 10013</span>
-                                            <span style={{ fontSize: '11px', color: '#6b7280', fontFamily: 'monospace', letterSpacing: '0.5px' }}></span>
+                                    {/* UK */}
+                                    <div className="Contact__office-card">
+                                        <div className="Contact__office-header">
+                                            <div className="Contact__flag-wrapper">
+                                                <img src="https://flagcdn.com/w40/gb.png" alt="United Kingdom Flag" className="Contact__flag-img" />
+                                            </div>
+                                            <span className="Contact__office-country">United Kingdom</span>
                                         </div>
+                                        <p className="Contact__office-address">71-75 Shelton Street, Covent Garden, London</p>
+                                    </div>
 
-                                        {/* UK */}
-                                        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                                            <span style={{ fontSize: '15px', fontWeight: '600', color: '#000', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                                                <span>🇬🇧</span> United Kingdom
-                                            </span>
-                                            <span style={{ fontSize: '13px', color: '#9ca3af' }}>71-75 Shelton Street, Covent Garden, London</span>
-                                            <span style={{ fontSize: '11px', color: '#6b7280', fontFamily: 'monospace', letterSpacing: '0.5px' }}></span>
+                                    {/* AUS */}
+                                    <div className="Contact__office-card">
+                                        <div className="Contact__office-header">
+                                            <div className="Contact__flag-wrapper">
+                                                <img src="https://flagcdn.com/w40/au.png" alt="Australia Flag" className="Contact__flag-img" />
+                                            </div>
+                                            <span className="Contact__office-country">Australia</span>
                                         </div>
+                                        <p className="Contact__office-address">100 Harris Street, Pyrmont, NSW 2009</p>
+                                    </div>
 
-                                        {/* AUS */}
-                                        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                                            <span style={{ fontSize: '15px', fontWeight: '600', color: '#000', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                                                <span>🇦🇺</span> Australia
-                                            </span>
-                                            <span style={{ fontSize: '13px', color: '#9ca3af' }}>100 Harris Street, Pyrmont, NSW 2009</span>
-                                            <span style={{ fontSize: '11px', color: '#6b7280', fontFamily: 'monospace', letterSpacing: '0.5px' }}></span>
+                                    {/* BD */}
+                                    <div className="Contact__office-card">
+                                        <div className="Contact__office-header">
+                                            <div className="Contact__flag-wrapper">
+                                                <img src="https://flagcdn.com/w40/bd.png" alt="Bangladesh Flag" className="Contact__flag-img" />
+                                            </div>
+                                            <span className="Contact__office-country">Bangladesh</span>
                                         </div>
-
-                                        {/* BD */}
-                                        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                                            <span style={{ fontSize: '15px', fontWeight: '600', color: '#000', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                                                <span>🇧🇩</span> Bangladesh
-                                            </span>
-                                            <span style={{ fontSize: '13px', color: '#9ca3af' }}>House 74, Road 7, Block H, Banani, Dhaka</span>
-                                            <span style={{ fontSize: '11px', color: '#6b7280', fontFamily: 'monospace', letterSpacing: '0.5px' }}></span>
-                                        </div>
-
+                                        <p className="Contact__office-address">House 74, Road 7, Block H, Banani, Dhaka</p>
                                     </div>
                                 </div>
                             </div>

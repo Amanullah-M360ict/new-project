@@ -51,7 +51,7 @@ export default function CopyrightAndLicense() {
         <div className="min-h-screen pb-24">
             <header className="pt-10 pb-16 bg-white">
                 <div className="container mx-auto px-4">
-                    <div className="text-[12px] font-bold text-indigo-600 uppercase tracking-[0.3em] mb-4">Official Rights</div>
+                    <div className="text-[12px] font-bold text-[#38B1ED] uppercase tracking-[0.3em] mb-4">Official Rights</div>
                     <h1 className="text-4xl md:text-6xl m-0 font-bold text-gray-900 leading-[1.1] font-['Outfit'] tracking-tight max-w-4xl">
                         Copyright, Licensing & <br />
                         Legal Compliance

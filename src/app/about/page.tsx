@@ -71,7 +71,9 @@ export default function About() {
                     <div className="OfficesGrid">
                         <div className="OfficeCard" data-reveal="up" data-delay="100">
                             <div className="OfficeCard__header">
-                                <img src="https://flagcdn.com/w40/us.png" alt="USA Flag" className="OfficeCard__flag" />
+                                <div className="OfficeCard__flag-wrapper">
+                                    <img src="https://flagcdn.com/w40/us.png" alt="USA Flag" className="OfficeCard__flag" />
+                                </div>
                                 <h3 className="OfficeCard__country">United States</h3>
                             </div>
                             <div className="OfficeCard__body">
@@ -81,7 +83,9 @@ export default function About() {
 
                         <div className="OfficeCard" data-reveal="up" data-delay="200">
                             <div className="OfficeCard__header">
-                                <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" className="OfficeCard__flag" />
+                                <div className="OfficeCard__flag-wrapper">
+                                    <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" className="OfficeCard__flag" />
+                                </div>
                                 <h3 className="OfficeCard__country">United Kingdom</h3>
                             </div>
                             <div className="OfficeCard__body">
@@ -91,7 +95,9 @@ export default function About() {
 
                         <div className="OfficeCard" data-reveal="up" data-delay="300">
                             <div className="OfficeCard__header">
-                                <img src="https://flagcdn.com/w40/au.png" alt="Australia Flag" className="OfficeCard__flag" />
+                                <div className="OfficeCard__flag-wrapper">
+                                    <img src="https://flagcdn.com/w40/au.png" alt="Australia Flag" className="OfficeCard__flag" />
+                                </div>
                                 <h3 className="OfficeCard__country">Australia</h3>
                             </div>
                             <div className="OfficeCard__body">
@@ -101,7 +107,9 @@ export default function About() {
 
                         <div className="OfficeCard" data-reveal="up" data-delay="400">
                             <div className="OfficeCard__header">
-                                <img src="https://flagcdn.com/w40/bd.png" alt="Bangladesh Flag" className="OfficeCard__flag" />
+                                <div className="OfficeCard__flag-wrapper">
+                                    <img src="https://flagcdn.com/w40/bd.png" alt="Bangladesh Flag" className="OfficeCard__flag" />
+                                </div>
                                 <h3 className="OfficeCard__country">Bangladesh</h3>
                             </div>
                             <div className="OfficeCard__body">

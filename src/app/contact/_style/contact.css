@@ -1,6 +1,6 @@
 .Contact {
     --app-width: 880px;
-    margin: 100px 0
+    margin: 50px 0
 }
 
 @media(max-width:580px) {
@@ -11,9 +11,10 @@
 
 .Contact__hero__h1 {
     color: #1a1a1a;
-    font-size: 110px;
+    font-size: 80px;
     font-weight: 700;
-    text-align: center
+    text-align: center;
+    margin: 0;
 }
 
 .Contact__hero__h1,
@@ -37,13 +38,14 @@
 }
 
 .Contact__hero__p {
-    margin-top: calc(var(--global-space)*.5);
+    margin-top: calc(var(--global-space)*.8);
     color: #1a1a1a;
     font-size: 16px;
     font-style: italic;
     font-weight: 500;
     letter-spacing: 11.5556px;
-    text-align: center
+    text-align: center;
+
 }
 
 @media(max-width:750px) {
@@ -63,7 +65,7 @@
 }
 
 .Contact__content {
-    margin-top: calc(var(--global-space)*3)
+    margin-top: calc(var(--global-space)*2)
 }
 
 .Contact__content__p {
@@ -215,4 +217,90 @@
     .Contact__content__buttons {
         grid-column: unset
     }
+}
+
+/* Premium Flags & Addresses Layout - Ultra Compact */
+.Contact__offices {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    /* Extremely tight gap */
+    margin-top: 15px;
+    /* Shrunk spacing */
+    width: 100%;
+}
+
+.Contact__offices__title {
+    font-size: 11.5px;
+    /* Tiny elegant title */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #1a1a1a;
+    margin: 0 0 2px;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 4px;
+}
+
+.Contact__office-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    /* Slightly snug radius */
+    padding: 7px 10px;
+    /* Highly squeezed padding */
+    transition: all 0.25s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
+}
+
+.Contact__office-card:hover {
+    transform: translateY(-1px);
+    border-color: #2563eb;
+    box-shadow: 0 3px 8px rgba(37, 99, 235, 0.06);
+}
+
+.Contact__office-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Tighter gap */
+    margin-bottom: 3px;
+    /* Reduced vertical space */
+}
+
+.Contact__flag-wrapper {
+    width: 20px;
+    /* Compact flag */
+    height: 13px;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: #f8fafc;
+}
+
+.Contact__flag-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Contact__office-country {
+    font-size: 12px;
+    /* Smaller elegant typography */
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.01em;
+}
+
+.Contact__office-address {
+    font-size: 11px;
+    /* Dense clean street address */
+    color: #64748b;
+    line-height: 1.35;
+    margin: 0;
+    font-weight: 400;
 }

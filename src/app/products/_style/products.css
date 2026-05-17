@@ -11,7 +11,7 @@
 
  @media(max-width:580px) {
      .Products__questions {
-         margin-top: 120px
+         margin-top: 20px
      }
  }
 
@@ -47,7 +47,7 @@
      display: grid;
      grid-template-columns: max-content;
      justify-content: center;
-     margin-top: calc(var(--global-space)*3)
+     margin-top: calc(var(--global-space)*2)
  }
 
  @media(max-width:580px) {

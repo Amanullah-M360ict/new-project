@@ -142,7 +142,7 @@
     color: #1a1a1a;
     letter-spacing: -3px;
     max-width: 700px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .OurClients__hero__p {
@@ -177,8 +177,16 @@
 
 @media(max-width: 750px) {
     .OurClients__hero__h1 {
-        font-size: 52px;
+        font-size: 40px;
         letter-spacing: -1px;
+    }
+
+    .OurClients__hero__h1 {
+        margin-bottom: 20px;
+    }
+
+    .OurClients__hero__stats {
+        margin-top: 10px;
     }
 
     .OurClients__hero__stats {
@@ -274,7 +282,7 @@
     font-weight: 800;
     line-height: 77px;
     columns: #1a1a1a;
-
+    margin: 0;
 }
 
 
@@ -293,7 +301,8 @@
     }
 
     .OurClients__intro__h2 {
-        font-size: 38px;
+        font-size: 30px;
+        line-height: 40px;
     }
 }
 
@@ -330,9 +339,9 @@
 
 
 .OurClients__cta {
-    margin-top: 80px;
+    margin-top: 50px;
     background: #1a1a1a;
-    padding: 80px 60px;
+    padding: 40px 60px;
     gap: 40px;
     position: relative;
     overflow: hidden;

@@ -562,12 +562,12 @@
 }
 
 .Careers__openings__hero__h2 {
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: -3px;
     color: #1a1a1a;
     text-align: center;
     margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .Careers__openings__hero__h2 span {
@@ -589,7 +589,7 @@
 }
 
 .Careers__openings__hero__p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.6;
     color: #444;
 }

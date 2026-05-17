@@ -51,7 +51,7 @@ const GallerySection = () => {
 
                     <img
                         className="gallery-img-e"
-                        src="https://images.unsplash.com/photo-1531498860502-7c67cf02f657?q=80&w=800&auto=format&fit=crop"
+                        src="/images/engineering.avif"
                         alt="Team creativity"
                     />
 
@@ -63,7 +63,7 @@ const GallerySection = () => {
 
                     <img
                         className="gallery-img-c"
-                        src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=400&auto=format&fit=crop"
+                        src="/images/about-asse.avif"
                         alt="Office Hallway"
                     />
 
