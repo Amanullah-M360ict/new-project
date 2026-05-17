@@ -7,7 +7,6 @@ import Link from "next/link";
 import { useMediaQuery } from "@/lib/hooks/use-media-query";
 
 export default function Career() {
-    // Group jobs by department
     const departments = Array.from(new Set(jobsData.map(j => j.department)));
     const isDesktop = useMediaQuery('(min-width: 768px)');
     return (

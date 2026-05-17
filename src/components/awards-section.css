@@ -25,51 +25,14 @@
 }
 
 .AwardsSection__marqueeWrapper {
-    width: 100vw;
-    max-width: 100%;
+    width: 100%;
     overflow: hidden;
     position: relative;
     padding: 20px 0;
-    /* margin-left: calc(-50vw + 50%); */
 }
 
-.AwardsSection__marqueeWrapper::before,
-.AwardsSection__marqueeWrapper::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 150px;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
-}
-
-.AwardsSection__marqueeWrapper::before {
-    left: 0;
-    background: linear-gradient(to right, #fafafa, transparent);
-}
-
-.AwardsSection__marqueeWrapper::after {
-    right: 0;
-    background: linear-gradient(to left, #fafafa, transparent);
-}
-
-.AwardsSection__marquee {
-    display: flex;
-    width: max-content;
-    animation: marquee 30s linear infinite;
-    gap: 30px;
-    padding: 0 15px;
-}
-
-.AwardsSection__marquee:hover {
-    animation-play-state: paused;
-}
-
-@keyframes marquee {
-    to {
-        transform: translateX(calc(-33.333333% - 10px));
-    }
+.AwardsSection__marqueeWrapper .InteractiveAwardCard {
+    margin-right: 30px;
 }
 
 .InteractiveAwardCard {

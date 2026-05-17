@@ -48,7 +48,6 @@ export default function OperatingCountriesPage() {
             </header>
 
             <main className="py-24 space-y-1 container">
-                {/* Right to Left Marquee */}
                 <Marquee gradient={true} gradientColor="white" gradientWidth={150} speed={45}>
                     {firstRow.map((country, index) => (
                         <div key={index} className="mx-4 group flex flex-col items-center">

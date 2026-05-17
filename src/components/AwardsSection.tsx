@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Marquee from 'react-fast-marquee';
 import './awards-section.css';
 import AnimatedText from './AnimatedText';
 import Link from 'next/link';
@@ -25,8 +26,8 @@ const AwardsSection = ({ showExploreButton, isFullList = false }: { showExploreB
                     <p className="AwardsSection__subtitle">Recognized globally for our continuous innovation and excellence.</p>
                 </div>
 
-                {isFullList ? (
-                    <div className="grid grid-cols-5 gap-2.5">
+                <div className="AwardsSection__marqueeWrapper">
+                    <Marquee speed={50} pauseOnHover gradient gradientColor="#fafafa" gradientWidth={120}>
                         {awards.map((award) => (
                             <div key={award.id} className="InteractiveAwardCard">
                                 <div className="InteractiveAwardCard__inner">
@@ -39,25 +40,8 @@ const AwardsSection = ({ showExploreButton, isFullList = false }: { showExploreB
                                 </div>
                             </div>
                         ))}
-                    </div>
-                ) : (
-                    <div className="AwardsSection__marqueeWrapper">
-                        <div className="AwardsSection__marquee">
-                            {[...awards, ...awards, ...awards].map((award, index) => (
-                                <div key={`${award.id}-${index}`} className="InteractiveAwardCard">
-                                    <div className="InteractiveAwardCard__inner">
-                                        <div className="InteractiveAwardCard__front">
-                                            <img src={award.img} alt={award.title} className="InteractiveAwardCard__img" />
-                                        </div>
-                                        <div className="InteractiveAwardCard__back">
-                                            <p>{award.title}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                )}
+                    </Marquee>
+                </div>
 
                 {showExploreButton && (
                     <div style={{ textAlign: "center", marginTop: "50px" }}>
