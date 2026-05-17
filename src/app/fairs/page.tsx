@@ -59,6 +59,23 @@ export default function FairsPage() {
         allHeroImages.slice(i * itemsPerRow, (i + 1) * itemsPerRow)
     );
 
+    const awardsDir = path.join(process.cwd(), 'public', 'images', 'awards', 'received-award');
+    let awardVideos: string[] = [];
+    let awardImages: string[] = [];
+    try {
+        if (fs.existsSync(awardsDir)) {
+            const allFiles = fs.readdirSync(awardsDir);
+            awardVideos = allFiles
+                .filter(f => f.match(/\.(mp4|webm)$/i))
+                .map(file => `/images/awards/received-award/${file}`);
+            awardImages = allFiles
+                .filter(f => f.match(/\.(jpg|jpeg|png|webp|gif)$/i))
+                .map(file => `/images/awards/received-award/${file}`);
+        }
+    } catch (e) {
+        console.error("Error reading awards dir:", e);
+    }
+
     return (
         <div className="Fairs">
             <div className="Hero">
@@ -88,12 +105,32 @@ export default function FairsPage() {
                 </div>
             </div>
 
+            <div className="Fairs__awards">
+                <div className="container">
+
+
+                    {/* Featured Videos */}
+                    <div className="Awards__featured">
+                        {awardVideos.map((video, idx) => (
+                            <div key={`v-${idx}`} className="Award__video-featured">
+                                <video src={video} autoPlay loop muted playsInline />
+                                <div className="Award__video-overlay">
+                                    <span>Featured Recognition</span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+
+                </div>
+            </div>
+
             <div className="Fairs__main">
                 <div className="container">
                     <div className="Fairs__intro">
                         <h2 className="Fairs__h2">Our Presence</h2>
                         <p className="Fairs__intro-text">
-                            At M360ICT, we actively engage in top-tier tourism, technology, and business exhibitions across the globe. These events highlight our dedication to innovation, continuous learning, and fostering strong networks throughout the travel tech ecosystem. Walk through our journey as we shape the future of digital travel solutions and build pathways to global success.
+                            M360ICT proudly participates in global tourism, technology, and business exhibitions, showcasing innovation and building strong <br className='md:block hidden' /> connections in the travel tech industry.
                         </p>
                     </div>
 

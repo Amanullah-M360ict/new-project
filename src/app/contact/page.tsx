@@ -46,7 +46,7 @@ export default function Contact() {
                                                 <span>🇺🇸</span> United States
                                             </span>
                                             <span style={{ fontSize: '13px', color: '#9ca3af' }}>447 Broadway, 2nd Floor, New York, NY 10013</span>
-                                            <span style={{ fontSize: '11px', color: '#6b7280', fontFamily: 'monospace', letterSpacing: '0.5px' }}>REG: 5432198</span>
+                                            <span style={{ fontSize: '11px', color: '#6b7280', fontFamily: 'monospace', letterSpacing: '0.5px' }}></span>
                                         </div>
 
                                         {/* UK */}
@@ -55,7 +55,7 @@ export default function Contact() {
                                                 <span>🇬🇧</span> United Kingdom
                                             </span>
                                             <span style={{ fontSize: '13px', color: '#9ca3af' }}>71-75 Shelton Street, Covent Garden, London</span>
-                                            <span style={{ fontSize: '11px', color: '#6b7280', fontFamily: 'monospace', letterSpacing: '0.5px' }}>REG: 12839440</span>
+                                            <span style={{ fontSize: '11px', color: '#6b7280', fontFamily: 'monospace', letterSpacing: '0.5px' }}></span>
                                         </div>
 
                                         {/* AUS */}
@@ -64,7 +64,7 @@ export default function Contact() {
                                                 <span>🇦🇺</span> Australia
                                             </span>
                                             <span style={{ fontSize: '13px', color: '#9ca3af' }}>100 Harris Street, Pyrmont, NSW 2009</span>
-                                            <span style={{ fontSize: '11px', color: '#6b7280', fontFamily: 'monospace', letterSpacing: '0.5px' }}>REG: ABN 45 123 456 789</span>
+                                            <span style={{ fontSize: '11px', color: '#6b7280', fontFamily: 'monospace', letterSpacing: '0.5px' }}></span>
                                         </div>
 
                                         {/* BD */}
@@ -72,8 +72,8 @@ export default function Contact() {
                                             <span style={{ fontSize: '15px', fontWeight: '600', color: '#000', display: 'flex', alignItems: 'center', gap: '6px' }}>
                                                 <span>🇧🇩</span> Bangladesh
                                             </span>
-                                            <span style={{ fontSize: '13px', color: '#9ca3af' }}>House# 74, Road# 7, Block# H, Banani, Dhaka</span>
-                                            <span style={{ fontSize: '11px', color: '#6b7280', fontFamily: 'monospace', letterSpacing: '0.5px' }}>REG: C-161483/2020</span>
+                                            <span style={{ fontSize: '13px', color: '#9ca3af' }}>House 74, Road 7, Block H, Banani, Dhaka</span>
+                                            <span style={{ fontSize: '11px', color: '#6b7280', fontFamily: 'monospace', letterSpacing: '0.5px' }}></span>
                                         </div>
 
                                     </div>

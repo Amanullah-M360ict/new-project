@@ -59,7 +59,7 @@ export default function FairImages({ images, fairName, introText }: { images: st
 
 
                     {images.length > 1 && (
-                        <div className="Fairs__thumbnail_grid" style={{ marginTop: '20px' }}>
+                        <div className="Fairs__thumbnail_grid" style={{ marginTop: '10px' }}>
                             {images.slice(1, 4).map((img, imgIdx) => (
                                 <img
                                     key={`thumb-${imgIdx}`}

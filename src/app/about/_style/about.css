@@ -840,163 +840,135 @@
 }
 
 .About__offices {
-    padding: 34px 0 108px;
-    background-color: #fcfcfc;
-    background-image: url("/images/map-bg.png");
+    padding: 0px 0px 75px;
+    background-color: #0b1120;
+    /* Deep navy professional background */
+    background-image:
+        radial-gradient(circle at 50% 50%, rgba(31, 181, 255, 0.1) 0%, transparent 50%),
+        url("/images/map-bg.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-blend-mode: overlay;
     position: relative;
     overflow: hidden;
 }
 
-a.OfficeCard__link svg {
-    width: 24px;
-}
-
-/* Background Decoration */
 .About__offices::before {
-    content: "WORLDWIDE";
+    content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20vw;
-    font-weight: 900;
-    color: rgba(0, 0, 0, 0.015);
-    white-space: nowrap;
+    inset: 0;
+    background: linear-gradient(180deg, #0b1120 0%, transparent 20%, transparent 80%, #0b1120 100%);
     pointer-events: none;
-    z-index: 0;
+    z-index: 1;
 }
 
 .About__offices__h2 {
-    font-family: 'Outfit', sans-serif;
-    font-size: 64px;
+    font-size: 56px;
     font-weight: 800;
-    margin-bottom: 80px;
-    color: #1a1a1a;
     text-align: center;
-    letter-spacing: -3px;
+    margin-bottom: 80px;
+    color: #ffffff;
+    letter-spacing: -2px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .OfficesGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 24px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .OfficeCard {
-    height: 480px;
-    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 32px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 50px 40px;
-    border: none;
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-    position: relative;
-    overflow: hidden;
-}
-
-.OfficeCard__bg {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-    z-index: 0;
-}
-
-.OfficeCard::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.9) 100%);
-    z-index: 1;
-    transition: all 0.6s ease;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .OfficeCard:hover {
-    transform: translateY(-20px);
-    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(31, 181, 255, 0.5);
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(31, 181, 255, 0.2);
 }
 
-.OfficeCard:hover .OfficeCard__bg {
-    transform: scale(1.1);
+.OfficeCard__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
 }
 
-.OfficeCard:hover::before {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 1) 100%);
-}
-
-.OfficeCard__content {
-    position: relative;
-    z-index: 2;
-    color: #ffffff;
+.OfficeCard__flag {
+    width: 32px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .OfficeCard__country {
-    font-family: 'Outfit', sans-serif;
-    font-size: 36px;
-    font-weight: 800;
-    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
     color: #ffffff;
-    letter-spacing: -1px;
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.OfficeCard__body {
+    position: relative;
 }
 
 .OfficeCard__address {
-    font-size: 18px;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.85);
-    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
     font-weight: 400;
-    max-width: 90%;
 }
 
-.OfficeCard__links {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+/* Pulsing indicators on the map (decorative) */
+.About__offices::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image:
+        radial-gradient(circle at 20% 40%, #1fb5ff 2px, transparent 4px),
+        radial-gradient(circle at 48% 35%, #1fb5ff 2px, transparent 4px),
+        radial-gradient(circle at 75% 55%, #1fb5ff 2px, transparent 4px),
+        radial-gradient(circle at 72% 42%, #1fb5ff 2px, transparent 4px);
+    opacity: 0.5;
+    animation: pulseGlow 4s infinite alternate;
+    pointer-events: none;
 }
 
-.OfficeCard__link {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 17px;
-    color: #1fb5ff;
-    text-decoration: none;
-    font-weight: 700;
-    transition: all 0.3s ease;
-}
+@keyframes pulseGlow {
+    from {
+        opacity: 0.3;
+        transform: scale(1);
+    }
 
-.OfficeCard__link:hover {
-    color: #ffffff;
-    transform: translateX(10px);
-}
-
-@media (max-width: 1199px) {
-    .OfficeCard {
-        height: 420px;
-        padding: 40px 30px;
+    to {
+        opacity: 0.7;
+        transform: scale(1.05);
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
     .OfficesGrid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .About__offices__h2 {
-        font-size: 56px;
-        margin-bottom: 60px;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1005,15 +977,16 @@ a.OfficeCard__link svg {
         padding: 80px 0;
     }
 
-    .OfficeCard {
-        text-align: left;
-        border-radius: 30px;
-        height: 204px;
-        padding: 16px 30px;
-    }
-
     .About__offices__h2 {
         font-size: 40px;
+        margin-bottom: 50px;
     }
 
+    .OfficesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .OfficeCard {
+        padding: 24px;
+    }
 }

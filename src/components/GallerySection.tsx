@@ -3,6 +3,7 @@
 import React from 'react';
 import './gallery.css';
 import AnimatedText from './AnimatedText';
+import CountUp from './common/CountUp';
 
 const GallerySection = () => {
     return (
@@ -18,19 +19,35 @@ const GallerySection = () => {
                 <div className="gallery-right">
 
                     <div className="stat-item stat-1">
-                        <span className="stat-title"><AnimatedText text={["Years of Excellence"]} /></span>
-                        <span className="stat-number"><AnimatedText text={["15+"]} /></span>
+                        <span className="stat-title">Years of Excellence</span>
+                        <span className="stat-number"><CountUp end="15+" /></span>
                     </div>
 
                     <div className="stat-item stat-2">
-                        <span className="stat-title"><AnimatedText text={["Tech Members"]} /></span>
-                        <span className="stat-number"><AnimatedText text={["150+"]} /></span>
+                        <span className="stat-title">Tech Members</span>
+                        <span className="stat-number"><CountUp end="150+" /></span>
                     </div>
 
                     <div className="stat-item stat-3">
-                        <span className="stat-title"><AnimatedText text={["Export Countries"]} /></span>
-                        <span className="stat-number"><AnimatedText text={["21+"]} /></span>
+                        <span className="stat-title">Export Countries</span>
+                        <span className="stat-number"><CountUp end="21+" /></span>
                     </div>
+
+                    <div className="stat-item stat-4">
+                        <span className="stat-title">Users</span>
+                        <span className="stat-number"><CountUp end="2500+" /></span>
+                    </div>
+
+                    <div className="stat-item stat-5">
+                        <span className="stat-title">Products</span>
+                        <span className="stat-number"><CountUp end="350+" /></span>
+                    </div>
+
+                    <div className="stat-item stat-6">
+                        <span className="stat-title">Sister Concern</span>
+                        <span className="stat-number"><CountUp end="9" /></span>
+                    </div>
+
 
                     <img
                         className="gallery-img-e"

@@ -5,90 +5,141 @@ export default function Memberships() {
     const memberships = [
         {
             id: 1,
-            title: "BASIS",
-            category: "Software Industry",
-            img: "https://tse3.mm.bing.net/th/id/OIP.TRJkxa2zUHZhovBbFZz3aAHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-            registrationNo: "G-1892"
+            title: "ATAB",
+            category: "Association of Travel Agents of Bangladesh",
+            img: "/images/partners/atab.png",
+            registrationNo: "M-11202"
         },
         {
             id: 2,
-            title: "ECAB",
-            category: "E-Commerce",
-            img: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800",
-            registrationNo: "ECAB-2021-443"
+            title: "TOAB",
+            category: "Tour Operators Association of Bangladesh",
+            img: "/images/partners/toab.jpg",
+            registrationNo: "M-55201"
         },
         {
             id: 3,
-            title: "BACCO",
-            category: "Outsourcing",
-            img: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=800",
-            registrationNo: "BACCO-M-882"
+            title: "HAAB",
+            category: "Hajj Agencies Association of Bangladesh",
+            img: "/images/partners/haab.png",
+            registrationNo: "M-99301"
         },
         {
             id: 4,
-            title: "BCS",
-            category: "Computer Society",
-            img: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=800",
-            registrationNo: "BCS-2022-771"
+            title: "AMCHAM",
+            category: "American Chamber of Commerce in Bangladesh",
+            img: "/images/partners/amcham.png",
+            registrationNo: "M-88402"
         },
         {
             id: 5,
-            title: "DCCI",
-            category: "Chamber of Commerce",
-            img: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800",
-            registrationNo: "DCCI-CORP-992"
+            title: "BTTF",
+            category: "Bangladesh Travel & Tourism Fair",
+            img: "/images/partners/bttf.jpg",
+            registrationNo: "M-77503"
         },
         {
             id: 6,
-            title: "International Travel Association",
-            category: "Global Travel",
-            img: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=800",
-            registrationNo: "IATA-M-55102"
+            title: "Sabre",
+            category: "Global Travel Technology Partner",
+            img: "/images/partners/sabre.png",
+            registrationNo: "T-44604"
+        },
+        {
+            id: 7,
+            title: "Asian Tourism",
+            category: "Regional Partner",
+            img: "/images/partners/asian-tourism.png",
+            registrationNo: "P-33705"
+        },
+        {
+            id: 8,
+            title: "ATAB Training",
+            category: "Educational Partner",
+            img: "/images/partners/atab-training.png",
+            registrationNo: "E-22806"
+        },
+        {
+            id: 9,
+            title: "DBBL",
+            category: "Financial Partner",
+            img: "/images/partners/dbbl.webp",
+            registrationNo: "F-11907"
+        },
+        {
+            id: 10,
+            title: "Discover",
+            category: "Global Travel Network",
+            img: "/images/partners/discover.webp",
+            registrationNo: "N-00108"
+        },
+        {
+            id: 11,
+            title: "Finlay",
+            category: "Logistics Partner",
+            img: "/images/partners/finlay.webp",
+            registrationNo: "L-22209"
+        },
+        {
+            id: 12,
+            title: "Skill Planet",
+            category: "Training Partner",
+            img: "/images/partners/skill-planet.png",
+            registrationNo: "S-33310"
+        },
+        {
+            id: 13,
+            title: "Sena Kalyan",
+            category: "Corporate Partner",
+            img: "/images/partners/sena.webp",
+            registrationNo: "C-44411"
+        },
+        {
+            id: 14,
+            title: "The Monitor",
+            category: "Media Partner",
+            img: "/images/partners/monitor.png",
+            registrationNo: "M-55512"
+        },
+        {
+            id: 15,
+            title: "Sammoni",
+            category: "Strategic Partner",
+            img: "/images/partners/sammoni.jpg",
+            registrationNo: "S-66613"
         }
     ];
 
     return (
         <div className="min-h-screen pb-24  ">
-            <header className="pt-3 pb-10 bg-white ">
-                <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 font-['Outfit'] tracking-tight">
-                        <AnimatedText text={["Corporate", "Memberships"]} />
+            <header className="pt-10 pb-16 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="text-[12px] font-bold text-amber-600 uppercase tracking-[0.3em] mb-4">Our Memberships</div>
+                    <h1 className="text-4xl md:text-6xl m-0 font-bold text-gray-900 leading-[1.1] font-['Outfit'] tracking-tight max-w-4xl">
+                        Strategic Partnerships that Drive <br />
+                        Industry Innovation
                     </h1>
-                    <div className='flex items-center justify-center'><p className="text-lg text-gray-500 max-w-2xl mx-auto">
-                        We are proud members of prestigious national and international associations, collaborating to drive industry growth.
-                    </p></div>
-
                 </div>
             </header>
 
-            <main className="container mx-auto px-4 pt-20">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <main className="container mx-auto px-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 border-t border-l border-gray-100">
                     {memberships.map((member) => (
                         <div
                             key={member.id}
-                            className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                            className="group relative aspect-square flex flex-col items-center justify-center p-6 border-r border-b border-gray-100 transition-all duration-500 hover:bg-amber-50/30"
                         >
-                            <div className="aspect-[4/3] w-full overflow-hidden relative bg-gray-100">
+                            <div className="h-32 w-full flex items-center justify-center mb-4 transition-transform duration-500 group-hover:scale-110">
                                 <img
                                     src={member.img}
                                     alt={member.title}
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    className="h-full w-auto object-contain  group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             </div>
 
-                            <div className="p-8">
-                                <span className="inline-block px-3 py-1 bg-amber-50 text-amber-700 text-xs font-semibold rounded-full mb-4">
-                                    {member.category}
-                                </span>
-                                <h3 className="text-xl font-bold text-gray-900 mb-2 font-['Outfit'] leading-tight">
-                                    {member.title}
-                                </h3>
-                                <div className="flex items-center text-sm text-gray-500 mt-4 pt-4 border-t border-gray-50">
-                                    <span className="font-mono bg-gray-50 px-2 py-1 rounded text-xs">
-                                        REG: {member.registrationNo}
-                                    </span>
-                                </div>
+                            <div className="absolute inset-x-4 bottom-6 text-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+                                <h3 className="text-[12px] font-bold text-gray-900 uppercase tracking-wider mb-1">{member.title}</h3>
+                                <p className="text-[10px] text-amber-600 font-bold uppercase tracking-widest">{member.category}</p>
                             </div>
                         </div>
                     ))}

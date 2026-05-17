@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Marquee from "react-fast-marquee";
 import "./_style/clients.css";
 import AnimatedText from "@/components/AnimatedText";
 import { useScrollReveal } from "@/lib/hooks/useScrollReveal";
@@ -84,7 +85,7 @@ export default function OurClientsPage() {
             <section className="OurClients__hero">
                 <div className="container OurClients__hero__inner">
                     <div className="OurClients__hero__label" data-reveal="up">Our Clients</div>
-                    <h1 className="OurClients__hero__h1" data-reveal="up" data-delay="100">
+                    <h1 className="OurClients__hero__h1 m-0" data-reveal="up" data-delay="100">
                         <AnimatedText text={["Trusted by", "Industry Leaders"]} />
                     </h1>
                     <p className="OurClients__hero__p" data-reveal="up" data-delay="200">
@@ -101,19 +102,19 @@ export default function OurClientsPage() {
                 </div>
             </section>
 
-            {/* ── Marquee Logo Strip ── */}
             <div className="OurClients__marquee-section">
-                <div className="OurClients__marquee-track">
+                <Marquee gradient={true} gradientColor="#f7f7f7" speed={50} pauseOnHover={true}>
                     {marqueeLogos.map((c, i) => (
-                        <img
-                            key={i}
-                            src={c.logo}
-                            alt={c.name}
-                            className="OurClients__marquee-logo"
-                            title={c.fullName}
-                        />
+                        <div key={i} className="OurClients__marquee-item-wrapper" style={{ padding: '0 30px' }}>
+                            <img
+                                src={c.logo}
+                                alt={c.name}
+                                className="OurClients__marquee-logo"
+                                title={c.fullName}
+                            />
+                        </div>
                     ))}
-                </div>
+                </Marquee>
             </div>
 
 

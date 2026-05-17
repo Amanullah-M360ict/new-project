@@ -19,10 +19,6 @@ const StatsSection = () => {
 
             </div>
             <div className="stats-section__right">
-
-
-
-
                 <div className="stats-card stats-card--green card-1">
                     <div className="stats-card__icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

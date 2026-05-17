@@ -514,7 +514,8 @@
 
 .Careers__wanna-join__h2,
 .Careers__wanna-join__h2 * {
-    line-height: 1.2
+    line-height: 1.2;
+    margin: 0;
 }
 
 @media(max-width:580px) {
@@ -563,11 +564,10 @@
 .Careers__openings__hero__h2 {
     font-size: 60px;
     font-weight: 700;
-    line-height: 75px;
     letter-spacing: -3px;
     color: #1a1a1a;
     text-align: center;
-
+    margin: 0;
 }
 
 .Careers__openings__hero__h2 span {

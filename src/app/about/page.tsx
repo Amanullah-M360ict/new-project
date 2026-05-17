@@ -7,6 +7,7 @@ import GallerySection from "@/components/GallerySection";
 import TechnologyPartner from "@/components/TechnologyPartner";
 import AwardsSection from "@/components/AwardsSection";
 import { useScrollReveal } from "@/lib/hooks/useScrollReveal";
+import Review from "@/components/Review";
 
 export default function About() {
     const pageRef = useScrollReveal("[data-reveal]");
@@ -25,7 +26,6 @@ export default function About() {
                                     About us
                                 </p>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,12 @@ export default function About() {
                     <div className="second_title">
                         <h2 className="second_title__h2">Who We Are</h2>
                         <p className="second_title__text">
-                            M360 ICT is a premier global technology consulting and software engineering firm dedicated to transforming businesses through innovation and excellence. With over 15 years of experience in the technology sector, we have established ourselves as a trusted partner for companies seeking reliable, scalable, and future-ready digital solutions.
+                            M360 ICT is a premier global technology consulting and software
+                            engineering firm dedicated to transforming businesses through
+                            innovation and excellence. With over 15 years of experience in the
+                            technology sector, we have established ourselves as a trusted partner for
+                            companies seeking reliable, scalable, and future-ready digital solutions.
+
                         </p>
                     </div>
                 </div>
@@ -48,8 +53,6 @@ export default function About() {
                     <div className="About__vision__content">
                         <p className="About__vision__p" data-reveal="up" data-delay="100">
                             Our mission is to bridge the gap between technical complexity and intuitive digital empowerment. We believe that great technology should be accessible, efficient, and transformative, allowing businesses to focus on what they do best.
-
-
                         </p>
                     </div>
                 </div>
@@ -59,44 +62,50 @@ export default function About() {
             <AwardsSection showExploreButton={true} />
 
             <TechnologyPartner />
+            <Review />
+
 
             <div className="About__offices">
                 <div className="container">
                     <h2 className="About__offices__h2" data-reveal="up">Global Offices</h2>
                     <div className="OfficesGrid">
                         <div className="OfficeCard" data-reveal="up" data-delay="100">
-                            <div className="OfficeCard__bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=800&auto=format&fit=crop')" }}></div>
-                            <div className="OfficeCard__content">
+                            <div className="OfficeCard__header">
+                                <img src="https://flagcdn.com/w40/us.png" alt="USA Flag" className="OfficeCard__flag" />
                                 <h3 className="OfficeCard__country">United States</h3>
-                                <p className="OfficeCard__address">447 Broadway, 2nd Floor,<br />New York, NY 10013</p>
-
+                            </div>
+                            <div className="OfficeCard__body">
+                                <p className="OfficeCard__address">447 Broadway, 2nd Floor, New York, NY 10013</p>
                             </div>
                         </div>
 
                         <div className="OfficeCard" data-reveal="up" data-delay="200">
-                            <div className="OfficeCard__bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=800&auto=format&fit=crop')" }}></div>
-                            <div className="OfficeCard__content">
+                            <div className="OfficeCard__header">
+                                <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" className="OfficeCard__flag" />
                                 <h3 className="OfficeCard__country">United Kingdom</h3>
-                                <p className="OfficeCard__address">71-75 Shelton Street,<br />Covent Garden, London</p>
-
+                            </div>
+                            <div className="OfficeCard__body">
+                                <p className="OfficeCard__address">71-75 Shelton Street, Covent Garden, London</p>
                             </div>
                         </div>
 
                         <div className="OfficeCard" data-reveal="up" data-delay="300">
-                            <div className="OfficeCard__bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=800&auto=format&fit=crop')" }}></div>
-                            <div className="OfficeCard__content">
+                            <div className="OfficeCard__header">
+                                <img src="https://flagcdn.com/w40/au.png" alt="Australia Flag" className="OfficeCard__flag" />
                                 <h3 className="OfficeCard__country">Australia</h3>
-                                <p className="OfficeCard__address">100 Harris Street,<br />Pyrmont, NSW 2009</p>
-
+                            </div>
+                            <div className="OfficeCard__body">
+                                <p className="OfficeCard__address">100 Harris Street, Pyrmont, NSW 2009</p>
                             </div>
                         </div>
 
                         <div className="OfficeCard" data-reveal="up" data-delay="400">
-                            <div className="OfficeCard__bg" style={{ backgroundImage: "url('/images/hati.jpg')" }}></div>
-                            <div className="OfficeCard__content">
+                            <div className="OfficeCard__header">
+                                <img src="https://flagcdn.com/w40/bd.png" alt="Bangladesh Flag" className="OfficeCard__flag" />
                                 <h3 className="OfficeCard__country">Bangladesh</h3>
-                                <p className="OfficeCard__address">House# 74, Road# 7,<br />Block# H, Banani, Dhaka</p>
-
+                            </div>
+                            <div className="OfficeCard__body">
+                                <p className="OfficeCard__address">House 74, Road 7, Block H, Banani, Dhaka</p>
                             </div>
                         </div>
                     </div>

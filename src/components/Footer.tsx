@@ -81,7 +81,7 @@ export default function Footer() {
                                 <li><Link href="/our-concern"><span className="chevron">&gt;</span> Our Concern</Link></li>
                                 <li><Link href="/fairs"><span className="chevron">&gt;</span> Events</Link></li>
                                 <li><Link href="/awards"><span className="chevron">&gt;</span> Awards</Link></li>
-                                <li><Link href="/careers"><span className="chevron">&gt;</span> Career</Link></li>
+                                <li><Link href="/career"><span className="chevron">&gt;</span> Career</Link></li>
                                 <li><Link href="/news"><span className="chevron">&gt;</span> News</Link></li>
                             </ul>
                         </div>
@@ -145,47 +145,52 @@ export default function Footer() {
                     </div>
 
                     {/* Global Offices */}
-                    <div className="ExactFooter__addressesRow">
-                        {/* USA */}
-                        <div className="ExactFooter__addressCard">
-                            <div className="ExactFooter__addressHeader">
-                                <img src="https://flagcdn.com/w40/us.png" alt="USA Flag" className="ExactFooter__flagImg" />
-                                <span className="ExactFooter__country">United States</span>
+
+                    <div>
+                        <h2 className=" text-[13px] text-center border-t border-gray-200 pt-4 ">Global Offices</h2>
+
+                        <div className="ExactFooter__addressesRow">
+
+                            {/* USA */}
+                            <div className="ExactFooter__addressCard">
+                                <div className="ExactFooter__addressHeader">
+                                    <img src="https://flagcdn.com/w40/us.png" alt="USA Flag" className="ExactFooter__flagImg" />
+                                    <span className="ExactFooter__country">United States</span>
+                                </div>
+                                <p className="ExactFooter__addressDetail">447 Broadway, 2nd Floor, New York, NY 10013</p>
+                                <span className="ExactFooter__reg"></span>
                             </div>
-                            <p className="ExactFooter__addressDetail">447 Broadway, 2nd Floor, New York, NY 10013</p>
-                            <span className="ExactFooter__reg">REG: 5432198</span>
-                        </div>
-                        {/* UK */}
-                        <div className="ExactFooter__addressCard">
-                            <div className="ExactFooter__addressHeader">
-                                <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" className="ExactFooter__flagImg" />
-                                <span className="ExactFooter__country">United Kingdom</span>
+                            {/* UK */}
+                            <div className="ExactFooter__addressCard">
+                                <div className="ExactFooter__addressHeader">
+                                    <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" className="ExactFooter__flagImg" />
+                                    <span className="ExactFooter__country">United Kingdom</span>
+                                </div>
+                                <p className="ExactFooter__addressDetail">71-75 Shelton Street, Covent Garden, London</p>
+                                <span className="ExactFooter__reg"> </span>
                             </div>
-                            <p className="ExactFooter__addressDetail">71-75 Shelton Street, Covent Garden, London</p>
-                            <span className="ExactFooter__reg">REG: 12839440</span>
-                        </div>
-                        {/* AUS */}
-                        <div className="ExactFooter__addressCard">
-                            <div className="ExactFooter__addressHeader">
-                                <span className="ExactFooter__addressHeader">
-                                    <img src="https://flagcdn.com/w40/au.png" alt="Australia Flag" className="ExactFooter__flagImg" />
-                                    <span className="ExactFooter__country">Australia</span>
-                                </span>
+                            {/* AUS */}
+                            <div className="ExactFooter__addressCard">
+                                <div className="ExactFooter__addressHeader">
+                                    <span className="ExactFooter__addressHeader">
+                                        <img src="https://flagcdn.com/w40/au.png" alt="Australia Flag" className="ExactFooter__flagImg" />
+                                        <span className="ExactFooter__country">Australia</span>
+                                    </span>
+                                </div>
+                                <p className="ExactFooter__addressDetail">100 Harris Street, Pyrmont, NSW 2009</p>
+                                <span className="ExactFooter__reg"> </span>
                             </div>
-                            <p className="ExactFooter__addressDetail">100 Harris Street, Pyrmont, NSW 2009</p>
-                            <span className="ExactFooter__reg">REG: ABN 45 123 456 789</span>
-                        </div>
-                        {/* BD */}
-                        <div className="ExactFooter__addressCard">
-                            <div className="ExactFooter__addressHeader">
-                                <img src="https://flagcdn.com/w40/bd.png" alt="Bangladesh Flag" className="ExactFooter__flagImg" />
-                                <span className="ExactFooter__country">Bangladesh</span>
+                            {/* BD */}
+                            <div className="ExactFooter__addressCard">
+                                <div className="ExactFooter__addressHeader">
+                                    <img src="https://flagcdn.com/w40/bd.png" alt="Bangladesh Flag" className="ExactFooter__flagImg" />
+                                    <span className="ExactFooter__country">Bangladesh</span>
+                                </div>
+                                <p className="ExactFooter__addressDetail">House 74, Road 7, Block H, Banani, Dhaka</p>
+                                <span className="ExactFooter__reg"> </span>
                             </div>
-                            <p className="ExactFooter__addressDetail">House# 74, Road# 7, Block# H, Banani, Dhaka</p>
-                            <span className="ExactFooter__reg">REG: C-161483/2020</span>
                         </div>
                     </div>
-
 
 
                     {/* Bottom Bar */}

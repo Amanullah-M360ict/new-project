@@ -3,7 +3,6 @@
 import React from "react";
 import "./_style/style.css";
 import AnimatedText from "@/components/AnimatedText";
-
 import { CONCERNS } from "@/data/concerns";
 
 export default function OurConcern() {
@@ -27,7 +26,17 @@ export default function OurConcern() {
                 <div className="container">
                     <div className="Concern__grid">
                         {CONCERNS.map((concern, idx) => (
-                            <div key={idx} className="Concern__card" style={{ backgroundImage: `url('${concern.bgImage}')` }}>
+                            <div key={idx} className="Concern__card">
+                                {concern.videoUrl && (
+                                    <video
+                                        src={concern.videoUrl}
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                        className="Concern__cardVideo"
+                                    />
+                                )}
                                 <div className="Concern__cardOverlay"></div>
                                 <div className="Concern__cardContent">
                                     <div className="Concern__logoWrapper">
